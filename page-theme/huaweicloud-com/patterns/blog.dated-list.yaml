@@ -1,0 +1,45 @@
+id: blog.dated-list
+taxonomy: blog
+label_zh: "资讯·日期列单行列表"
+role: section
+summary: "浅灰底上分类 Tab 与搜索框，下列白卡：左日期、中缩略图、右可变长标题与摘要，底部分页。现有 blog.split-feature / blog.grid-3 / blog.analyst-list 都不是整页新闻合集。"
+variant: { layout: list, columns: 1, media_position: left, overlay: false, card: filled }
+container: { mode: contained, max_width_px: 1367 }
+density: default
+content_max: full
+slots:
+  - name: tab
+    required: true
+    repeatable: true
+  - name: input
+    required: false
+    notes: "搜索新闻"
+  - name: date
+    required: true
+    repeatable: true
+  - name: media
+    required: true
+    repeatable: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 6, max: 12, typical: 9, observed: [9] }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1367, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 1002, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 784, columns: 1 }
+  stack_below: never
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [news.html]
+screenshot: screenshots/news.html/floors/pc--sec-02.png
+dont: ["不要把整页新闻合集压成产品页里的左主右列表或三列纯文卡；标题可含会议名与年份，须 ∈ 本站 headline_structures"]
+confidence: medium

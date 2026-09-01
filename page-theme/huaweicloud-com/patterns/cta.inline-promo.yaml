@@ -1,0 +1,46 @@
+id: cta.inline-promo
+taxonomy: cta
+label_zh: "促销·横条"
+role: section
+summary: "圆角横条：左标题、中说明、右按钮，带渐变描边。"
+variant:
+  layout: stacked
+  columns: 1
+  media_position: none
+  overlay: false
+  align: justified
+container: { mode: contained, max_width_px: 1600 }
+density: compact
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: primary_cta
+    required: true
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1476, columns: 1 }
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 942
+      columns: 2
+      gutter_px: 40
+      item_widths_px: [339, 563]
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 737
+      columns: 2
+      gutter_px: 40
+      item_widths_px: [265, 432]
+  stack_below: never
+rhythm: { surface: default, alternate: keep, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [agentorchard--home]
+screenshot: screenshots/agentorchard--home/floors/pc--sec-06.png
+dont: ["不要把 Token Plan 横条拉成居中大标题收束"]
+confidence: medium

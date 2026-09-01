@@ -1,0 +1,42 @@
+id: hero.slider-split
+taxonomy: hero
+label_zh: "首屏轮播·左文右图"
+role: section
+summary: "轮播首屏：左标题与双 CTA，右插画，底下一排快捷入口。"
+variant: { layout: slider, columns: 1, media_position: right, overlay: false }
+container: { mode: full-bleed }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+    typical_chars: 8-20
+  - name: subcopy
+    required: true
+  - name: primary_cta
+    required: true
+  - name: secondary_cta
+    required: false
+  - name: media
+    required: true
+content_count: { unit: slide, min: 1, max: 6, typical: 3 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1688, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 784, columns: 1 }
+  mobile:
+    columns: 5
+    grid:
+      content_width_px: 684
+      columns: 5
+      gutter_px: 0
+      item_widths_px: [684, 684, 684, 684, 684]
+  stack_below: never
+rhythm: { surface: muted, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [home]
+screenshot: screenshots/home/floors/pc--sec-01.png
+dont: ["不要把底下一排快捷入口拆成独立 feature 楼层"]
+confidence: medium

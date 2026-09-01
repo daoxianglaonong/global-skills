@@ -1,0 +1,44 @@
+id: content.numbered-stack
+taxonomy: content
+label_zh: "长文·编号能力栈"
+role: section
+summary: "关于页长文：编号小节叠三列能力卡与平台入口，真·长文图文，无 unmapped_reason。"
+variant: { layout: stacked, columns: 1, media_position: top, overlay: false }
+container: { mode: contained, max_width_px: 1200 }
+density: spacious
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: step_label
+    required: true
+    repeatable: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: false
+    repeatable: true
+  - name: media
+    required: false
+    repeatable: true
+  - name: stat_value
+    required: false
+    repeatable: true
+content_count: { unit: item, min: 3, max: 9, typical: 6 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1200, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 784, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 717, columns: 1 }
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [about-index.html]
+screenshot: screenshots/about-index.html/floors/pc--sec-03.png
+dont: ["不要把编号长文拆成互不相关的三页；编号红不是行动色"]
+confidence: medium

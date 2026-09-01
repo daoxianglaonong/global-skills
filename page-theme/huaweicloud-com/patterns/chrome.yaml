@@ -1,0 +1,298 @@
+navbar.portal-utility:
+  id: navbar.portal-utility
+  taxonomy: navbar
+  label_zh: "门户顶栏·左标右搜"
+  role: chrome
+  summary: "黑底效用条 + 白底主栏：左 logo，中导航，右搜索框 input#header-navigation-search-input 与识别红注册钮。"
+  variant:
+    layout: split
+    columns: 2
+    media_position: none
+    overlay: false
+    align: justified
+  container: { mode: contained, max_width_px: 1600 }
+  density: compact
+  content_max: full
+  slots:
+    - name: logo
+      required: true
+    - name: nav_item
+      required: true
+      repeatable: true
+    - name: input
+      required: false
+      notes: "搜索框"
+    - name: primary_cta
+      required: true
+      typical_chars: 2-4
+  content_count: { unit: item, min: 8, max: 16, typical: 10 }
+  responsive:
+    pc:
+      columns: 2
+      grid:
+        content_width_px: 1519
+        columns: 2
+        gutter_px: 12
+        item_widths_px: [82, 74]
+    tablet:
+      columns: 2
+      grid:
+        content_width_px: 737
+        columns: 2
+        gutter_px: 12
+        item_widths_px: [82, 74]
+    mobile:
+      columns: 3
+      grid:
+        content_width_px: 652
+        columns: 3
+        gutter_px: 0
+        item_widths_px: [24, 42, 28]
+    stack_below: never
+  rhythm: { surface: default, alternate: keep, full_bleed_media: false, merge_spacing_with_prev: false }
+  observed_on: [home, product-agentarts.html, product-modelarts.html, ai, product-ecs.html, service-contact.html, about-index.html, news.html, securecenter-compliance-compliance-center.html]
+  screenshot: screenshots/home/floors/pc--sec-00.png
+  observations:
+    - path: responsive.pc.grid.content_width_px
+      pageId: home
+      pageUrl: "https://www.huaweicloud.com/"
+      value: 1519
+      selected: true
+    - path: responsive.pc.grid.content_width_px
+      pageId: securecenter-compliance-compliance-center.html
+      pageUrl: "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+      value: 1305
+      selected: false
+    - path: responsive.tablet.grid.content_width_px
+      pageId: home
+      pageUrl: "https://www.huaweicloud.com/"
+      value: 737
+      selected: true
+    - path: responsive.tablet.grid.content_width_px
+      pageId: product-agentarts.html
+      pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+      value: 1116
+      selected: false
+    - path: responsive.tablet.grid.content_width_px
+      pageId: product-modelarts.html
+      pageUrl: "https://www.huaweicloud.com/product/modelarts.html"
+      value: 942
+      selected: false
+    - path: responsive.mobile.grid.content_width_px
+      pageId: home
+      pageUrl: "https://www.huaweicloud.com/"
+      value: 652
+      selected: true
+    - path: responsive.mobile.grid.content_width_px
+      pageId: product-modelarts.html
+      pageUrl: "https://www.huaweicloud.com/product/modelarts.html"
+      value: 737
+      selected: false
+    - path: responsive.mobile.columns
+      pageId: home
+      pageUrl: "https://www.huaweicloud.com/"
+      value: 3
+      selected: true
+    - path: responsive.mobile.columns
+      pageId: product-modelarts.html
+      pageUrl: "https://www.huaweicloud.com/product/modelarts.html"
+      value: 2
+      selected: false
+  dont: ["不要把注册红钮改成主站行动黑钮"]
+  confidence: medium
+navbar.orchard-subbrand:
+  id: navbar.orchard-subbrand
+  taxonomy: navbar
+  label_zh: "智果园顶栏·副品牌"
+  role: chrome
+  summary: "同门户两层壳，但主栏带「智果园」副品牌与更短导航，行动区更收。"
+  variant:
+    layout: split
+    columns: 2
+    media_position: none
+    overlay: false
+    align: start
+  container: { mode: contained, max_width_px: 1600 }
+  density: compact
+  content_max: full
+  slots:
+    - name: logo
+      required: true
+    - name: nav_item
+      required: true
+      repeatable: true
+    - name: input
+      required: false
+    - name: primary_cta
+      required: true
+  content_count: { unit: item, min: 4, max: 8, typical: 5 }
+  responsive:
+    pc:
+      columns: 2
+      grid:
+        content_width_px: 1476
+        columns: 2
+        gutter_px: 12
+        item_widths_px: [82, 74]
+    tablet:
+      columns: 2
+      grid:
+        content_width_px: 942
+        columns: 2
+        gutter_px: 12
+        item_widths_px: [82, 74]
+    mobile:
+      columns: 2
+      grid:
+        content_width_px: 737
+        columns: 2
+        gutter_px: 12
+        item_widths_px: [82, 74]
+    stack_below: never
+  rhythm: { surface: default, alternate: keep, full_bleed_media: false, merge_spacing_with_prev: false }
+  observed_on: [agentorchard--home]
+  screenshot: screenshots/agentorchard--home/floors/pc--sec-00.png
+  dont: ["不要去掉智果园副品牌字标去套门户十项导航"]
+  confidence: medium
+footer.multi-column:
+  id: footer.multi-column
+  taxonomy: footer
+  label_zh: "多列页脚·备案条"
+  role: section
+  summary: "浅灰底：上为链接列与热线，下为版权与备案。landmark 测得整块单列，内部链表面读为多列。"
+  variant: { layout: stacked, columns: 1, media_position: none, overlay: false }
+  container: { mode: full-bleed }
+  density: default
+  content_max: full
+  slots:
+    - name: logo
+      required: false
+    - name: phone
+      required: true
+    - name: nav_item
+      required: true
+      repeatable: true
+    - name: social
+      required: false
+      repeatable: true
+    - name: legal
+      required: true
+    - name: beian
+      required: true
+  content_count: { unit: item, min: 4, max: 8, typical: 6 }
+  responsive:
+    pc:
+      columns: 1
+      grid: { content_width_px: 1688, columns: 1 }
+    tablet:
+      columns: 1
+      grid: { content_width_px: 784, columns: 1 }
+    mobile:
+      columns: 4
+      grid:
+        content_width_px: 660
+        columns: 4
+        gutter_px: 0
+        item_widths_px: [34, 478, 106, 28]
+    stack_below: never
+  rhythm: { surface: muted, alternate: keep, full_bleed_media: false, merge_spacing_with_prev: false }
+  observed_on: [home, product-agentarts.html, product-modelarts.html, agentorchard--home, ai, product-ecs.html, service-contact.html, about-index.html, news.html, securecenter-compliance-compliance-center.html]
+  screenshot: screenshots/home/floors/pc--sec-08.png
+  observations:
+    - path: responsive.pc.grid.content_width_px
+      pageId: home
+      pageUrl: "https://www.huaweicloud.com/"
+      value: 1688
+      selected: true
+    - path: responsive.pc.grid.content_width_px
+      pageId: agentorchard--home
+      pageUrl: "https://agentorchard.huaweicloud.com/"
+      value: 1640
+      selected: false
+    - path: responsive.pc.grid.content_width_px
+      pageId: securecenter-compliance-compliance-center.html
+      pageUrl: "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+      value: 1450
+      selected: false
+    - path: responsive.tablet.grid.content_width_px
+      pageId: home
+      pageUrl: "https://www.huaweicloud.com/"
+      value: 784
+      selected: true
+    - path: responsive.tablet.grid.content_width_px
+      pageId: product-agentarts.html
+      pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+      value: 1240
+      selected: false
+    - path: responsive.tablet.grid.content_width_px
+      pageId: product-modelarts.html
+      pageUrl: "https://www.huaweicloud.com/product/modelarts.html"
+      value: 1002
+      selected: false
+    - path: responsive.tablet.grid.content_width_px
+      pageId: securecenter-compliance-compliance-center.html
+      pageUrl: "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+      value: 1200
+      selected: false
+    - path: responsive.mobile.grid.content_width_px
+      pageId: home
+      pageUrl: "https://www.huaweicloud.com/"
+      value: 660
+      selected: true
+    - path: responsive.mobile.grid.content_width_px
+      pageId: securecenter-compliance-compliance-center.html
+      pageUrl: "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+      value: 1200
+      selected: false
+    - path: responsive.mobile.grid.content_width_px
+      pageId: agentorchard--home
+      pageUrl: "https://agentorchard.huaweicloud.com/"
+      value: 784
+      selected: false
+    - path: responsive.mobile.columns
+      pageId: home
+      pageUrl: "https://www.huaweicloud.com/"
+      value: 4
+      selected: true
+    - path: responsive.mobile.columns
+      pageId: agentorchard--home
+      pageUrl: "https://agentorchard.huaweicloud.com/"
+      value: 1
+      selected: false
+  dont: ["不要把备案条拆成独立 legal-bar 楼层"]
+  confidence: medium
+float-widget.service-rail:
+  id: float-widget.service-rail
+  taxonomy: float-widget
+  label_zh: "右侧客服浮栏"
+  role: chrome
+  summary: "右侧 div.float-dialog 整栏：客服头像、反馈、电话，底部可带回顶。viewport 读图成立；landmarks 未成层，三档几何保留字段，不从邻档或 CSS 声明填数。"
+  variant: { layout: overlay, columns: 1, media_position: none, overlay: true }
+  container: { mode: full-bleed }
+  density: compact
+  content_max: full
+  slots:
+    - name: nav_item
+      required: true
+      repeatable: true
+      notes: "客服 / 反馈 / 电话；回顶若同栏则一并计入，不得只写空回顶"
+  content_count: { unit: item, min: 3, max: 4, typical: 4 }
+  responsive:
+    pc:
+      columns: 1
+      grid: { content_width_px: 0, columns: 1 }
+    tablet:
+      columns: 1
+      grid: { content_width_px: 0, columns: 1 }
+    mobile:
+      columns: 1
+      overlay_strategy: keep
+      grid: { content_width_px: 0, columns: 1 }
+    stack_below: never
+    notes: "float-dialog 未进 landmarks，painted-area 只有 paintedPx 无 bbox；三档几何 observed 缺测，不从邻档填数"
+  rhythm: { surface: default, alternate: keep, full_bleed_media: false, merge_spacing_with_prev: false }
+  observed_on: [home, product-agentarts.html, product-modelarts.html, agentorchard--home, ai, product-ecs.html, service-contact.html, about-index.html, news.html, securecenter-compliance-compliance-center.html]
+  screenshot: screenshots/home/pc--viewport.png
+  dont: ["不要只写空回顶；不要把浮层写进 sequence；不要用邻档或 44px CSS 声明填几何"]
+  confidence: medium
+  observed: true

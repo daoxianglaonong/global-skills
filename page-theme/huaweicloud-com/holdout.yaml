@@ -1,0 +1,22 @@
+schema_version: 1
+declared_at: "2026-08-23T13:20:00+08:00"
+declared_by: "human"
+style_set_id: huaweicloud-com
+page_type:
+  taxonomy: case-study
+  label_zh: 客户案例页
+  exists_on_site: true
+urls_forbidden:
+  - https://www.huaweicloud.com/cases.html
+  - https://www.huaweicloud.com/cases/meitu.html
+  - https://www.huaweicloud.com/cases/psbc.html
+  - https://www.huaweicloud.com/cases/faw.html
+  - https://www.huaweicloud.com/cases/hnair.html
+  - https://www.huaweicloud.com/cases/jt.html
+  - https://www.huaweicloud.com/cases/pioneers100.html
+  - https://www.huaweicloud.com/cases/zhixing100.html
+excluded_from_sampling: true
+ground_truth:
+  url: https://www.huaweicloud.com/cases/meitu.html
+  note: "提取禁采；仅验收阶段可截视口图。合集页一并禁采以免泄漏同型叙事。"
+status: declared

@@ -1,0 +1,103 @@
+id: case-study.split-stats
+taxonomy: case-study
+label_zh: "案例·左媒右数"
+role: section
+summary: "居中标题 + 左媒体、右文案与三列统计，可带客户 logo。"
+variant:
+  layout: split
+  columns: 2
+  media_position: left
+  overlay: false
+  card: filled
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: media
+    required: true
+  - name: logo
+    required: false
+  - name: item_title
+    required: true
+  - name: item_body
+    required: true
+  - name: stat_value
+    required: true
+    repeatable: true
+  - name: stat_label
+    required: true
+    repeatable: true
+  - name: primary_cta
+    required: false
+content_count: { unit: item, min: 1, max: 6, typical: 1 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 1431
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [716, 716]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 1116
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [558, 558]
+  mobile:
+    columns: 3
+    grid:
+      content_width_px: 636
+      columns: 3
+      gutter_px: 12
+      item_widths_px: [204, 204, 204]
+  stack_below: never
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-agentarts.html, agentorchard--home]
+screenshot: screenshots/product-agentarts.html/floors/pc--sec-05.png
+observations:
+  - path: responsive.pc.grid.content_width_px
+    pageId: product-agentarts.html
+    pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+    value: 1431
+    selected: true
+  - path: responsive.pc.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 1436
+    selected: false
+  - path: responsive.tablet.grid.content_width_px
+    pageId: product-agentarts.html
+    pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+    value: 1116
+    selected: true
+  - path: responsive.tablet.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 966
+    selected: false
+  - path: responsive.tablet.columns
+    pageId: product-agentarts.html
+    pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+    value: 2
+    selected: true
+  - path: responsive.tablet.columns
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 3
+    selected: false
+  - path: responsive.mobile.grid.content_width_px
+    pageId: product-agentarts.html
+    pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+    value: 636
+    selected: true
+  - path: responsive.mobile.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 761
+    selected: false
+dont: ["不要把案例统计改成纯 logo 墙"]
+confidence: medium

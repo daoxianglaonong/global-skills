@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "pageId": "product-modelarts.html",
+  "pageCount": 1,
+  "itemCount": 121,
+  "hash": "sha256:1e10158bcec9b43d938ab59a1aff6765918204dda513c6cfcf3cd48101202e50",
+  "url": "https://www.huaweicloud.com/product/modelarts.html",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 23,
+      "charsP50": 6,
+      "charsP90": 17,
+      "punct": 5,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 5,
+        "ratioWithSpace": 0
+      }
+    },
+    "subcopy": {
+      "n": 17,
+      "charsP50": 24,
+      "charsP90": 42,
+      "punct": 29,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 6,
+        "ratioWithSpace": 0
+      }
+    },
+    "primary_cta": {
+      "n": 2,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 2,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 77,
+      "charsP50": 5,
+      "charsP90": 18,
+      "punct": 16,
+      "cjkLatin": {
+        "withSpace": 5,
+        "withoutSpace": 38,
+        "ratioWithSpace": 0.1163
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {},
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 1,
+      "开发者": 3,
+      "客户": 1,
+      "用户": 1
+    }
+  },
+  "cta": [
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "立即使用",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "文档",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "ModelArts",
+    "LLM",
+    "OBS",
+    "Notebook"
+  ],
+  "numberSamples": {
+    "heading": [
+      "4"
+    ],
+    "body": [
+      "7",
+      "24 ",
+      "7",
+      "24",
+      "1",
+      "2",
+      "20200593 "
+    ]
+  },
+  "chromeCopyPreview": []
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "pageId": "agentorchard--home",
+  "pageCount": 1,
+  "itemCount": 107,
+  "hash": "sha256:4e124d19d89a04876ff62269807329f33ba17b6193df2db6813410237767840a",
+  "url": "https://agentorchard.huaweicloud.com/",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 17,
+      "charsP50": 18,
+      "charsP90": 25,
+      "punct": 8,
+      "cjkLatin": {
+        "withSpace": 18,
+        "withoutSpace": 4,
+        "ratioWithSpace": 0.8182
+      }
+    },
+    "subcopy": {
+      "n": 24,
+      "charsP50": 29,
+      "charsP90": 66,
+      "punct": 48,
+      "cjkLatin": {
+        "withSpace": 28,
+        "withoutSpace": 8,
+        "ratioWithSpace": 0.7778
+      }
+    },
+    "primary_cta": {
+      "n": 1,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 1,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 58,
+      "charsP50": 6,
+      "charsP90": 14,
+      "punct": 6,
+      "cjkLatin": {
+        "withSpace": 6,
+        "withoutSpace": 7,
+        "ratioWithSpace": 0.4615
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {
+      "你": 2
+    },
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 6,
+      "开发者": 1,
+      "客户": 2,
+      "团队": 1
+    }
+  },
+  "cta": [
+    {
+      "term": "了解详情",
+      "count": 9
+    },
+    {
+      "term": "在线体验",
+      "count": 4
+    },
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "探索更多Skills",
+      "count": 1
+    },
+    {
+      "term": "进入专区",
+      "count": 1
+    },
+    {
+      "term": "了解产品",
+      "count": 1
+    },
+    {
+      "term": "立即体验",
+      "count": 1
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "AgentArts",
+    "Agent",
+    "OfficeAce",
+    "Skills",
+    "Shell",
+    "CodeArts"
+  ],
+  "numberSamples": {
+    "subcopy": [
+      "505",
+      "18",
+      "512",
+      "92",
+      "6",
+      "5.2",
+      "4"
+    ],
+    "body": [
+      "7",
+      "24 ",
+      "7",
+      "24",
+      "1",
+      "2",
+      "20200593 "
+    ]
+  },
+  "chromeCopyPreview": []
+}

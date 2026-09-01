@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "pageId": "securecenter-compliance-compliance-center.html",
+  "pageCount": 1,
+  "itemCount": 183,
+  "hash": "sha256:2afafd6a0f129746810bc40b3b706141b80382644d94eb25d41a13f85e6d3387",
+  "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 38,
+      "charsP50": 13,
+      "charsP90": 21,
+      "punct": 1,
+      "cjkLatin": {
+        "withSpace": 1,
+        "withoutSpace": 11,
+        "ratioWithSpace": 0.0833
+      }
+    },
+    "subcopy": {
+      "n": 6,
+      "charsP50": 5,
+      "charsP90": 6,
+      "punct": 2,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "primary_cta": {
+      "n": 1,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 1,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 137,
+      "charsP50": 15,
+      "charsP90": 54,
+      "punct": 45,
+      "cjkLatin": {
+        "withSpace": 29,
+        "withoutSpace": 55,
+        "ratioWithSpace": 0.3452
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {
+      "您": 1
+    },
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 1,
+      "开发者": 2,
+      "客户": 1,
+      "用户": 4
+    }
+  },
+  "cta": [
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "ISO",
+    "ISAE",
+    "SRAA",
+    "Cloud CoC",
+    "GDPR",
+    "NTRA",
+    "CSA STAR",
+    "PCI DSS",
+    "PCI",
+    "SOC1",
+    "TISAX",
+    "OSPAR",
+    "MTCS Tier",
+    "NIST",
+    "ENS",
+    "CSA Cyber",
+    "Trust Mark",
+    "Class",
+    "Tier",
+    "The Data",
+    "Protection Trustmark",
+    "DPTM",
+    "AIMS",
+    "MTCS",
+    "DCA",
+    "IPDRR",
+    "Cyber Trust",
+    "Mark",
+    "EDPB",
+    "Communications"
+  ],
+  "numberSamples": {
+    "heading": [
+      "27001",
+      "27017",
+      "27018",
+      "9001",
+      "9000",
+      "20000",
+      "22301",
+      "27701",
+      "10012",
+      "29151",
+      "3",
+      "27799",
+      "27034",
+      "42001",
+      "1",
+      "2",
+      "3",
+      "5",
+      "3",
+      "3000"
+    ],
+    "body": [
+      "27001 ",
+      "27017 ",
+      "27018 ",
+      "9001",
+      "9000 ",
+      "20000 ",
+      "22301 ",
+      "27701 ",
+      "10012 ",
+      "29151 ",
+      "3",
+      "3",
+      "3",
+      "27799 ",
+      "27034 ",
+      "42001 ",
+      "42001",
+      "42001",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  "chromeCopyPreview": []
+}

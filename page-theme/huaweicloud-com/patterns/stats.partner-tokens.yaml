@@ -1,0 +1,50 @@
+id: stats.partner-tokens
+taxonomy: stats
+label_zh: "统计·伙伴场景三数"
+role: section
+summary: "居中长标题下三枚行业/场景/企业数字，下接行业名。"
+variant: { layout: centered, columns: 1, media_position: none, overlay: false, align: center }
+container: { mode: contained, max_width_px: 1200 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: stat_value
+    required: true
+    repeatable: true
+  - name: stat_label
+    required: true
+    repeatable: true
+  - name: item_title
+    required: false
+    repeatable: true
+content_count: { unit: stat, min: 3, max: 3, typical: 3 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 1040
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [155, 193, 230]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 600
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [112, 137, 161]
+  mobile:
+    columns: 3
+    grid:
+      content_width_px: 600
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [112, 137, 161]
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [about-index.html]
+screenshot: screenshots/about-index.html/floors/pc--sec-04.png
+dont: ["不要把三数改成价格表"]
+confidence: medium

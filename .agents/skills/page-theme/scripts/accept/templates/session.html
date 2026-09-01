@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>500ms 品牌归属判断 · 裁判端</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; font: 15px/1.7 system-ui, "Segoe UI", "Microsoft YaHei", sans-serif; background: #f4f4f5; color: #18181b; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+  h1 { font-size: 20px; margin: 0 0 16px; }
+  .card { background: #fff; border: 1px solid #e4e4e7; border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+  button { font: inherit; padding: 8px 18px; border: 1px solid #18181b; background: #18181b; color: #fff; border-radius: 6px; cursor: pointer; }
+  button.ghost { background: #fff; color: #18181b; }
+  button:disabled { opacity: .4; cursor: not-allowed; }
+  .choices { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
+  textarea { width: 100%; min-height: 88px; font: inherit; padding: 8px; border: 1px solid #d4d4d8; border-radius: 6px; box-sizing: border-box; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid img { width: 100%; border: 2px solid transparent; border-radius: 6px; cursor: pointer; display: block; }
+  .grid img.sel { border-color: #18181b; }
+  .muted { color: #52525b; font-size: 13px; }
+  #stage { position: fixed; inset: 0; background: #7f7f7f; display: none; align-items: center; justify-content: center; z-index: 9; }
+  #stage img { max-width: 100%; max-height: 100%; }
+  #fix { position: fixed; inset: 0; background: #7f7f7f; display: none; align-items: center; justify-content: center; font-size: 40px; color: #fff; z-index: 8; }
+  pre { background: #18181b; color: #e4e4e7; padding: 14px; border-radius: 6px; overflow: auto; font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>500ms 品牌归属判断</h1>
+  <div id="app"></div>
+</main>
+<div id="fix"><span>+</span></div>
+<div id="stage"><img id="shot" alt="" /></div>
+<script>
+// 本页只做曝光计时与答案录入。判定不在这里发生，也不在任何模型里发生（Q-26 / Q-45）。
+const DATA = __PT_SESSION_DATA__;
+const answers = { startedAt: new Date().toISOString(), exposureMsConfigured: DATA.exposureMs, calibration: [], masked: [], plain: [] };
+const app = document.getElementById('app');
+const stage = document.getElementById('stage');
+const shot = document.getElementById('shot');
+const fix = document.getElementById('fix');
+const el = (h) => { const d = document.createElement('div'); d.innerHTML = h; return d.firstElementChild; };
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+function preload(files) {
+  return Promise.all(files.map((f) => new Promise((res) => { const i = new Image(); i.onload = i.onerror = () => res(); i.src = f; })));
+}
+
+// 曝光：先注视点，再按配置毫秒闪现，记录实测显示时长（Q-23 要求写实际所用毫秒）
+async function expose(file, ms) {
+  fix.style.display = 'flex';
+  await wait(600);
+  fix.style.display = 'none';
+  shot.src = file;
+  await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  stage.style.display = 'flex';
+  const t0 = performance.now();
+  await wait(ms);
+  stage.style.display = 'none';
+  const actual = Math.round(performance.now() - t0);
+  shot.removeAttribute('src');
+  return actual;
+}
+
+function render(html) { app.innerHTML = ''; app.appendChild(el(html)); }
+
+function intro() {
+  render(`<div class="card">
+    <p><b>请先确认：</b>你没有看过本站的风格资产、没有参与提取、没有参与拍板（Q-26）。任一条不满足请现在退出。</p>
+    <p class="muted">流程：学习 3 张（各 10 秒）→ 校准题 → 第 1 轮判断（计分）→ 第 2 轮判断（不计分）。中途请勿自行浏览任何网站。</p>
+    <p><label>裁判代号 <input id="jid" size="12" /></label></p>
+    <button id="go">我确认，开始</button>
+  </div>`);
+  document.getElementById('go').onclick = async () => {
+    answers.judgeId = (document.getElementById('jid').value || '').trim();
+    await preload([...DATA.learning.map((l) => l.file), ...DATA.calibration.flatMap((c) => c.options.map((o) => o.file))]);
+    learn(0);
+  };
+}
+
+// Q-29：3 张原站真页视口图各看 10 秒，静态截图，禁止自由浏览原站
+async function learn(round) {
+  for (const [i, l] of DATA.learning.entries()) {
+    render(`<div class="card"><p>学习阶段 ${i + 1}/${DATA.learning.length}（10 秒）</p><img src="${l.file}" style="max-width:100%" /></div>`);
+    await wait(10000);
+  }
+  calibrate(round);
+}
+
+// Q-30：四选一校准题；答错重看一轮学习材料再测一题；两轮仍错必须换裁判
+function calibrate(round) {
+  const q = DATA.calibration[Math.min(round, DATA.calibration.length - 1)];
+  render(`<div class="card"><p><b>校准题（第 ${round + 1} 轮）</b>：${q.prompt}</p>
+    <div class="grid">${q.options.map((o) => `<img data-id="${o.id}" src="${o.file}" />`).join('')}</div>
+    <p><button id="sub" disabled>提交</button></p></div>`);
+  let picked = null;
+  app.querySelectorAll('.grid img').forEach((img) => {
+    img.onclick = () => {
+      app.querySelectorAll('.grid img').forEach((x) => x.classList.remove('sel'));
+      img.classList.add('sel');
+      picked = img.dataset.id;
+      document.getElementById('sub').disabled = false;
+    };
+  });
+  document.getElementById('sub').onclick = () => {
+    answers.calibration.push({ questionId: q.id, pickedOptionId: picked, round: round + 1, at: new Date().toISOString() });
+    // 对错由主持人按 manifest.calibration[].options[].correct 核对，本页不持有答案键
+    render(`<div class="card"><p>已记录第 ${round + 1} 轮校准作答。请<b>主持人</b>按 manifest 核对。</p>
+      <div class="choices"><button id="ok">校准通过，进入第 1 轮</button>
+      ${round === 0 ? '<button class="ghost" id="retry">校准未过，重看学习材料再测一题</button>' : '<button class="ghost" id="stop">两轮仍错：换裁判，本轮不作数</button>'}</div></div>`);
+    document.getElementById('ok').onclick = () => { answers.calibrationPassedAtRound = round + 1; runRound('masked'); };
+    const r = document.getElementById('retry');
+    if (r) r.onclick = () => learn(1);
+    const s = document.getElementById('stop');
+    if (s) s.onclick = () => { answers.judgeReplaced = true; finish(); };
+  };
+}
+
+// Q-37：先遮罩轮计分，后原样轮只作归因
+async function runRound(kind) {
+  const items = DATA[kind];
+  const scoring = kind === 'masked';
+  render(`<div class="card"><p><b>第 ${scoring ? 1 : 2} 轮</b>：共 ${items.length} 张，每张闪现 ${DATA.exposureMs} 毫秒。
+    ${scoring ? '本轮计分。' : '本轮不计分，只用于归因。'}</p>
+    <p class="muted">每张之后回答：这张属于<b>目标站</b> / <b>其他站</b> / <b>不确定</b>，再写一句「凭什么」（不限时）。</p>
+    <button id="go">开始</button></div>`);
+  document.getElementById('go').onclick = async () => {
+    await preload(items.map((i) => i.file));
+    for (const [n, item] of items.entries()) {
+      const actual = await expose(item.file, DATA.exposureMs);
+      const rec = await ask(item.id, n + 1, items.length, actual);
+      answers[kind].push(rec);
+    }
+    if (scoring) runRound('plain');
+    else finish();
+  };
+}
+
+function ask(id, n, total, actualMs) {
+  return new Promise((resolve) => {
+    render(`<div class="card"><p>第 ${n}/${total} 张（实测曝光 ${actualMs}ms）</p>
+      <div class="choices">
+        <button class="ghost" data-v="target">属于目标站</button>
+        <button class="ghost" data-v="other">属于其他站</button>
+        <button class="ghost" data-v="unsure">不确定</button>
+      </div>
+      <p>凭什么？（不限时，随便写）</p><textarea id="why"></textarea>
+      <p><button id="next" disabled>下一张</button></p></div>`);
+    let label = null;
+    app.querySelectorAll('[data-v]').forEach((b) => {
+      b.onclick = () => {
+        app.querySelectorAll('[data-v]').forEach((x) => (x.style.background = '#fff'));
+        b.style.background = '#d4d4d8';
+        label = b.dataset.v;
+        document.getElementById('next').disabled = false;
+      };
+    });
+    document.getElementById('next').onclick = () =>
+      resolve({ itemId: id, label, why: document.getElementById('why').value.trim(), exposureMsActual: actualMs, at: new Date().toISOString() });
+  });
+}
+
+function finish() {
+  answers.finishedAt = new Date().toISOString();
+  const blob = JSON.stringify(answers, null, 2);
+  render(`<div class="card"><p><b>结束。</b>把下面内容存成 <code>answers.json</code> 交主持人，交由 <code>score-attribution.mjs</code> 核算。</p>
+    <p class="choices"><button id="dl">下载 answers.json</button><button class="ghost" id="cp">复制</button></p>
+    <pre id="out">${blob.replace(/[<&]/g, (c) => ({ '<': '&lt;', '&': '&amp;' }[c]))}</pre></div>`);
+  document.getElementById('dl').onclick = () => {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([blob], { type: 'application/json' }));
+    a.download = 'answers.json';
+    a.click();
+  };
+  document.getElementById('cp').onclick = () => navigator.clipboard && navigator.clipboard.writeText(blob);
+}
+
+intro();
+</script>
+</body>
+</html>

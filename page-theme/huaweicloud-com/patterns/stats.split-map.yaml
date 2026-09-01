@@ -1,0 +1,44 @@
+id: stats.split-map
+taxonomy: stats
+label_zh: "统计·左数右地图"
+role: section
+summary: "左列基础设施数字，右列世界地图，底下一排资质标。"
+variant: { layout: split, columns: 2, media_position: right, overlay: false }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: stat_label
+    required: true
+    repeatable: true
+  - name: stat_value
+    required: true
+    repeatable: true
+  - name: media
+    required: true
+  - name: certificate
+    required: false
+    repeatable: true
+content_count: { unit: stat, min: 4, max: 8, typical: 4 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 1519
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [379, 1140, 1519]
+  tablet:
+    columns: 1
+    grid: { content_width_px: 697, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 636, columns: 1 }
+  stack_below: tablet
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [home]
+screenshot: screenshots/home/floors/pc--sec-06.png
+dont: ["不要把嵌在本层的资质标升格成独立 credentials 楼层"]
+confidence: medium

@@ -1,0 +1,50 @@
+id: content.certs-grid-3
+taxonomy: content
+label_zh: "资质卡栅·三列"
+role: section
+summary: "浅灰底居中标题下三列两行白卡：机构标、证书名、说明。资质嵌在内容楼层，不升 L2 credentials。"
+variant: { layout: grid, columns: 3, media_position: none, overlay: false, card: filled }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: logo
+    required: false
+    repeatable: true
+  - name: certificate
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+content_count: { unit: certificate, min: 6, max: 6, typical: 6 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 1455
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [485, 485, 485]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 966
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [322, 322, 322]
+  mobile:
+    columns: 3
+    grid:
+      content_width_px: 761
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [254, 254, 254]
+  stack_below: never
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-ecs.html]
+screenshot: screenshots/product-ecs.html/floors/pc--sec-05.png
+dont: ["不要把资质卡升格独立 credentials 楼层；不要拆成 legal-bar"]
+confidence: medium

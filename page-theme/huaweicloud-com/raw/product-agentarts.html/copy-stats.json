@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "pageId": "product-agentarts.html",
+  "pageCount": 1,
+  "itemCount": 134,
+  "hash": "sha256:50ed4fcbb43926ca7d0449992db2541db7f06474b578612a588a4d56216bccc6",
+  "url": "https://www.huaweicloud.com/product/agentarts.html",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 16,
+      "charsP50": 10,
+      "charsP90": 23,
+      "punct": 2,
+      "cjkLatin": {
+        "withSpace": 6,
+        "withoutSpace": 7,
+        "ratioWithSpace": 0.4615
+      }
+    },
+    "subcopy": {
+      "n": 16,
+      "charsP50": 25,
+      "charsP90": 39,
+      "punct": 26,
+      "cjkLatin": {
+        "withSpace": 4,
+        "withoutSpace": 11,
+        "ratioWithSpace": 0.2667
+      }
+    },
+    "primary_cta": {
+      "n": 3,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 3,
+      "charsP50": 3,
+      "charsP90": 3,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 87,
+      "charsP50": 6,
+      "charsP90": 20,
+      "punct": 48,
+      "cjkLatin": {
+        "withSpace": 3,
+        "withoutSpace": 7,
+        "ratioWithSpace": 0.3
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {
+      "你": 2,
+      "您": 7
+    },
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 2,
+      "开发者": 2,
+      "客户": 2,
+      "用户": 7
+    }
+  },
+  "cta": [
+    {
+      "term": "立即体验",
+      "count": 7
+    },
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "申请公测",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "免费试用",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "控制台",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "提交",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "资产广场",
+      "count": 1
+    },
+    {
+      "term": "搭建知识库问答工作流 06:36",
+      "count": 1
+    },
+    {
+      "term": "接入预置的MaaS服务模型 03:38",
+      "count": 1
+    },
+    {
+      "term": "使用API调用智能体 10:01",
+      "count": 1
+    },
+    {
+      "term": "什么是AgentArts？",
+      "count": 1
+    },
+    {
+      "term": "单智能体应用与多智能体应用是否可以切换？",
+      "count": 1
+    },
+    {
+      "term": "工作流应用和多智能体应用有什么区别？",
+      "count": 1
+    },
+    {
+      "term": "插件的输入参数支持图片格式吗？",
+      "count": 1
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "AgentArts",
+    "MaaS",
+    "API",
+    "OfficeAce"
+  ],
+  "numberSamples": {
+    "heading": [
+      "950808 ",
+      "1"
+    ],
+    "unslotted": [
+      "06",
+      "36",
+      "03",
+      "38",
+      "10",
+      "01"
+    ],
+    "subcopy": [
+      "4",
+      "1",
+      "1",
+      "9",
+      "1"
+    ],
+    "body": [
+      "7",
+      "24 ",
+      "7",
+      "24",
+      "1",
+      "2",
+      "20200593 "
+    ]
+  },
+  "chromeCopyPreview": []
+}

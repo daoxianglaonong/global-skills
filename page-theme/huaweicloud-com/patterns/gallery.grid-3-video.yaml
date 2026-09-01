@@ -1,0 +1,55 @@
+id: gallery.grid-3-video
+taxonomy: gallery
+label_zh: "图库·三列教程卡"
+role: section
+summary: "居中标题下三列教程卡，左文右装饰图，带时长。"
+variant:
+  layout: grid
+  columns: 3
+  media_position: right
+  overlay: false
+  card: filled
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: media
+    required: true
+    repeatable: true
+  - name: date
+    required: false
+    notes: "时长"
+content_count: { unit: item, min: 3, max: 6, typical: 3 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 1431
+      columns: 3
+      gutter_px: 24
+      item_widths_px: [461, 461, 461]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 1116
+      columns: 3
+      gutter_px: 16
+      item_widths_px: [361, 361, 361]
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 636
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [636, 318]
+  stack_below: never
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-agentarts.html]
+screenshot: screenshots/product-agentarts.html/floors/pc--sec-06.png
+dont: ["不要把教程卡改成无媒体的文档目录"]
+confidence: medium

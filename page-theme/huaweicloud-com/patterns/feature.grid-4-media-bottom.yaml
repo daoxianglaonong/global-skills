@@ -1,0 +1,129 @@
+id: feature.grid-4-media-bottom
+taxonomy: feature
+label_zh: "能力·四列底图卡"
+role: section
+summary: "居中标题下四列等宽卡，文上图下，可带 CTA。"
+variant:
+  layout: grid
+  columns: 4
+  media_position: bottom
+  overlay: false
+  card: filled
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: media
+    required: true
+    repeatable: true
+  - name: primary_cta
+    required: false
+    repeatable: true
+content_count: { unit: item, min: 4, max: 8, typical: 4 }
+responsive:
+  pc:
+    columns: 4
+    grid:
+      content_width_px: 1436
+      columns: 4
+      gutter_px: 20
+      item_widths_px: [344, 344, 344, 344]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 942
+      columns: 2
+      gutter_px: 16
+      item_widths_px: [463, 463, 463, 463]
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 737
+      columns: 2
+      gutter_px: 16
+      item_widths_px: [360, 360, 360, 360]
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [home, agentorchard--home, ai]
+screenshot: screenshots/agentorchard--home/floors/pc--sec-05.png
+observations:
+  - path: responsive.pc.grid.content_width_px
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: 1519
+    selected: false
+  - path: responsive.pc.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 1436
+    selected: true
+  - path: responsive.pc.grid.content_width_px
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 1431
+    selected: false
+  - path: responsive.pc.grid.gutter_px
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: 20
+    selected: true
+  - path: responsive.pc.columns
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: 4
+    selected: true
+  - path: responsive.pc.columns
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 1
+    selected: false
+  - path: responsive.tablet.grid.content_width_px
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: 737
+    selected: false
+  - path: responsive.tablet.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 942
+    selected: true
+  - path: responsive.tablet.columns
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: 4
+    selected: false
+  - path: responsive.tablet.columns
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 2
+    selected: true
+  - path: responsive.mobile.grid.content_width_px
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: 636
+    selected: false
+  - path: responsive.mobile.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 737
+    selected: true
+  - path: responsive.mobile.columns
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: 1
+    selected: false
+  - path: responsive.mobile.columns
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 2
+    selected: true
+dont: ["不要把四列能力卡改成客户 logo 灰度条"]
+confidence: medium

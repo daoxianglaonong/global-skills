@@ -1,0 +1,36 @@
+id: page-header.video
+taxonomy: page-header
+label_zh: "页头·视频底白描边"
+role: section
+summary: "全幅视频底居中白字主张，白描边「播放视频」。脚本把白钮记成 primary，资产不改行动色。"
+variant: { layout: centered, columns: 1, media_position: background, overlay: true, align: center }
+container: { mode: full-bleed }
+density: default
+content_max: prose
+slots:
+  - name: heading
+    required: true
+  - name: secondary_cta
+    required: true
+  - name: media
+    required: true
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 1450, columns: 1 }
+  tablet:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 1002, columns: 1 }
+  mobile:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 784, columns: 1 }
+  stack_below: never
+rhythm: { surface: image, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [about-index.html]
+screenshot: screenshots/about-index.html/floors/pc--sec-01.png
+dont: ["不要把视频底白描边钮写成第三行动色或改 {color.primary.$root}"]
+confidence: medium

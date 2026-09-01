@@ -1,0 +1,50 @@
+id: feature.grid-2x2-diagram
+taxonomy: feature
+label_zh: "能力·二乘二图文卡"
+role: section
+summary: "居中「为什么选择」下二列两行卡：标题、要点、示意图。"
+variant: { layout: grid, columns: 2, media_position: bottom, overlay: false, card: filled }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: media
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 4, max: 4, typical: 4 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 1447
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [724, 724]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 958
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [479, 479]
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 753
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [376, 376]
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-ecs.html]
+screenshot: screenshots/product-ecs.html/floors/pc--sec-03.png
+dont: ["不要把示意图里的蓝/橙当成行动色或 accent"]
+confidence: medium

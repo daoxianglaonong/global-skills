@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "pageId": "product-ecs.html",
+  "pageCount": 1,
+  "itemCount": 158,
+  "hash": "sha256:a8eaab3b765bc52fb7b3843a1555d561e1e56073ee7eab7a2a266208ca49929a",
+  "url": "https://www.huaweicloud.com/product/ecs.html",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 27,
+      "charsP50": 10,
+      "charsP90": 19,
+      "punct": 6,
+      "cjkLatin": {
+        "withSpace": 5,
+        "withoutSpace": 11,
+        "ratioWithSpace": 0.3125
+      }
+    },
+    "subcopy": {
+      "n": 19,
+      "charsP50": 38,
+      "charsP90": 51,
+      "punct": 35,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 29,
+        "ratioWithSpace": 0
+      }
+    },
+    "primary_cta": {
+      "n": 2,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 3,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 105,
+      "charsP50": 6,
+      "charsP90": 34,
+      "punct": 53,
+      "cjkLatin": {
+        "withSpace": 3,
+        "withoutSpace": 36,
+        "ratioWithSpace": 0.0769
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {
+      "您": 4
+    },
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 4,
+      "开发者": 2,
+      "客户": 4,
+      "团队": 2
+    }
+  },
+  "cta": [
+    {
+      "term": "购买",
+      "count": 5,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "控制台",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "文档",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "了解详情",
+      "count": 1
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "ECS",
+    "Windows",
+    "PPS",
+    "OCP",
+    "USCP",
+    "Web",
+    "SSD",
+    "Linux"
+  ],
+  "numberSamples": {
+    "heading": [
+      "30+",
+      "51",
+      "200+",
+      "80+",
+      "200+",
+      "51"
+    ],
+    "subcopy": [
+      "50%",
+      "80",
+      "90%",
+      "2020",
+      "51",
+      "2020",
+      "2021",
+      "2022",
+      "0",
+      "2"
+    ],
+    "body": [
+      "1",
+      "1",
+      "8",
+      "2",
+      "2",
+      "9",
+      "2",
+      "2",
+      "2",
+      "2",
+      "1",
+      "99.9999999%",
+      "384vCPU",
+      "8",
+      "064",
+      "120Gb",
+      "20+",
+      "400",
+      "7",
+      "24 "
+    ]
+  },
+  "chromeCopyPreview": []
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "pageId": "ai",
+  "pageCount": 1,
+  "itemCount": 101,
+  "hash": "sha256:7d2f794143bc605fb2cd063d20891615d58f2c27b071d8abe93e1f82798d2b58",
+  "url": "https://www.huaweicloud.com/ai/",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 17,
+      "charsP50": 8,
+      "charsP90": 21,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 2,
+        "withoutSpace": 8,
+        "ratioWithSpace": 0.2
+      }
+    },
+    "subcopy": {
+      "n": 13,
+      "charsP50": 17,
+      "charsP90": 36,
+      "punct": 21,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 13,
+        "ratioWithSpace": 0
+      }
+    },
+    "primary_cta": {
+      "n": 1,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 1,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 66,
+      "charsP50": 4,
+      "charsP90": 11,
+      "punct": 4,
+      "cjkLatin": {
+        "withSpace": 3,
+        "withoutSpace": 10,
+        "ratioWithSpace": 0.2308
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {},
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 1,
+      "开发者": 3,
+      "客户": 2
+    }
+  },
+  "cta": [
+    {
+      "term": "立即体验",
+      "count": 3
+    },
+    {
+      "term": "立即咨询",
+      "count": 2
+    },
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "产品体验",
+      "count": 1
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "RuiPath"
+  ],
+  "numberSamples": {
+    "heading": [
+      "2026 ",
+      "2026"
+    ],
+    "body": [
+      "7",
+      "24 ",
+      "7",
+      "24",
+      "1",
+      "2",
+      "20200593 "
+    ]
+  },
+  "chromeCopyPreview": []
+}

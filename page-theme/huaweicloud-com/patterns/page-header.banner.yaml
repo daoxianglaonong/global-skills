@@ -1,0 +1,67 @@
+id: page-header.banner
+taxonomy: page-header
+label_zh: "页头·居中横幅无钮"
+role: section
+summary: "全幅装饰横幅底，居中页标题与一句说明，无行动钮。与联系页照片底咨询钮、关于页视频底白描边不同型。"
+variant: { layout: centered, columns: 1, media_position: background, overlay: true }
+container: { mode: full-bleed }
+density: default
+content_max: prose
+slots:
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: media
+    required: true
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 1688, columns: 1 }
+  tablet:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 894, columns: 1 }
+  mobile:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 689, columns: 1 }
+  stack_below: never
+rhythm: { surface: image, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [news.html, securecenter-compliance-compliance-center.html]
+screenshot: screenshots/news.html/floors/pc--sec-01.png
+observations:
+  - path: responsive.pc.grid.content_width_px
+    pageId: news.html
+    pageUrl: "https://www.huaweicloud.com/news.html"
+    value: 1688
+    selected: true
+  - path: responsive.pc.grid.content_width_px
+    pageId: securecenter-compliance-compliance-center.html
+    pageUrl: "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+    value: 1450
+    selected: false
+  - path: responsive.tablet.grid.content_width_px
+    pageId: news.html
+    pageUrl: "https://www.huaweicloud.com/news.html"
+    value: 894
+    selected: true
+  - path: responsive.tablet.grid.content_width_px
+    pageId: securecenter-compliance-compliance-center.html
+    pageUrl: "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+    value: 1200
+    selected: false
+  - path: responsive.mobile.grid.content_width_px
+    pageId: news.html
+    pageUrl: "https://www.huaweicloud.com/news.html"
+    value: 689
+    selected: true
+  - path: responsive.mobile.grid.content_width_px
+    pageId: securecenter-compliance-compliance-center.html
+    pageUrl: "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+    value: 1200
+    selected: false
+dont: ["不要把新闻页头改成产品首屏滑块或视频底白描边；本型无 CTA，不得补实心/线框钮"]
+confidence: medium

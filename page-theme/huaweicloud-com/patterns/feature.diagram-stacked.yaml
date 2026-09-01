@@ -1,0 +1,38 @@
+id: feature.diagram-stacked
+taxonomy: feature
+label_zh: "能力·架构示意图"
+role: section
+summary: "居中标题副文，下方整幅产品架构图。"
+variant:
+  layout: stacked
+  columns: 1
+  media_position: bottom
+  overlay: false
+  align: center
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: media
+    required: true
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1688, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 1002, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 737, columns: 1 }
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-modelarts.html]
+screenshot: screenshots/product-modelarts.html/floors/pc--sec-04.png
+dont: ["不要把架构图拆成五列能力卡"]
+confidence: medium

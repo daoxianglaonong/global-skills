@@ -1,0 +1,1648 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "runId": "20260823T074543Z-dfb9",
+      "startedAt": "2026-08-23T07:41:49.313Z",
+      "finishedAt": "2026-08-23T07:45:43.244Z",
+      "trigger": "initial",
+      "scriptVersion": "0.1.0",
+      "params": {
+        "urls": [
+          "https://www.huaweicloud.com/",
+          "https://www.huaweicloud.com/product/agentarts.html",
+          "https://www.huaweicloud.com/product/modelarts.html",
+          "https://agentorchard.huaweicloud.com/",
+          "https://www.huaweicloud.com/ai/"
+        ],
+        "assetDir": null,
+        "supplied": []
+      },
+      "deps": {
+        "playwright": "1.62.1",
+        "@projectwallace/css-analyzer": "9.9.3",
+        "tldts": "7.4.10",
+        "pixelmatch": "7.2.0",
+        "sharp": "0.35.3"
+      },
+      "pages": [
+        {
+          "pageId": "home",
+          "url": "https://www.huaweicloud.com/",
+          "finalUrl": "https://www.huaweicloud.com/",
+          "extractedAt": "2026-08-23T07:42:22.087Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-agentarts.html",
+          "url": "https://www.huaweicloud.com/product/agentarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+          "extractedAt": "2026-08-23T07:43:25.586Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-modelarts.html",
+          "url": "https://www.huaweicloud.com/product/modelarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+          "extractedAt": "2026-08-23T07:44:23.184Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "agentorchard--home",
+          "url": "https://agentorchard.huaweicloud.com/",
+          "finalUrl": "https://agentorchard.huaweicloud.com/",
+          "extractedAt": "2026-08-23T07:44:46.665Z",
+          "fingerprints": {
+            "bodyHash": "sha256:41a4cb0e92508db7b737537c1f372443f0c82b58569ba656eaa318ed0fd25766"
+          }
+        },
+        {
+          "pageId": "ai",
+          "url": "https://www.huaweicloud.com/ai/",
+          "finalUrl": "https://www.huaweicloud.com/ai/",
+          "extractedAt": "2026-08-23T07:45:43.185Z",
+          "fingerprints": {}
+        }
+      ],
+      "stylesheetSplits": [],
+      "renames": [],
+      "coverage": {
+        "status": "full",
+        "holdoutDeclared": true,
+        "pages": [
+          {
+            "pageId": "home",
+            "sourceId": "source-01",
+            "url": "https://www.huaweicloud.com/",
+            "finalUrl": "https://www.huaweicloud.com/",
+            "extractedAt": "2026-08-23T07:42:22.087Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-agentarts.html",
+            "sourceId": "source-02",
+            "url": "https://www.huaweicloud.com/product/agentarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+            "extractedAt": "2026-08-23T07:43:25.586Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-modelarts.html",
+            "sourceId": "source-03",
+            "url": "https://www.huaweicloud.com/product/modelarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+            "extractedAt": "2026-08-23T07:44:23.184Z",
+            "variant": ""
+          },
+          {
+            "pageId": "agentorchard--home",
+            "sourceId": "source-04",
+            "url": "https://agentorchard.huaweicloud.com/",
+            "finalUrl": "https://agentorchard.huaweicloud.com/",
+            "extractedAt": "2026-08-23T07:44:46.665Z",
+            "variant": "agentorchard"
+          },
+          {
+            "pageId": "ai",
+            "sourceId": "source-05",
+            "url": "https://www.huaweicloud.com/ai/",
+            "finalUrl": "https://www.huaweicloud.com/ai/",
+            "extractedAt": "2026-08-23T07:45:43.185Z",
+            "variant": ""
+          }
+        ],
+        "cohesion": {
+          "verdict": "cohesive",
+          "divergences": [],
+          "suggestedSplit": []
+        },
+        "blockers": [],
+        "candidates": [
+          {
+            "url": "https://activity.huaweicloud.com/phbcecs.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-0",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-2",
+            "source": "nav"
+          },
+          {
+            "url": "https://bbs.huaweicloud.com/suggestion",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/contact.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/mysql.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://beian.miit.gov.cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/soc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/csa-star.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/mlps.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://cloudpartner.shixizhi.huawei.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-22301.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-27001.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts/studio/maas-openpangu-2-pro.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://activity.huaweicloud.com/opc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/ai/",
+            "source": "nav"
+          },
+          {
+            "url": "https://codearts.huaweicloud.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts/officeace.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts/studio.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/consultation/index.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://edu.huaweicloud.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/professionalservices.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://status.service.huaweicloud.com/#/home",
+            "source": "nav"
+          },
+          {
+            "url": "https://consumer.huawei.com/cn/?utm_source=huaweicloud&utm_medium=footer",
+            "source": "nav"
+          },
+          {
+            "url": "https://developer.huawei.com/consumer/cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://e.huawei.com/cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/pci-dss.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://console.huaweicloud.com/ticket/?locale=zh-cn#/ticketindex/createIndex",
+            "source": "nav"
+          },
+          {
+            "url": "https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/wangxue/header/yingyezhizhao02.jpg",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/about/index.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52990002000093",
+            "source": "nav"
+          },
+          {
+            "url": "https://reg.huaweicloud.com/registerui/public/custom/register.html?locale=zh-cn&service=https%3A%2F%2Fwww.huaweicloud.com%2F&channelFrom=&hwid=portal",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/mobile_app/hwapp.html?channel=navigation_right",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/overallsafety.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/news.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/about/live.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://support.huaweicloud.com/help-tools.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://account.huaweicloud.com/usercenter/#/betaManagement?serviceCode=beta_agentarts",
+            "source": "nav"
+          },
+          {
+            "url": "https://console.huaweicloud.com/agentarts/?region=cn-southwest-2#/home/overview",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/ecs.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts/openJiuwen.html",
+            "source": "nav"
+          }
+        ]
+      },
+      "runtimeError": null
+    },
+    {
+      "runId": "20260823T130951Z-ccb5",
+      "startedAt": "2026-08-23T13:05:46.045Z",
+      "finishedAt": "2026-08-23T13:09:51.095Z",
+      "trigger": "refetch",
+      "scriptVersion": "0.1.0",
+      "overridesHash": "sha256:e492f61620e058d0dcaff55fefd462632b6372a1ec8384a3dd114f297fa79383",
+      "params": {
+        "urls": [
+          "https://www.huaweicloud.com/",
+          "https://www.huaweicloud.com/product/agentarts.html",
+          "https://www.huaweicloud.com/product/modelarts.html",
+          "https://agentorchard.huaweicloud.com/",
+          "https://www.huaweicloud.com/ai/"
+        ],
+        "assetDir": null,
+        "supplied": []
+      },
+      "deps": {
+        "playwright": "1.62.1",
+        "@projectwallace/css-analyzer": "9.9.3",
+        "tldts": "7.4.10",
+        "pixelmatch": "7.2.0",
+        "sharp": "0.35.3"
+      },
+      "pages": [
+        {
+          "pageId": "home",
+          "url": "https://www.huaweicloud.com/",
+          "finalUrl": "https://www.huaweicloud.com/",
+          "extractedAt": "2026-08-23T13:06:22.035Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-agentarts.html",
+          "url": "https://www.huaweicloud.com/product/agentarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+          "extractedAt": "2026-08-23T13:07:27.821Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-modelarts.html",
+          "url": "https://www.huaweicloud.com/product/modelarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+          "extractedAt": "2026-08-23T13:08:26.952Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "agentorchard--home",
+          "url": "https://agentorchard.huaweicloud.com/",
+          "finalUrl": "https://agentorchard.huaweicloud.com/",
+          "extractedAt": "2026-08-23T13:08:51.717Z",
+          "fingerprints": {
+            "bodyHash": "sha256:41a4cb0e92508db7b737537c1f372443f0c82b58569ba656eaa318ed0fd25766"
+          }
+        },
+        {
+          "pageId": "ai",
+          "url": "https://www.huaweicloud.com/ai/",
+          "finalUrl": "https://www.huaweicloud.com/ai/",
+          "extractedAt": "2026-08-23T13:09:51.023Z",
+          "fingerprints": {}
+        }
+      ],
+      "stylesheetSplits": [],
+      "renames": [],
+      "coverage": {
+        "status": "full",
+        "holdoutDeclared": true,
+        "pages": [
+          {
+            "pageId": "home",
+            "sourceId": "source-01",
+            "url": "https://www.huaweicloud.com/",
+            "finalUrl": "https://www.huaweicloud.com/",
+            "extractedAt": "2026-08-23T13:06:22.035Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-agentarts.html",
+            "sourceId": "source-02",
+            "url": "https://www.huaweicloud.com/product/agentarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+            "extractedAt": "2026-08-23T13:07:27.821Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-modelarts.html",
+            "sourceId": "source-03",
+            "url": "https://www.huaweicloud.com/product/modelarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+            "extractedAt": "2026-08-23T13:08:26.952Z",
+            "variant": ""
+          },
+          {
+            "pageId": "agentorchard--home",
+            "sourceId": "source-04",
+            "url": "https://agentorchard.huaweicloud.com/",
+            "finalUrl": "https://agentorchard.huaweicloud.com/",
+            "extractedAt": "2026-08-23T13:08:51.717Z",
+            "variant": "agentorchard"
+          },
+          {
+            "pageId": "ai",
+            "sourceId": "source-05",
+            "url": "https://www.huaweicloud.com/ai/",
+            "finalUrl": "https://www.huaweicloud.com/ai/",
+            "extractedAt": "2026-08-23T13:09:51.023Z",
+            "variant": ""
+          }
+        ],
+        "cohesion": {
+          "verdict": "cohesive",
+          "divergences": [],
+          "suggestedSplit": []
+        },
+        "blockers": [],
+        "candidates": [
+          {
+            "url": "https://activity.huaweicloud.com/phbcecs.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-0",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-2",
+            "source": "nav"
+          },
+          {
+            "url": "https://bbs.huaweicloud.com/suggestion",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/contact.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/mysql.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://beian.miit.gov.cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/soc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/csa-star.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/mlps.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://cloudpartner.shixizhi.huawei.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-22301.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-27001.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts/studio/maas-openpangu-2-pro.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://activity.huaweicloud.com/opc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/ai/",
+            "source": "nav"
+          },
+          {
+            "url": "https://codearts.huaweicloud.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts/officeace.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts/studio.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/consultation/index.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://edu.huaweicloud.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/professionalservices.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://status.service.huaweicloud.com/#/home",
+            "source": "nav"
+          },
+          {
+            "url": "https://consumer.huawei.com/cn/?utm_source=huaweicloud&utm_medium=footer",
+            "source": "nav"
+          },
+          {
+            "url": "https://developer.huawei.com/consumer/cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://e.huawei.com/cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/pci-dss.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://console.huaweicloud.com/ticket/?locale=zh-cn#/ticketindex/createIndex",
+            "source": "nav"
+          },
+          {
+            "url": "https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/wangxue/header/yingyezhizhao02.jpg",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/about/index.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52990002000093",
+            "source": "nav"
+          },
+          {
+            "url": "https://reg.huaweicloud.com/registerui/public/custom/register.html?locale=zh-cn&service=https%3A%2F%2Fwww.huaweicloud.com%2F&channelFrom=&hwid=portal",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/mobile_app/hwapp.html?channel=navigation_right",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/cases.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/overallsafety.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/news.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/about/live.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://support.huaweicloud.com/help-tools.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://account.huaweicloud.com/usercenter/#/betaManagement?serviceCode=beta_agentarts",
+            "source": "nav"
+          },
+          {
+            "url": "https://console.huaweicloud.com/agentarts/?region=cn-southwest-2#/home/overview",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/ecs.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts/openJiuwen.html",
+            "source": "nav"
+          }
+        ]
+      },
+      "runtimeError": null
+    },
+    {
+      "runId": "20260823T134847Z-fc8f",
+      "startedAt": "2026-08-23T13:42:51.296Z",
+      "finishedAt": "2026-08-23T13:48:47.107Z",
+      "trigger": "add-page",
+      "scriptVersion": "0.1.0",
+      "overridesHash": "sha256:e492f61620e058d0dcaff55fefd462632b6372a1ec8384a3dd114f297fa79383",
+      "params": {
+        "urls": [
+          "https://www.huaweicloud.com/",
+          "https://www.huaweicloud.com/product/agentarts.html",
+          "https://www.huaweicloud.com/product/modelarts.html",
+          "https://agentorchard.huaweicloud.com/",
+          "https://www.huaweicloud.com/ai/",
+          "https://www.huaweicloud.com/product/ecs.html",
+          "https://www.huaweicloud.com/service/contact.html",
+          "https://www.huaweicloud.com/about/index.html"
+        ],
+        "assetDir": "e:\\\\work\\\\skills-list\\\\page-theme\\\\huaweicloud-com",
+        "supplied": []
+      },
+      "deps": {
+        "playwright": "1.62.1",
+        "@projectwallace/css-analyzer": "9.9.3",
+        "tldts": "7.4.10",
+        "pixelmatch": "7.2.0",
+        "sharp": "0.35.3"
+      },
+      "pages": [
+        {
+          "pageId": "home",
+          "url": "https://www.huaweicloud.com/",
+          "finalUrl": "https://www.huaweicloud.com/",
+          "extractedAt": "2026-08-23T13:43:27.864Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-agentarts.html",
+          "url": "https://www.huaweicloud.com/product/agentarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+          "extractedAt": "2026-08-23T13:44:35.968Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-modelarts.html",
+          "url": "https://www.huaweicloud.com/product/modelarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+          "extractedAt": "2026-08-23T13:45:35.038Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "agentorchard--home",
+          "url": "https://agentorchard.huaweicloud.com/",
+          "finalUrl": "https://agentorchard.huaweicloud.com/",
+          "extractedAt": "2026-08-23T13:46:00.209Z",
+          "fingerprints": {
+            "bodyHash": "sha256:41a4cb0e92508db7b737537c1f372443f0c82b58569ba656eaa318ed0fd25766"
+          }
+        },
+        {
+          "pageId": "ai",
+          "url": "https://www.huaweicloud.com/ai/",
+          "finalUrl": "https://www.huaweicloud.com/ai/",
+          "extractedAt": "2026-08-23T13:46:58.779Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-ecs.html",
+          "url": "https://www.huaweicloud.com/product/ecs.html",
+          "finalUrl": "https://www.huaweicloud.com/product/ecs.html",
+          "extractedAt": "2026-08-23T13:47:56.601Z",
+          "fingerprints": {
+            "etag": "W/\"3442-1787220482209\""
+          }
+        },
+        {
+          "pageId": "service-contact.html",
+          "url": "https://www.huaweicloud.com/service/contact.html",
+          "finalUrl": "https://www.huaweicloud.com/service/contact.html",
+          "extractedAt": "2026-08-23T13:48:16.067Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "about-index.html",
+          "url": "https://www.huaweicloud.com/about/index.html",
+          "finalUrl": "https://www.huaweicloud.com/about/index.html",
+          "extractedAt": "2026-08-23T13:48:47.025Z",
+          "fingerprints": {}
+        }
+      ],
+      "stylesheetSplits": [],
+      "renames": [],
+      "coverage": {
+        "status": "full",
+        "holdoutDeclared": true,
+        "pages": [
+          {
+            "pageId": "home",
+            "sourceId": "source-01",
+            "url": "https://www.huaweicloud.com/",
+            "finalUrl": "https://www.huaweicloud.com/",
+            "extractedAt": "2026-08-23T13:43:27.864Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-agentarts.html",
+            "sourceId": "source-02",
+            "url": "https://www.huaweicloud.com/product/agentarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+            "extractedAt": "2026-08-23T13:44:35.968Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-modelarts.html",
+            "sourceId": "source-03",
+            "url": "https://www.huaweicloud.com/product/modelarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+            "extractedAt": "2026-08-23T13:45:35.038Z",
+            "variant": ""
+          },
+          {
+            "pageId": "agentorchard--home",
+            "sourceId": "source-04",
+            "url": "https://agentorchard.huaweicloud.com/",
+            "finalUrl": "https://agentorchard.huaweicloud.com/",
+            "extractedAt": "2026-08-23T13:46:00.209Z",
+            "variant": "agentorchard"
+          },
+          {
+            "pageId": "ai",
+            "sourceId": "source-05",
+            "url": "https://www.huaweicloud.com/ai/",
+            "finalUrl": "https://www.huaweicloud.com/ai/",
+            "extractedAt": "2026-08-23T13:46:58.779Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-ecs.html",
+            "sourceId": "source-06",
+            "url": "https://www.huaweicloud.com/product/ecs.html",
+            "finalUrl": "https://www.huaweicloud.com/product/ecs.html",
+            "extractedAt": "2026-08-23T13:47:56.601Z",
+            "variant": ""
+          },
+          {
+            "pageId": "service-contact.html",
+            "sourceId": "source-07",
+            "url": "https://www.huaweicloud.com/service/contact.html",
+            "finalUrl": "https://www.huaweicloud.com/service/contact.html",
+            "extractedAt": "2026-08-23T13:48:16.067Z",
+            "variant": ""
+          },
+          {
+            "pageId": "about-index.html",
+            "sourceId": "source-08",
+            "url": "https://www.huaweicloud.com/about/index.html",
+            "finalUrl": "https://www.huaweicloud.com/about/index.html",
+            "extractedAt": "2026-08-23T13:48:47.025Z",
+            "variant": ""
+          }
+        ],
+        "cohesion": {
+          "verdict": "mixed-suspected",
+          "divergences": [
+            {
+              "axis": "color.primary",
+              "match": "different",
+              "sourceIds": [
+                "source-01",
+                "source-02",
+                "source-03",
+                "source-04",
+                "source-05",
+                "source-06",
+                "source-07",
+                "source-08"
+              ],
+              "groups": [
+                {
+                  "value": "#191919",
+                  "sourceIds": [
+                    "source-01",
+                    "source-02",
+                    "source-03",
+                    "source-04",
+                    "source-05",
+                    "source-06",
+                    "source-07"
+                  ]
+                },
+                {
+                  "value": "#ffffff",
+                  "sourceIds": [
+                    "source-08"
+                  ]
+                }
+              ]
+            }
+          ],
+          "suggestedSplit": [
+            "source-08",
+            "source-01,source-02,source-03,source-04,source-05,source-06,source-07"
+          ]
+        },
+        "blockers": [],
+        "candidates": [
+          {
+            "url": "https://activity.huaweicloud.com/phbcecs.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-0",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-2",
+            "source": "nav"
+          },
+          {
+            "url": "https://bbs.huaweicloud.com/suggestion",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/contact.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/mysql.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://beian.miit.gov.cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/soc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/csa-star.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/mlps.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://cloudpartner.shixizhi.huawei.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-22301.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-27001.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts/studio/maas-openpangu-2-pro.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://activity.huaweicloud.com/opc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/ai/",
+            "source": "nav"
+          },
+          {
+            "url": "https://codearts.huaweicloud.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts/officeace.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts/studio.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/consultation/index.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://edu.huaweicloud.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/professionalservices.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://status.service.huaweicloud.com/#/home",
+            "source": "nav"
+          },
+          {
+            "url": "https://consumer.huawei.com/cn/?utm_source=huaweicloud&utm_medium=footer",
+            "source": "nav"
+          },
+          {
+            "url": "https://developer.huawei.com/consumer/cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://e.huawei.com/cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/pci-dss.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://console.huaweicloud.com/ticket/?locale=zh-cn#/ticketindex/createIndex",
+            "source": "nav"
+          },
+          {
+            "url": "https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/wangxue/header/yingyezhizhao02.jpg",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/about/index.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52990002000093",
+            "source": "nav"
+          },
+          {
+            "url": "https://reg.huaweicloud.com/registerui/public/custom/register.html?locale=zh-cn&service=https%3A%2F%2Fwww.huaweicloud.com%2F&channelFrom=&hwid=portal",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/mobile_app/hwapp.html?channel=navigation_right",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/cases.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/overallsafety.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/news.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/about/live.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://support.huaweicloud.com/help-tools.html",
+            "source": "nav"
+          }
+        ]
+      },
+      "runtimeError": null
+    },
+    {
+      "runId": "20260823T140625Z-b3e7",
+      "startedAt": "2026-08-23T14:00:10.964Z",
+      "finishedAt": "2026-08-23T14:06:25.446Z",
+      "trigger": "add-page",
+      "scriptVersion": "0.1.0",
+      "overridesHash": "sha256:e492f61620e058d0dcaff55fefd462632b6372a1ec8384a3dd114f297fa79383",
+      "params": {
+        "urls": [
+          "https://www.huaweicloud.com/",
+          "https://www.huaweicloud.com/product/agentarts.html",
+          "https://www.huaweicloud.com/product/modelarts.html",
+          "https://agentorchard.huaweicloud.com/",
+          "https://www.huaweicloud.com/ai/",
+          "https://www.huaweicloud.com/product/ecs.html",
+          "https://www.huaweicloud.com/service/contact.html",
+          "https://www.huaweicloud.com/about/index.html",
+          "https://www.huaweicloud.com/news.html"
+        ],
+        "assetDir": null,
+        "supplied": []
+      },
+      "deps": {
+        "playwright": "1.62.1",
+        "@projectwallace/css-analyzer": "9.9.3",
+        "tldts": "7.4.10",
+        "pixelmatch": "7.2.0",
+        "sharp": "0.35.3"
+      },
+      "pages": [
+        {
+          "pageId": "home",
+          "url": "https://www.huaweicloud.com/",
+          "finalUrl": "https://www.huaweicloud.com/",
+          "extractedAt": "2026-08-23T14:00:47.358Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-agentarts.html",
+          "url": "https://www.huaweicloud.com/product/agentarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+          "extractedAt": "2026-08-23T14:01:53.095Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-modelarts.html",
+          "url": "https://www.huaweicloud.com/product/modelarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+          "extractedAt": "2026-08-23T14:02:52.490Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "agentorchard--home",
+          "url": "https://agentorchard.huaweicloud.com/",
+          "finalUrl": "https://agentorchard.huaweicloud.com/",
+          "extractedAt": "2026-08-23T14:03:17.447Z",
+          "fingerprints": {
+            "bodyHash": "sha256:41a4cb0e92508db7b737537c1f372443f0c82b58569ba656eaa318ed0fd25766"
+          }
+        },
+        {
+          "pageId": "ai",
+          "url": "https://www.huaweicloud.com/ai/",
+          "finalUrl": "https://www.huaweicloud.com/ai/",
+          "extractedAt": "2026-08-23T14:04:17.128Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-ecs.html",
+          "url": "https://www.huaweicloud.com/product/ecs.html",
+          "finalUrl": "https://www.huaweicloud.com/product/ecs.html",
+          "extractedAt": "2026-08-23T14:05:15.546Z",
+          "fingerprints": {
+            "etag": "W/\"3442-1787220532064\""
+          }
+        },
+        {
+          "pageId": "service-contact.html",
+          "url": "https://www.huaweicloud.com/service/contact.html",
+          "finalUrl": "https://www.huaweicloud.com/service/contact.html",
+          "extractedAt": "2026-08-23T14:05:34.690Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "about-index.html",
+          "url": "https://www.huaweicloud.com/about/index.html",
+          "finalUrl": "https://www.huaweicloud.com/about/index.html",
+          "extractedAt": "2026-08-23T14:06:05.489Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "news.html",
+          "url": "https://www.huaweicloud.com/news.html",
+          "finalUrl": "https://www.huaweicloud.com/news.html",
+          "extractedAt": "2026-08-23T14:06:25.369Z",
+          "fingerprints": {}
+        }
+      ],
+      "stylesheetSplits": [],
+      "renames": [],
+      "coverage": {
+        "status": "full",
+        "holdoutDeclared": true,
+        "pages": [
+          {
+            "pageId": "home",
+            "sourceId": "source-01",
+            "url": "https://www.huaweicloud.com/",
+            "finalUrl": "https://www.huaweicloud.com/",
+            "extractedAt": "2026-08-23T14:00:47.358Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-agentarts.html",
+            "sourceId": "source-02",
+            "url": "https://www.huaweicloud.com/product/agentarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+            "extractedAt": "2026-08-23T14:01:53.095Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-modelarts.html",
+            "sourceId": "source-03",
+            "url": "https://www.huaweicloud.com/product/modelarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+            "extractedAt": "2026-08-23T14:02:52.490Z",
+            "variant": ""
+          },
+          {
+            "pageId": "agentorchard--home",
+            "sourceId": "source-04",
+            "url": "https://agentorchard.huaweicloud.com/",
+            "finalUrl": "https://agentorchard.huaweicloud.com/",
+            "extractedAt": "2026-08-23T14:03:17.447Z",
+            "variant": "agentorchard"
+          },
+          {
+            "pageId": "ai",
+            "sourceId": "source-05",
+            "url": "https://www.huaweicloud.com/ai/",
+            "finalUrl": "https://www.huaweicloud.com/ai/",
+            "extractedAt": "2026-08-23T14:04:17.128Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-ecs.html",
+            "sourceId": "source-06",
+            "url": "https://www.huaweicloud.com/product/ecs.html",
+            "finalUrl": "https://www.huaweicloud.com/product/ecs.html",
+            "extractedAt": "2026-08-23T14:05:15.546Z",
+            "variant": ""
+          },
+          {
+            "pageId": "service-contact.html",
+            "sourceId": "source-07",
+            "url": "https://www.huaweicloud.com/service/contact.html",
+            "finalUrl": "https://www.huaweicloud.com/service/contact.html",
+            "extractedAt": "2026-08-23T14:05:34.690Z",
+            "variant": ""
+          },
+          {
+            "pageId": "about-index.html",
+            "sourceId": "source-08",
+            "url": "https://www.huaweicloud.com/about/index.html",
+            "finalUrl": "https://www.huaweicloud.com/about/index.html",
+            "extractedAt": "2026-08-23T14:06:05.489Z",
+            "variant": ""
+          },
+          {
+            "pageId": "news.html",
+            "sourceId": "source-09",
+            "url": "https://www.huaweicloud.com/news.html",
+            "finalUrl": "https://www.huaweicloud.com/news.html",
+            "extractedAt": "2026-08-23T14:06:25.369Z",
+            "variant": ""
+          }
+        ],
+        "cohesion": {
+          "verdict": "mixed-suspected",
+          "divergences": [
+            {
+              "axis": "color.primary",
+              "match": "different",
+              "sourceIds": [
+                "source-01",
+                "source-02",
+                "source-03",
+                "source-04",
+                "source-05",
+                "source-06",
+                "source-07",
+                "source-08",
+                "source-09"
+              ],
+              "groups": [
+                {
+                  "value": "#191919",
+                  "sourceIds": [
+                    "source-01",
+                    "source-02",
+                    "source-03",
+                    "source-04",
+                    "source-05",
+                    "source-06",
+                    "source-07"
+                  ]
+                },
+                {
+                  "value": "#ffffff",
+                  "sourceIds": [
+                    "source-08",
+                    "source-09"
+                  ]
+                }
+              ]
+            }
+          ],
+          "suggestedSplit": [
+            "source-08,source-09",
+            "source-01,source-02,source-03,source-04,source-05,source-06,source-07"
+          ]
+        },
+        "blockers": [],
+        "candidates": [
+          {
+            "url": "https://activity.huaweicloud.com/phbcecs.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-0",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-2",
+            "source": "nav"
+          },
+          {
+            "url": "https://bbs.huaweicloud.com/suggestion",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/mysql.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://beian.miit.gov.cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/soc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/csa-star.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/mlps.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://cloudpartner.shixizhi.huawei.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-22301.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-27001.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts/studio/maas-openpangu-2-pro.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://activity.huaweicloud.com/opc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://codearts.huaweicloud.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/agentarts/officeace.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/modelarts/studio.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/consultation/index.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://edu.huaweicloud.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/professionalservices.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://status.service.huaweicloud.com/#/home",
+            "source": "nav"
+          },
+          {
+            "url": "https://consumer.huawei.com/cn/?utm_source=huaweicloud&utm_medium=footer",
+            "source": "nav"
+          },
+          {
+            "url": "https://developer.huawei.com/consumer/cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://e.huawei.com/cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/pci-dss.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://console.huaweicloud.com/ticket/?locale=zh-cn#/ticketindex/createIndex",
+            "source": "nav"
+          },
+          {
+            "url": "https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/wangxue/header/yingyezhizhao02.jpg",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52990002000093",
+            "source": "nav"
+          },
+          {
+            "url": "https://reg.huaweicloud.com/registerui/public/custom/register.html?locale=zh-cn&service=https%3A%2F%2Fwww.huaweicloud.com%2F&channelFrom=&hwid=portal",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/mobile_app/hwapp.html?channel=navigation_right",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/cases.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/overallsafety.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/about/live.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://support.huaweicloud.com/help-tools.html",
+            "source": "nav"
+          }
+        ]
+      },
+      "runtimeError": null
+    },
+    {
+      "runId": "20260823T142436Z-ae52",
+      "startedAt": "2026-08-23T14:18:05.789Z",
+      "finishedAt": "2026-08-23T14:24:36.024Z",
+      "trigger": "add-page",
+      "scriptVersion": "0.1.0",
+      "overridesHash": "sha256:e492f61620e058d0dcaff55fefd462632b6372a1ec8384a3dd114f297fa79383",
+      "params": {
+        "urls": [
+          "https://www.huaweicloud.com/",
+          "https://www.huaweicloud.com/product/agentarts.html",
+          "https://www.huaweicloud.com/product/modelarts.html",
+          "https://agentorchard.huaweicloud.com/",
+          "https://www.huaweicloud.com/ai/",
+          "https://www.huaweicloud.com/product/ecs.html",
+          "https://www.huaweicloud.com/service/contact.html",
+          "https://www.huaweicloud.com/about/index.html",
+          "https://www.huaweicloud.com/news.html",
+          "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+        ],
+        "assetDir": null,
+        "supplied": []
+      },
+      "deps": {
+        "playwright": "1.62.1",
+        "@projectwallace/css-analyzer": "9.9.3",
+        "tldts": "7.4.10",
+        "pixelmatch": "7.2.0",
+        "sharp": "0.35.3"
+      },
+      "pages": [
+        {
+          "pageId": "home",
+          "url": "https://www.huaweicloud.com/",
+          "finalUrl": "https://www.huaweicloud.com/",
+          "extractedAt": "2026-08-23T14:18:42.303Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-agentarts.html",
+          "url": "https://www.huaweicloud.com/product/agentarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+          "extractedAt": "2026-08-23T14:19:47.916Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-modelarts.html",
+          "url": "https://www.huaweicloud.com/product/modelarts.html",
+          "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+          "extractedAt": "2026-08-23T14:20:44.889Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "agentorchard--home",
+          "url": "https://agentorchard.huaweicloud.com/",
+          "finalUrl": "https://agentorchard.huaweicloud.com/",
+          "extractedAt": "2026-08-23T14:21:09.891Z",
+          "fingerprints": {
+            "bodyHash": "sha256:41a4cb0e92508db7b737537c1f372443f0c82b58569ba656eaa318ed0fd25766"
+          }
+        },
+        {
+          "pageId": "ai",
+          "url": "https://www.huaweicloud.com/ai/",
+          "finalUrl": "https://www.huaweicloud.com/ai/",
+          "extractedAt": "2026-08-23T14:22:08.817Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "product-ecs.html",
+          "url": "https://www.huaweicloud.com/product/ecs.html",
+          "finalUrl": "https://www.huaweicloud.com/product/ecs.html",
+          "extractedAt": "2026-08-23T14:23:06.722Z",
+          "fingerprints": {
+            "etag": "W/\"3442-1787220482209\""
+          }
+        },
+        {
+          "pageId": "service-contact.html",
+          "url": "https://www.huaweicloud.com/service/contact.html",
+          "finalUrl": "https://www.huaweicloud.com/service/contact.html",
+          "extractedAt": "2026-08-23T14:23:26.026Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "about-index.html",
+          "url": "https://www.huaweicloud.com/about/index.html",
+          "finalUrl": "https://www.huaweicloud.com/about/index.html",
+          "extractedAt": "2026-08-23T14:23:58.556Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "news.html",
+          "url": "https://www.huaweicloud.com/news.html",
+          "finalUrl": "https://www.huaweicloud.com/news.html",
+          "extractedAt": "2026-08-23T14:24:18.050Z",
+          "fingerprints": {}
+        },
+        {
+          "pageId": "securecenter-compliance-compliance-center.html",
+          "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html",
+          "finalUrl": "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html",
+          "extractedAt": "2026-08-23T14:24:35.938Z",
+          "fingerprints": {}
+        }
+      ],
+      "stylesheetSplits": [],
+      "renames": [],
+      "coverage": {
+        "status": "full",
+        "holdoutDeclared": true,
+        "pages": [
+          {
+            "pageId": "home",
+            "sourceId": "source-01",
+            "url": "https://www.huaweicloud.com/",
+            "finalUrl": "https://www.huaweicloud.com/",
+            "extractedAt": "2026-08-23T14:18:42.303Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-agentarts.html",
+            "sourceId": "source-02",
+            "url": "https://www.huaweicloud.com/product/agentarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/agentarts.html",
+            "extractedAt": "2026-08-23T14:19:47.916Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-modelarts.html",
+            "sourceId": "source-03",
+            "url": "https://www.huaweicloud.com/product/modelarts.html",
+            "finalUrl": "https://www.huaweicloud.com/product/modelarts.html",
+            "extractedAt": "2026-08-23T14:20:44.889Z",
+            "variant": ""
+          },
+          {
+            "pageId": "agentorchard--home",
+            "sourceId": "source-04",
+            "url": "https://agentorchard.huaweicloud.com/",
+            "finalUrl": "https://agentorchard.huaweicloud.com/",
+            "extractedAt": "2026-08-23T14:21:09.891Z",
+            "variant": "agentorchard"
+          },
+          {
+            "pageId": "ai",
+            "sourceId": "source-05",
+            "url": "https://www.huaweicloud.com/ai/",
+            "finalUrl": "https://www.huaweicloud.com/ai/",
+            "extractedAt": "2026-08-23T14:22:08.817Z",
+            "variant": ""
+          },
+          {
+            "pageId": "product-ecs.html",
+            "sourceId": "source-06",
+            "url": "https://www.huaweicloud.com/product/ecs.html",
+            "finalUrl": "https://www.huaweicloud.com/product/ecs.html",
+            "extractedAt": "2026-08-23T14:23:06.722Z",
+            "variant": ""
+          },
+          {
+            "pageId": "service-contact.html",
+            "sourceId": "source-07",
+            "url": "https://www.huaweicloud.com/service/contact.html",
+            "finalUrl": "https://www.huaweicloud.com/service/contact.html",
+            "extractedAt": "2026-08-23T14:23:26.026Z",
+            "variant": ""
+          },
+          {
+            "pageId": "about-index.html",
+            "sourceId": "source-08",
+            "url": "https://www.huaweicloud.com/about/index.html",
+            "finalUrl": "https://www.huaweicloud.com/about/index.html",
+            "extractedAt": "2026-08-23T14:23:58.556Z",
+            "variant": ""
+          },
+          {
+            "pageId": "news.html",
+            "sourceId": "source-09",
+            "url": "https://www.huaweicloud.com/news.html",
+            "finalUrl": "https://www.huaweicloud.com/news.html",
+            "extractedAt": "2026-08-23T14:24:18.050Z",
+            "variant": ""
+          },
+          {
+            "pageId": "securecenter-compliance-compliance-center.html",
+            "sourceId": "source-10",
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html",
+            "finalUrl": "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html",
+            "extractedAt": "2026-08-23T14:24:35.938Z",
+            "variant": ""
+          }
+        ],
+        "cohesion": {
+          "verdict": "mixed-suspected",
+          "divergences": [
+            {
+              "axis": "color.primary",
+              "match": "different",
+              "sourceIds": [
+                "source-01",
+                "source-02",
+                "source-03",
+                "source-04",
+                "source-05",
+                "source-06",
+                "source-07",
+                "source-08",
+                "source-09",
+                "source-10"
+              ],
+              "groups": [
+                {
+                  "value": "#191919",
+                  "sourceIds": [
+                    "source-01",
+                    "source-02",
+                    "source-03",
+                    "source-04",
+                    "source-05",
+                    "source-06",
+                    "source-07"
+                  ]
+                },
+                {
+                  "value": "#ffffff",
+                  "sourceIds": [
+                    "source-08",
+                    "source-09",
+                    "source-10"
+                  ]
+                }
+              ]
+            }
+          ],
+          "suggestedSplit": [
+            "source-08,source-09,source-10",
+            "source-01,source-02,source-03,source-04,source-05,source-06,source-07"
+          ]
+        },
+        "blockers": [],
+        "candidates": [
+          {
+            "url": "https://activity.huaweicloud.com/phbcecs.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-0",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/service/protection.html#section-2",
+            "source": "nav"
+          },
+          {
+            "url": "https://bbs.huaweicloud.com/suggestion",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/product/mysql.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://beian.miit.gov.cn/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/soc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/csa-star.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/mlps.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://cloudpartner.shixizhi.huawei.com/",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-22301.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/iso-27001.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://activity.huaweicloud.com/opc.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/compliance/compliance-center/pci-dss.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/cases.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://www.huaweicloud.com/securecenter/overallsafety.html",
+            "source": "nav"
+          },
+          {
+            "url": "https://console.huaweicloud.com/ticket/?locale=zh-cn#/ticketindex/createIndex",
+            "source": "nav"
+          },
+          {
+            "url": "https://account.huaweicloud.com/usercenter/#/betaManagement?serviceCode=beta_agentarts",
+            "source": "nav"
+          }
+        ]
+      },
+      "runtimeError": null
+    }
+  ]
+}

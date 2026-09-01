@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "pageId": "service-contact.html",
+  "pageCount": 1,
+  "itemCount": 123,
+  "hash": "sha256:ab2858f8fe85aab1abd178735858d4ac85f2c0586f58aa888882def6fc5dc13b",
+  "url": "https://www.huaweicloud.com/service/contact.html",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 18,
+      "charsP50": 4,
+      "charsP90": 6,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "subcopy": {
+      "n": 20,
+      "charsP50": 21,
+      "charsP90": 38,
+      "punct": 28,
+      "cjkLatin": {
+        "withSpace": 1,
+        "withoutSpace": 9,
+        "ratioWithSpace": 0.1
+      }
+    },
+    "primary_cta": {
+      "n": 2,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 2,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 76,
+      "charsP50": 6,
+      "charsP90": 19,
+      "punct": 39,
+      "cjkLatin": {
+        "withSpace": 3,
+        "withoutSpace": 20,
+        "ratioWithSpace": 0.1304
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {
+      "您": 16
+    },
+    "brand_self": {
+      "我们": 3
+    },
+    "audience_noun": {
+      "企业": 1,
+      "开发者": 2,
+      "客户": 1,
+      "团队": 1
+    }
+  },
+  "cta": [
+    {
+      "term": "立即咨询",
+      "count": 2,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "查看详情",
+      "count": 2
+    },
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "填写表单",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "查看更多",
+      "count": 1
+    },
+    {
+      "term": "提交工单",
+      "count": 1
+    },
+    {
+      "term": "去提建议",
+      "count": 1
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "Windows",
+    "RDS",
+    "Linux"
+  ],
+  "numberSamples": {
+    "subcopy": [
+      "1",
+      "1",
+      "1",
+      "9",
+      "00",
+      "18",
+      "7",
+      "24",
+      "950808",
+      "2",
+      "2",
+      "2",
+      "3"
+    ],
+    "body": [
+      "7",
+      "24 ",
+      "7",
+      "24",
+      "1",
+      "2",
+      "20200593 "
+    ]
+  },
+  "chromeCopyPreview": []
+}

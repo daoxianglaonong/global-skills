@@ -1,0 +1,625 @@
+schema_version: 1
+style_set_id: huaweicloud-com
+taxonomy_layers: [L1, L2]
+catalog:
+  chrome: chrome.yaml
+  sections: [hero.slider-split, hero.stacked-decor, hero.stacked-plain, hero.centered-media, feature.grid-4-media-bottom, feature.accordion-media, feature.tabs-mosaic, content.merged-industry-case, stats.split-map, feature.grid-3-text, content.playground, feature.slider-cards-3, case-study.split-stats, gallery.grid-3-video, feature.split-promo, faq.accordion-contact, cta.centered-band, blog.split-feature, feature.diagram-stacked, feature.grid-4-dark-cards, feature.grid-5-media-top, content.docs-columns, feature.grid-2-media-bottom, feature.grid-2-text, cta.inline-promo, blog.grid-3, feature.bento-scenes, case-study.tabs-image, hero.centered-icon-stats, feature.grid-4-instance, feature.grid-2x2-diagram, content.certs-grid-3, feature.grid-3-related, page-header.photo-cta, contact.cards-hotline, contact.grid-4-channels, feature.grid-4-support, faq.grid-3, page-header.video, stats.map-cities, content.numbered-stack, stats.partner-tokens, blog.analyst-list, content.about-stories, content.csr-split, page-header.banner, blog.dated-list, credentials.grid-4-tabs]
+rhythm:
+  scheme: alternate-muted
+  skip_roles: [chrome, overlay]
+  skip_taxonomies: [hero, footer]
+  surfaces: [default, muted]
+  notes: "交替池只放 default/muted，对应 tokens 的 {color.surface.default.$root} 与 {color.surface.muted.$root}；站点无识别色做楼层底，不把 identity 放入池。"
+chrome:
+  navbar:
+    default: navbar.portal-utility
+    variants:
+      - hosts: [agentorchard.huaweicloud.com]
+        pattern: navbar.orchard-subbrand
+  footer: footer.multi-column
+  float_widget: float-widget.service-rail
+  legal_bar: null
+  breadcrumb: null
+  announcement: null
+  floor_nav: null
+  cookie_consent: null
+page_skeletons:
+  - id: sk-home
+    label_zh: "门户首页型"
+    observed_on: [home]
+    steps:
+      - taxonomy: hero
+        required: true
+        repeat: { min: 1, max: 1 }
+      - taxonomy: feature
+        required: true
+        repeat: { min: 2, max: 4 }
+      - taxonomy: content
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: stats
+        required: false
+        repeat: { min: 0, max: 1 }
+    confidence: low
+  - id: sk-product
+    label_zh: "产品详情型"
+    observed_on: [product-agentarts.html, product-modelarts.html, product-ecs.html]
+    steps:
+      - taxonomy: hero
+        required: true
+        repeat: { min: 1, max: 1 }
+      - taxonomy: content
+        required: false
+        repeat: { min: 0, max: 2 }
+      - taxonomy: blog
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: feature
+        required: true
+        repeat: { min: 2, max: 6 }
+      - taxonomy: case-study
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: gallery
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: faq
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: cta
+        required: false
+        repeat: { min: 0, max: 1 }
+    confidence: low
+  - id: sk-orchard
+    label_zh: "智果园主题首页型"
+    observed_on: [agentorchard--home]
+    steps:
+      - taxonomy: hero
+        required: true
+        repeat: { min: 1, max: 1 }
+      - taxonomy: feature
+        required: true
+        repeat: { min: 3, max: 5 }
+      - taxonomy: cta
+        required: true
+        repeat: { min: 1, max: 2 }
+      - taxonomy: case-study
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: blog
+        required: false
+        repeat: { min: 0, max: 1 }
+    confidence: low
+  - id: sk-ai-hub
+    label_zh: "行业AI主题型"
+    observed_on: [ai]
+    steps:
+      - taxonomy: hero
+        required: true
+        repeat: { min: 1, max: 1 }
+      - taxonomy: feature
+        required: true
+        repeat: { min: 2, max: 4 }
+      - taxonomy: case-study
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: blog
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: cta
+        required: false
+        repeat: { min: 0, max: 1 }
+    confidence: low
+  - id: sk-contact
+    label_zh: "联系我们型"
+    observed_on: [service-contact.html]
+    steps:
+      - taxonomy: page-header
+        required: true
+        repeat: { min: 1, max: 1 }
+      - taxonomy: contact
+        required: true
+        repeat: { min: 1, max: 2 }
+      - taxonomy: feature
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: faq
+        required: false
+        repeat: { min: 0, max: 1 }
+    confidence: low
+  - id: sk-about
+    label_zh: "关于我们型"
+    observed_on: [about-index.html]
+    steps:
+      - taxonomy: page-header
+        required: true
+        repeat: { min: 1, max: 1 }
+      - taxonomy: stats
+        required: false
+        repeat: { min: 0, max: 2 }
+      - taxonomy: content
+        required: true
+        repeat: { min: 1, max: 3 }
+      - taxonomy: blog
+        required: false
+        repeat: { min: 0, max: 1 }
+      - taxonomy: feature
+        required: false
+        repeat: { min: 0, max: 1 }
+    confidence: low
+  - id: sk-news
+    label_zh: "新闻合集型"
+    observed_on: [news.html]
+    steps:
+      - taxonomy: page-header
+        required: true
+        repeat: { min: 1, max: 1 }
+      - taxonomy: blog
+        required: true
+        repeat: { min: 1, max: 1 }
+    confidence: low
+  - id: sk-compliance
+    label_zh: "合规资质型"
+    observed_on: [securecenter-compliance-compliance-center.html]
+    steps:
+      - taxonomy: page-header
+        required: true
+        repeat: { min: 1, max: 1 }
+      - taxonomy: credentials
+        required: true
+        repeat: { min: 1, max: 1 }
+    confidence: low
+pages:
+  home:
+    url: "https://www.huaweicloud.com/"
+    title_zh: "华为云首页"
+    sequence:
+      - id: home-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: home-hero
+        pattern: hero.slider-split
+        taxonomy: hero
+        surface: muted
+        label_zh: "首屏"
+      - id: home-feat-ai
+        pattern: feature.grid-4-media-bottom
+        taxonomy: feature
+        surface: default
+        label_zh: "云上AI"
+      - id: home-feat-models
+        pattern: feature.accordion-media
+        taxonomy: feature
+        surface: default
+        label_zh: "百模千态"
+      - id: home-feat-products
+        pattern: feature.tabs-mosaic
+        taxonomy: feature
+        surface: default
+        label_zh: "产品精选"
+      - id: home-content-merged
+        pattern: content.merged-industry-case
+        taxonomy: content
+        surface: image
+        label_zh: "行业与案例"
+        unmapped_reason: "采集将行业解决方案卡栅与客户案例图底并入同一楼层，词表无复合型"
+      - id: home-stats
+        pattern: stats.split-map
+        taxonomy: stats
+        surface: default
+        label_zh: "全球基础设施"
+      - id: home-feat-support
+        pattern: feature.grid-3-text
+        taxonomy: feature
+        surface: muted
+        label_zh: "咨询培训"
+      - id: home-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  product-agentarts.html:
+    url: "https://www.huaweicloud.com/product/agentarts.html"
+    title_zh: "智果 AgentArts"
+    sequence:
+      - id: aa-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: aa-hero
+        pattern: hero.stacked-decor
+        taxonomy: hero
+        surface: default
+        label_zh: "产品首屏"
+      - id: aa-playground
+        pattern: content.playground
+        taxonomy: content
+        surface: image
+        label_zh: "工作台"
+        unmapped_reason: "交互式智能体工作台/playground，词表无对应型"
+      - id: aa-why
+        pattern: feature.accordion-media
+        taxonomy: feature
+        surface: default
+        label_zh: "为何选择"
+      - id: aa-templates
+        pattern: feature.slider-cards-3
+        taxonomy: feature
+        surface: default
+        label_zh: "应用模版"
+      - id: aa-case
+        pattern: case-study.split-stats
+        taxonomy: case-study
+        surface: muted
+        label_zh: "客户创新"
+      - id: aa-gallery
+        pattern: gallery.grid-3-video
+        taxonomy: gallery
+        surface: muted
+        label_zh: "视频教程"
+      - id: aa-promo
+        pattern: feature.split-promo
+        taxonomy: feature
+        surface: image
+        label_zh: OfficeAce
+      - id: aa-faq
+        pattern: faq.accordion-contact
+        taxonomy: faq
+        surface: muted
+        label_zh: "常见问题"
+      - id: aa-cta
+        pattern: cta.centered-band
+        taxonomy: cta
+        surface: image
+        label_zh: "即刻体验"
+      - id: aa-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  product-modelarts.html:
+    url: "https://www.huaweicloud.com/product/modelarts.html"
+    title_zh: "魔坊 ModelArts"
+    sequence:
+      - id: ma-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: ma-hero
+        pattern: hero.stacked-plain
+        taxonomy: hero
+        surface: default
+        label_zh: "产品首屏"
+      - id: ma-blog
+        pattern: blog.split-feature
+        taxonomy: blog
+        surface: default
+        label_zh: "产品动态"
+      - id: ma-tools
+        pattern: feature.accordion-media
+        taxonomy: feature
+        surface: default
+        label_zh: "开发工具"
+      - id: ma-arch
+        pattern: feature.diagram-stacked
+        taxonomy: feature
+        surface: default
+        label_zh: "产品架构"
+      - id: ma-exp
+        pattern: feature.grid-4-dark-cards
+        taxonomy: feature
+        surface: default
+        label_zh: "开发体验"
+      - id: ma-scenes
+        pattern: feature.grid-5-media-top
+        taxonomy: feature
+        surface: default
+        label_zh: "应用场景"
+      - id: ma-docs
+        pattern: content.docs-columns
+        taxonomy: content
+        surface: default
+        label_zh: "文档学习"
+      - id: ma-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  agentorchard--home:
+    url: "https://agentorchard.huaweicloud.com/"
+    title_zh: "智果园"
+    sequence:
+      - id: ao-nav
+        pattern: navbar.orchard-subbrand
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: ao-hero
+        pattern: hero.centered-media
+        taxonomy: hero
+        surface: default
+        label_zh: "首屏"
+      - id: ao-plat
+        pattern: feature.grid-2-media-bottom
+        taxonomy: feature
+        surface: muted
+        label_zh: "智能体平台"
+      - id: ao-agents
+        pattern: feature.grid-2-media-bottom
+        taxonomy: feature
+        surface: muted
+        label_zh: "行业智能体"
+      - id: ao-open
+        pattern: feature.grid-2-text
+        taxonomy: feature
+        surface: default
+        label_zh: "开放能力"
+      - id: ao-models
+        pattern: feature.grid-4-media-bottom
+        taxonomy: feature
+        surface: default
+        label_zh: "百模千态"
+      - id: ao-token
+        pattern: cta.inline-promo
+        taxonomy: cta
+        surface: default
+        label_zh: "Token Plan"
+      - id: ao-industry
+        pattern: feature.accordion-media
+        taxonomy: feature
+        surface: default
+        label_zh: "行业梦工厂"
+      - id: ao-case
+        pattern: case-study.split-stats
+        taxonomy: case-study
+        surface: muted
+        label_zh: "客户案例"
+      - id: ao-news
+        pattern: blog.grid-3
+        taxonomy: blog
+        surface: default
+        label_zh: "重磅资讯"
+      - id: ao-cta
+        pattern: cta.centered-band
+        taxonomy: cta
+        surface: muted
+        label_zh: "加入智果园"
+      - id: ao-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  ai:
+    url: "https://www.huaweicloud.com/ai/"
+    title_zh: "行业AI梦工厂"
+    sequence:
+      - id: ai-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: ai-hero
+        pattern: hero.centered-media
+        taxonomy: hero
+        surface: default
+        label_zh: "首屏"
+      - id: ai-zones
+        pattern: feature.grid-4-media-bottom
+        taxonomy: feature
+        surface: default
+        label_zh: "行业专区"
+      - id: ai-scenes
+        pattern: feature.bento-scenes
+        taxonomy: feature
+        surface: muted
+        label_zh: "热门场景"
+      - id: ai-why
+        pattern: feature.accordion-media
+        taxonomy: feature
+        surface: default
+        label_zh: "为何选择"
+      - id: ai-case
+        pattern: case-study.tabs-image
+        taxonomy: case-study
+        surface: image
+        label_zh: "客户创新"
+      - id: ai-news
+        pattern: blog.split-feature
+        taxonomy: blog
+        surface: default
+        label_zh: "最新资讯"
+      - id: ai-cta
+        pattern: cta.centered-band
+        taxonomy: cta
+        surface: muted
+        label_zh: "联系我们"
+      - id: ai-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  product-ecs.html:
+    url: "https://www.huaweicloud.com/product/ecs.html"
+    title_zh: "弹性云服务器 ECS"
+    sequence:
+      - id: ecs-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: ecs-hero
+        pattern: hero.centered-icon-stats
+        taxonomy: hero
+        surface: muted
+        label_zh: "产品首屏"
+      - id: ecs-instances
+        pattern: feature.grid-4-instance
+        taxonomy: feature
+        surface: muted
+        label_zh: "实例规格"
+      - id: ecs-why
+        pattern: feature.grid-2x2-diagram
+        taxonomy: feature
+        surface: default
+        label_zh: "为何选择"
+      - id: ecs-case
+        pattern: case-study.tabs-image
+        taxonomy: case-study
+        surface: image
+        label_zh: "客户创新"
+      - id: ecs-certs
+        pattern: content.certs-grid-3
+        taxonomy: content
+        surface: muted
+        label_zh: "权威认可"
+      - id: ecs-docs
+        pattern: content.docs-columns
+        taxonomy: content
+        surface: default
+        label_zh: "文档学习"
+      - id: ecs-related
+        pattern: feature.grid-3-related
+        taxonomy: feature
+        surface: muted
+        label_zh: "相关产品"
+      - id: ecs-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  service-contact.html:
+    url: "https://www.huaweicloud.com/service/contact.html"
+    title_zh: "联系我们"
+    sequence:
+      - id: ct-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: ct-header
+        pattern: page-header.photo-cta
+        taxonomy: page-header
+        surface: image
+        label_zh: "页头"
+      - id: ct-presale
+        pattern: contact.cards-hotline
+        taxonomy: contact
+        surface: muted
+        label_zh: "售前咨询"
+      - id: ct-aftersale
+        pattern: contact.grid-4-channels
+        taxonomy: contact
+        surface: muted
+        label_zh: "售后服务"
+      - id: ct-support
+        pattern: feature.grid-4-support
+        taxonomy: feature
+        surface: muted
+        label_zh: "其他支持"
+      - id: ct-faq
+        pattern: faq.grid-3
+        taxonomy: faq
+        surface: default
+        label_zh: "常见问题"
+      - id: ct-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  about-index.html:
+    url: "https://www.huaweicloud.com/about/index.html"
+    title_zh: "了解华为云"
+    sequence:
+      - id: ab-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: ab-header
+        pattern: page-header.video
+        taxonomy: page-header
+        surface: image
+        label_zh: "页头"
+      - id: ab-map
+        pattern: stats.map-cities
+        taxonomy: stats
+        surface: default
+        label_zh: "全球布局"
+      - id: ab-stack
+        pattern: content.numbered-stack
+        taxonomy: content
+        surface: default
+        label_zh: "硅基黑土地"
+      - id: ab-partners
+        pattern: stats.partner-tokens
+        taxonomy: stats
+        surface: default
+        label_zh: "伙伴场景"
+      - id: ab-analyst
+        pattern: blog.analyst-list
+        taxonomy: blog
+        surface: default
+        label_zh: "分析师报告"
+      - id: ab-stories
+        pattern: content.about-stories
+        taxonomy: content
+        surface: default
+        label_zh: "案例与价值观"
+        unmapped_reason: "采集将案例视频、客户 logo 与价值观条并入同一楼层，词表无复合型"
+      - id: ab-csr
+        pattern: content.csr-split
+        taxonomy: content
+        surface: default
+        label_zh: "社会责任"
+      - id: ab-support
+        pattern: feature.grid-3-text
+        taxonomy: feature
+        surface: muted
+        label_zh: "咨询培训"
+      - id: ab-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  news.html:
+    url: "https://www.huaweicloud.com/news.html"
+    title_zh: "新闻中心"
+    sequence:
+      - id: news-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: news-header
+        pattern: page-header.banner
+        taxonomy: page-header
+        surface: image
+        label_zh: "页头"
+      - id: news-list
+        pattern: blog.dated-list
+        taxonomy: blog
+        surface: muted
+        label_zh: "新闻列表"
+      - id: news-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"
+  securecenter-compliance-compliance-center.html:
+    url: "https://www.huaweicloud.com/securecenter/compliance/compliance-center.html"
+    title_zh: "合规中心"
+    sequence:
+      - id: cc-nav
+        pattern: navbar.portal-utility
+        taxonomy: navbar
+        label_zh: "顶栏"
+      - id: cc-header
+        pattern: page-header.banner
+        taxonomy: page-header
+        surface: image
+        label_zh: "页头"
+      - id: cc-creds
+        pattern: credentials.grid-4-tabs
+        taxonomy: credentials
+        surface: muted
+        label_zh: "认证全景"
+      - id: cc-footer
+        pattern: footer.multi-column
+        taxonomy: footer
+        surface: muted
+        label_zh: "页脚"

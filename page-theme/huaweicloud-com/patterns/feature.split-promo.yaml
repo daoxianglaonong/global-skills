@@ -1,0 +1,43 @@
+id: feature.split-promo
+taxonomy: feature
+label_zh: "能力·深底促销对切"
+role: section
+summary: "外标题 + 深色渐变容器内左文右界面稿。"
+variant: { layout: split, columns: 2, media_position: right, overlay: false }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: primary_cta
+    required: true
+  - name: media
+    required: true
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 1431
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [1431, 716]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 1116
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [1116, 558]
+  mobile:
+    columns: 1
+    grid: { content_width_px: 636, columns: 1 }
+  stack_below: mobile
+rhythm: { surface: image, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [product-agentarts.html]
+screenshot: screenshots/product-agentarts.html/floors/pc--sec-07.png
+dont: ["不要把深色促销底改成白底手风琴"]
+confidence: medium

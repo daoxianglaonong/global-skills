@@ -1,0 +1,69 @@
+id: hero.centered-media
+taxonomy: hero
+label_zh: "主题首屏·中文下图"
+role: section
+summary: "居中标题与副文，下方通栏插画或图标阵。"
+variant:
+  layout: centered
+  columns: 1
+  media_position: bottom
+  overlay: false
+  align: center
+container: { mode: full-bleed }
+density: spacious
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: media
+    required: true
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1640, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 1002, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 784, columns: 1 }
+  stack_below: never
+rhythm: { surface: default, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [agentorchard--home, ai]
+screenshot: screenshots/agentorchard--home/floors/pc--sec-01.png
+observations:
+  - path: responsive.pc.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 1640
+    selected: true
+  - path: responsive.pc.grid.content_width_px
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 1688
+    selected: false
+  - path: responsive.tablet.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 1002
+    selected: true
+  - path: responsive.tablet.grid.content_width_px
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 942
+    selected: false
+  - path: responsive.tablet.columns
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 1
+    selected: true
+  - path: responsive.tablet.columns
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 2
+    selected: false
+dont: ["不要改成左文右图的门户首屏"]
+confidence: medium

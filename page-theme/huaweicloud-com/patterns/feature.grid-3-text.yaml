@@ -1,0 +1,70 @@
+id: feature.grid-3-text
+taxonomy: feature
+label_zh: "能力·三列纯文卡"
+role: section
+summary: "浅灰底上三列白卡：标题、说明、描边钮，无媒体。"
+variant:
+  layout: grid
+  columns: 3
+  media_position: none
+  overlay: false
+  card: filled
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: primary_cta
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 3, max: 3, typical: 3 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 1519
+      columns: 3
+      gutter_px: 20
+      item_widths_px: [493, 493, 493]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 737
+      columns: 3
+      gutter_px: 16
+      item_widths_px: [235, 235, 235]
+  mobile:
+    columns: 1
+    grid: { content_width_px: 636, columns: 1 }
+  stack_below: mobile
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [home, about-index.html]
+screenshot: screenshots/home/floors/pc--sec-07.png
+observations:
+  - path: responsive.pc.grid.content_width_px
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: 1519
+    selected: true
+  - path: responsive.pc.grid.content_width_px
+    pageId: about-index.html
+    pageUrl: "https://www.huaweicloud.com/about/index.html"
+    value: 1200
+    selected: false
+  - path: responsive.pc.grid.item_widths_px
+    pageId: home
+    pageUrl: "https://www.huaweicloud.com/"
+    value: [493, 493, 493]
+    selected: true
+  - path: responsive.pc.grid.item_widths_px
+    pageId: about-index.html
+    pageUrl: "https://www.huaweicloud.com/about/index.html"
+    value: [387, 387, 387]
+    selected: false
+dont: ["不要给这三张服务卡补插画"]
+confidence: medium

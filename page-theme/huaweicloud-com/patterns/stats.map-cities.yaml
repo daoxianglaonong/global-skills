@@ -1,0 +1,48 @@
+id: stats.map-cities
+taxonomy: stats
+label_zh: "统计·全球布局点名"
+role: section
+summary: "居中「全球布局」标题下地图与城市名，不是产品页左数右图。"
+variant: { layout: centered, columns: 1, media_position: background, overlay: false, align: center }
+container: { mode: contained, max_width_px: 1200 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: subcopy
+    required: false
+  - name: media
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 8, max: 20, typical: 12 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 1200
+      columns: 3
+      gutter_px: 320
+      item_widths_px: [84, 139, 98]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 784
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [176, 291, 205]
+  mobile:
+    columns: 3
+    grid:
+      content_width_px: 784
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [176, 291, 205]
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [about-index.html]
+screenshot: screenshots/about-index.html/floors/pc--sec-02.png
+dont: ["不要把关于页地图并进首页 stats.split-map"]
+confidence: medium

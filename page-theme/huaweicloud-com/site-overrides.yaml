@@ -1,0 +1,35 @@
+schemaVersion: 1
+proposed: false
+siteSlug: huaweicloud-com
+notes: |
+  采集约定（本份资产，不另开待办文件）：
+  - 案例 holdout：holdout.yaml 的 urls_forbidden 全表 + ground_truth，一律不采。
+  - 控制台 / 登录后态：不采 console.huaweicloud.com、account.huaweicloud.com 及任何需登录壳；loggedIn 保持 false。
+  - 活动子域 activity.huaweicloud.com：默认不采，除非「活动子域体检门」票裁决为并进。
+  交互采样提示（脚本无 CTA 覆盖字段；复采写密时按此读图，勿把注册/提交当线框次钮）：
+  - 线框次钮：首屏 .banner-text-btn-wrapper.banner-btn-enter 内非实心底的 .por-btn（文案「了解详情」「免费试用」）。排除 li.header-register > a.btn.js-register（识别红「注册」）与表单 submit / 「提交」。
+  - 顶栏搜索：input#header-navigation-search-input，或 .header-search.J-header-search input.search-default。
+  - 右侧浮层整栏：div.float-dialog（客服 / 电话 / 反馈 / 二维码），不是单独回顶钮。
+
+consent: []
+
+overlays:
+  - selector: div.float-dialog
+    action: hide-for-floor-shot
+    reason: floating-chrome
+  - selector: "#chat-container"
+    action: hide-for-floor-shot
+    reason: floating-chrome
+  - selector: ul.float-bar-nav
+    action: hide-for-floor-shot
+    reason: floating-chrome
+
+wrappers: []
+
+floors: []
+
+enableL3: false
+
+noise:
+  thirdPartyHosts: []
+  excludeSelectors: []

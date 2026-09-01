@@ -1,0 +1,42 @@
+id: content.csr-split
+taxonomy: content
+label_zh: "长文·社会责任图文"
+role: section
+summary: "关于页 CSR 长文：标题加图文故事，真·长文，无 unmapped_reason。"
+variant: { layout: stacked, columns: 1, media_position: top, overlay: false }
+container: { mode: contained, max_width_px: 1200 }
+density: default
+content_max: prose-wide
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: media
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 2, max: 6, typical: 3 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1200, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 717, columns: 1 }
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 717
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [717, 717]
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [about-index.html]
+screenshot: screenshots/about-index.html/floors/pc--sec-07.png
+dont: ["不要把 CSR 写成定价或招聘"]
+confidence: medium

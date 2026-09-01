@@ -1,0 +1,39 @@
+id: faq.grid-3
+taxonomy: faq
+label_zh: "问答·三列分类链"
+role: section
+summary: "白底居中「常见问题」下三列问题分类，每列若干问句链接。"
+variant: { layout: grid, columns: 3, media_position: none, overlay: false }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: faq_q
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 3, max: 3, typical: 3 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 1431
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [477, 477, 477]
+  tablet:
+    columns: 1
+    grid: { content_width_px: 966, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 761, columns: 1 }
+  stack_below: tablet
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [service-contact.html]
+screenshot: screenshots/service-contact.html/floors/pc--sec-05.png
+dont: ["不要把三列问答改成手风琴加咨询卡"]
+confidence: medium

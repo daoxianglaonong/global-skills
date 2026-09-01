@@ -1,0 +1,56 @@
+id: feature.grid-4-instance
+taxonomy: feature
+label_zh: "能力·四列实例规格卡"
+role: section
+summary: "居中标题下四列白卡：短码图标、实例名、规格、参考价、线框购买。"
+variant: { layout: grid, columns: 4, media_position: top, overlay: false, card: filled }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_icon
+    required: true
+    repeatable: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: price
+    required: false
+    repeatable: true
+  - name: secondary_cta
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 3, max: 4, typical: 4 }
+responsive:
+  pc:
+    columns: 4
+    grid:
+      content_width_px: 1447
+      columns: 4
+      gutter_px: 0
+      item_widths_px: [362, 362, 362, 362]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 958
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [319, 319, 319]
+  mobile:
+    columns: 3
+    grid:
+      content_width_px: 753
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [251, 251, 251]
+  stack_below: never
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-ecs.html]
+screenshot: screenshots/product-ecs.html/floors/pc--sec-02.png
+dont: ["不要把实例卡改成三列纯文；卡内购买是线框次钮不是实心主钮"]
+confidence: medium

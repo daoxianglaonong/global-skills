@@ -1,0 +1,53 @@
+id: content.about-stories
+taxonomy: content
+label_zh: "关于·视频案例与价值观"
+role: section
+summary: "采集把案例视频、客户 logo 与价值观条并入同一楼层。"
+variant: { layout: stacked, columns: 1, media_position: top, overlay: false }
+container: { mode: contained, max_width_px: 1200 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: false
+  - name: media
+    required: true
+    repeatable: true
+  - name: logo
+    required: false
+    repeatable: true
+  - name: quote
+    required: false
+    repeatable: true
+  - name: item_title
+    required: false
+    repeatable: true
+content_count: { unit: item, min: 3, max: 8, typical: 5 }
+responsive:
+  pc:
+    columns: 5
+    grid:
+      content_width_px: 1200
+      columns: 5
+      gutter_px: 20
+      item_widths_px: [385, 184, 184, 184, 184]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 717
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [343, 343]
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 717
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [343, 343]
+  stack_below: tablet
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [about-index.html]
+screenshot: screenshots/about-index.html/floors/pc--sec-06.png
+dont: ["不要拆成独立 gallery 再加一条价值观"]
+confidence: medium

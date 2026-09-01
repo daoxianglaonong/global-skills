@@ -1,0 +1,17 @@
+{
+  "name": "page-theme-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "page-theme skill 的确定性采集与验收脚本（O-25 / O-26）",
+  "scripts": {
+    "selftest": "node lib/selftest.mjs"
+  },
+  "dependencies": {
+    "@projectwallace/css-analyzer": "~9.9.0",
+    "pixelmatch": "~7.2.0",
+    "playwright": "~1.62.1",
+    "sharp": "~0.35.3",
+    "tldts": "~7.4.10"
+  }
+}

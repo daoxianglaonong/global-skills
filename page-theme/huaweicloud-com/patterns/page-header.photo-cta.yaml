@@ -1,0 +1,38 @@
+id: page-header.photo-cta
+taxonomy: page-header
+label_zh: "页头·照片底加咨询钮"
+role: section
+summary: "全幅客服照片底，左叠页标题、一句说明、实心立即咨询。"
+variant: { layout: overlay, columns: 1, media_position: background, overlay: true }
+container: { mode: full-bleed }
+density: default
+content_max: prose
+slots:
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: primary_cta
+    required: true
+  - name: media
+    required: true
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 1688, columns: 1 }
+  tablet:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 1002, columns: 1 }
+  mobile:
+    columns: 1
+    overlay_strategy: keep
+    grid: { content_width_px: 784, columns: 1 }
+  stack_below: never
+rhythm: { surface: image, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [service-contact.html]
+screenshot: screenshots/service-contact.html/floors/pc--sec-01.png
+dont: ["不要把联系页头改成产品首屏滑块；主钮是立即咨询不是注册"]
+confidence: medium

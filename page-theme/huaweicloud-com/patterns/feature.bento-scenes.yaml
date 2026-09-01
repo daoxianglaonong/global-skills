@@ -1,0 +1,54 @@
+id: feature.bento-scenes
+taxonomy: feature
+label_zh: "能力·场景 Bento"
+role: section
+summary: "居中标题下不对称拼贴：左高卡 + 右上两小卡 + 右下宽卡。"
+variant:
+  layout: bento
+  media_position: bottom
+  overlay: false
+  card: filled
+  bento_map: [1x2, 1x1, 1x1, 2x1]
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: primary_cta
+    required: true
+    repeatable: true
+  - name: media
+    required: false
+    repeatable: true
+content_count: { unit: item, min: 4, max: 6, typical: 4 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 1451
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [726, 726]
+  tablet:
+    columns: 1
+    grid: { content_width_px: 942, columns: 1 }
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 753
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [251, 502]
+  stack_below: tablet
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [ai]
+screenshot: screenshots/ai/floors/pc--sec-03.png
+dont: ["不要把 Bento 拉齐成四列等宽"]
+confidence: medium

@@ -1,0 +1,56 @@
+id: hero.centered-icon-stats
+taxonomy: hero
+label_zh: "产品首屏·居中图标加四格数"
+role: section
+summary: "浅灰底居中产品图标、品类标题、副文、实心购买加两枚线框次钮，底下一排四格数字卡。"
+variant: { layout: centered, columns: 1, media_position: none, overlay: false, align: center }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: item_icon
+    required: true
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: primary_cta
+    required: true
+  - name: secondary_cta
+    required: false
+    repeatable: true
+  - name: stat_value
+    required: true
+    repeatable: true
+  - name: stat_label
+    required: true
+    repeatable: true
+content_count: { unit: stat, min: 4, max: 4, typical: 4 }
+responsive:
+  pc:
+    columns: 4
+    grid:
+      content_width_px: 1447
+      columns: 4
+      gutter_px: 0
+      item_widths_px: [362, 362, 362, 362]
+  tablet:
+    columns: 4
+    grid:
+      content_width_px: 958
+      columns: 4
+      gutter_px: 0
+      item_widths_px: [239, 239, 239, 239]
+  mobile:
+    columns: 4
+    grid:
+      content_width_px: 753
+      columns: 4
+      gutter_px: 0
+      item_widths_px: [188, 188, 188, 188]
+  stack_below: never
+rhythm: { surface: muted, alternate: keep, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-ecs.html]
+screenshot: screenshots/product-ecs.html/floors/pc--sec-01.png
+dont: ["不要把四格数字拆成独立 stats 楼层；线框次钮是控制台/文档，不是注册"]
+confidence: medium

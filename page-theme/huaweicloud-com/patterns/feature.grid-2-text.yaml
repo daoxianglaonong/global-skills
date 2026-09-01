@@ -1,0 +1,55 @@
+id: feature.grid-2-text
+taxonomy: feature
+label_zh: "能力·两列纯文卡"
+role: section
+summary: "居中标题下两列浅底文案卡，可带代码示意与按钮。"
+variant:
+  layout: grid
+  columns: 2
+  media_position: none
+  overlay: false
+  card: filled
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: primary_cta
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 2, max: 2, typical: 2 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 1436
+      columns: 2
+      gutter_px: 20
+      item_widths_px: [708, 708]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 942
+      columns: 2
+      gutter_px: 12
+      item_widths_px: [465, 465]
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 737
+      columns: 2
+      gutter_px: 12
+      item_widths_px: [362, 362]
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [agentorchard--home]
+screenshot: screenshots/agentorchard--home/floors/pc--sec-04.png
+dont: ["不要给开放能力卡补底图"]
+confidence: medium

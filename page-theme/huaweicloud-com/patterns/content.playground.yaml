@@ -1,0 +1,40 @@
+id: content.playground
+taxonomy: content
+label_zh: "交互工作台"
+role: section
+summary: "左配置说明、右对话画布的交互式智能体工作台。"
+unmapped_reason: "交互式智能体工作台/playground，词表无对应型"
+variant: { layout: split, columns: 2, media_position: right, overlay: false }
+container: { mode: full-bleed }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: false
+  - name: body
+    required: true
+  - name: input
+    required: true
+  - name: media
+    required: false
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1688, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 1240, columns: 1 }
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 636
+      columns: 2
+      gutter_px: 32
+      item_widths_px: [286, 318]
+  stack_below: never
+rhythm: { surface: image, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [product-agentarts.html]
+screenshot: screenshots/product-agentarts.html/floors/pc--sec-02.png
+dont: ["不要把工作台收成静态宣传卡"]
+confidence: medium

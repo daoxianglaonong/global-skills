@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "pageId": "2eb86e64-r30--home",
+  "pageCount": 1,
+  "itemCount": 86,
+  "hash": "sha256:4061a0df57e2c141b9bd184aeaa6463d3df87fa117f26411f46d6c2bf8804dc2",
+  "url": "https://2eb86e64.r30.cpolar.top/",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 24,
+      "charsP50": 7,
+      "charsP90": 18,
+      "punct": 7,
+      "cjkLatin": {
+        "withSpace": 2,
+        "withoutSpace": 1,
+        "ratioWithSpace": 0.6667
+      }
+    },
+    "subcopy": {
+      "n": 9,
+      "charsP50": 6,
+      "charsP90": 42,
+      "punct": 15,
+      "cjkLatin": {
+        "withSpace": 4,
+        "withoutSpace": 0,
+        "ratioWithSpace": 1
+      }
+    },
+    "primary_cta": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 42,
+      "charsP50": 8,
+      "charsP90": 36,
+      "punct": 38,
+      "cjkLatin": {
+        "withSpace": 16,
+        "withoutSpace": 4,
+        "ratioWithSpace": 0.8
+      }
+    },
+    "nav_item": {
+      "n": 6,
+      "charsP50": 4,
+      "charsP90": 6,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 1,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "h2",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {
+      "你": 5
+    },
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 3,
+      "开发者": 3,
+      "用户": 1,
+      "developers": 3
+    }
+  },
+  "cta": [
+    {
+      "term": "查看案例",
+      "count": 3
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "App",
+    "CodeArts Agent",
+    "HarmonyOS",
+    "Users"
+  ],
+  "numberSamples": {
+    "body": [
+      "35",
+      "202 ",
+      "17%",
+      "3",
+      "1",
+      "2",
+      "20200593 "
+    ],
+    "legal": [
+      "2026 "
+    ],
+    "beian": [
+      "20004760",
+      "14"
+    ]
+  },
+  "chromeCopyPreview": [
+    "鸿蒙开发实践中心",
+    "售前咨询热线",
+    "登录",
+    "注册",
+    "技术服务咨询",
+    "售前咨询",
+    "备案服务",
+    "华为云App",
+    "鸿蒙开发实践中心",
+    "案例中心",
+    "实践中心",
+    "登录",
+    "注册",
+    "中国站",
+    "案例中心",
+    "实践中心",
+    "了解华为云",
+    "信任中心",
+    "法律协议",
+    "新闻报道",
+    "视频中心",
+    "自助服务",
+    "服务公告",
+    "支持计划",
+    "联系我们",
+    "举报中心",
+    "华为云伙伴作战营",
+    "华为官网",
+    "华为开发者联盟",
+    "法律声明",
+    "隐私政策",
+    "增值电信业务经营许可证：B1.B2-20200593 | 代理域名注册服务机构：新网、西数",
+    "备案服务",
+    "隐私政策",
+    "©2026 Huaweicloud.com 版权所有",
+    "黔ICP备20004760号-14"
+  ]
+}

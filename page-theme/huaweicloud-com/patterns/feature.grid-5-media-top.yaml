@@ -1,0 +1,46 @@
+id: feature.grid-5-media-top
+taxonomy: feature
+label_zh: "能力·五列顶图"
+role: section
+summary: "居中标题下五列顶图场景卡。"
+variant: { layout: grid, columns: 5, media_position: top, overlay: false }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: media
+    required: true
+    repeatable: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 5, max: 8, typical: 5 }
+responsive:
+  pc:
+    columns: 5
+    grid:
+      content_width_px: 1447
+      columns: 5
+      gutter_px: 0
+      item_widths_px: [289, 289, 289, 289, 289]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 942
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [314, 314, 314]
+  mobile:
+    columns: 1
+    grid: { content_width_px: 784, columns: 1 }
+  stack_below: mobile
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-modelarts.html]
+screenshot: screenshots/product-modelarts.html/floors/pc--sec-07.png
+dont: ["不要把五列场景压成三列能力卡"]
+confidence: medium

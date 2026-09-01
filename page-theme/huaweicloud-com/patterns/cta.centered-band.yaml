@@ -1,0 +1,79 @@
+id: cta.centered-band
+taxonomy: cta
+label_zh: "收束·居中条带"
+role: section
+summary: "居中标题与主按钮的收束条，底可以是灰或渐变。"
+variant:
+  layout: centered
+  columns: 1
+  media_position: none
+  overlay: false
+  align: center
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: eyebrow
+    required: false
+  - name: heading
+    required: true
+  - name: primary_cta
+    required: true
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1111, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 964, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 614, columns: 1 }
+  stack_below: never
+rhythm: { surface: muted, alternate: keep, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-agentarts.html, agentorchard--home, ai]
+screenshot: screenshots/product-agentarts.html/floors/pc--sec-09.png
+observations:
+  - path: responsive.pc.grid.content_width_px
+    pageId: product-agentarts.html
+    pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+    value: 1111
+    selected: true
+  - path: responsive.pc.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 1436
+    selected: false
+  - path: responsive.pc.grid.content_width_px
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 1431
+    selected: false
+  - path: responsive.tablet.grid.content_width_px
+    pageId: product-agentarts.html
+    pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+    value: 964
+    selected: true
+  - path: responsive.tablet.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 1002
+    selected: false
+  - path: responsive.mobile.grid.content_width_px
+    pageId: product-agentarts.html
+    pageUrl: "https://www.huaweicloud.com/product/agentarts.html"
+    value: 614
+    selected: true
+  - path: responsive.mobile.grid.content_width_px
+    pageId: agentorchard--home
+    pageUrl: "https://agentorchard.huaweicloud.com/"
+    value: 784
+    selected: false
+  - path: responsive.mobile.grid.content_width_px
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 737
+    selected: false
+dont: ["不要在收束条里再堆产品卡"]
+confidence: medium

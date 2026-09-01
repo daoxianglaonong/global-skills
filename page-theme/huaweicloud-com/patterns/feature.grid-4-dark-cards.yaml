@@ -1,0 +1,47 @@
+id: feature.grid-4-dark-cards
+taxonomy: feature
+label_zh: "能力·四列深底卡"
+role: section
+summary: "居中标题下四列深色全底图卡。pc 档 bbox 塌成 1 列，读图为 4 列，不编造 item_widths。"
+variant:
+  layout: grid
+  columns: 4
+  media_position: background
+  overlay: false
+  card: filled
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: media
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 4, max: 4, typical: 4 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1431, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 942, columns: 1 }
+  mobile:
+    columns: 3
+    grid:
+      content_width_px: 761
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [254, 254, 254, 254, 254]
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-modelarts.html]
+screenshot: screenshots/product-modelarts.html/floors/pc--sec-05.png
+dont: ["不要把深底卡改成浅底纯文"]
+confidence: medium

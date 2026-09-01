@@ -1,0 +1,48 @@
+id: faq.accordion-contact
+taxonomy: faq
+label_zh: "问答·手风琴加咨询卡"
+role: section
+summary: "居中「常见问题」手风琴，下方两列咨询卡。"
+variant: { layout: accordion, columns: 2, media_position: none, overlay: false }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: faq_q
+    required: true
+    repeatable: true
+  - name: faq_a
+    required: false
+    repeatable: true
+  - name: phone
+    required: false
+  - name: item_title
+    required: false
+    repeatable: true
+content_count: { unit: item, min: 4, max: 8, typical: 4 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 1431
+      columns: 2
+      gutter_px: 20
+      item_widths_px: [706, 706]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 1116
+      columns: 2
+      gutter_px: 12
+      item_widths_px: [552, 552]
+  mobile:
+    columns: 1
+    grid: { content_width_px: 588, columns: 1 }
+  stack_below: mobile
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-agentarts.html]
+screenshot: screenshots/product-agentarts.html/floors/pc--sec-08.png
+dont: ["不要把问答改成三列文档目录"]
+confidence: medium

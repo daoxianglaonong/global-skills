@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "pageId": "home",
+  "pageCount": 1,
+  "itemCount": 124,
+  "hash": "sha256:6ca4d0d7c76d6d5ab3b9f082b047211d37553d5d0f58e87139abfba415b9e15d",
+  "url": "https://www.huaweicloud.com/",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 3,
+      "charsP50": 16,
+      "charsP90": 16,
+      "punct": 3,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "subcopy": {
+      "n": 24,
+      "charsP50": 12,
+      "charsP90": 33,
+      "punct": 23,
+      "cjkLatin": {
+        "withSpace": 2,
+        "withoutSpace": 21,
+        "ratioWithSpace": 0.087
+      }
+    },
+    "primary_cta": {
+      "n": 2,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 2,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 90,
+      "charsP50": 5,
+      "charsP90": 16,
+      "punct": 12,
+      "cjkLatin": {
+        "withSpace": 4,
+        "withoutSpace": 11,
+        "ratioWithSpace": 0.2667
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {
+      "你": 1,
+      "您": 5
+    },
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 2,
+      "开发者": 3,
+      "客户": 2
+    }
+  },
+  "cta": [
+    {
+      "term": "了解详情",
+      "count": 12,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "立即下载",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "在线体验",
+      "count": 1
+    },
+    {
+      "term": "立即咨询",
+      "count": 1
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "AgentArts",
+    "ISO"
+  ],
+  "numberSamples": {
+    "subcopy": [
+      "9.9元",
+      "90%"
+    ],
+    "body": [
+      "170+",
+      "34",
+      "2800+",
+      "103",
+      "22301",
+      "2019",
+      "27001",
+      "2022",
+      "2 ",
+      "7",
+      "24 ",
+      "7",
+      "24",
+      "1",
+      "2",
+      "20200593 "
+    ]
+  },
+  "chromeCopyPreview": []
+}

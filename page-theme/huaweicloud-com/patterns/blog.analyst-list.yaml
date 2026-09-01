@@ -1,0 +1,39 @@
+id: blog.analyst-list
+taxonomy: blog
+label_zh: "资讯·分析师报告双列"
+role: section
+summary: "居中「分析师报告」下双列报告卡：机构名与一句结论。"
+variant: { layout: list, columns: 2, media_position: none, overlay: false, card: filled }
+container: { mode: contained, max_width_px: 1200 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 4, max: 8, typical: 6 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 1200
+      columns: 2
+      gutter_px: 20
+      item_widths_px: [590, 590]
+  tablet:
+    columns: 1
+    grid: { content_width_px: 717, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 717, columns: 1 }
+  stack_below: tablet
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [about-index.html]
+screenshot: screenshots/about-index.html/floors/pc--sec-05.png
+dont: ["不要把分析师报告写成产品动态时间线"]
+confidence: medium

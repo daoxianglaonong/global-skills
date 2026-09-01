@@ -1,0 +1,59 @@
+id: hero.stacked-decor
+taxonomy: hero
+label_zh: "产品首屏·左叠右饰"
+role: section
+summary: "左对齐堆叠：图标、徽标、标题、副文、多 CTA；右侧装饰纹理。"
+variant:
+  layout: stacked
+  columns: 1
+  media_position: background
+  overlay: false
+  align: start
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: item_icon
+    required: true
+  - name: badge
+    required: false
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: primary_cta
+    required: true
+  - name: secondary_cta
+    required: false
+    repeatable: true
+  - name: media
+    required: false
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 621
+      columns: 3
+      gutter_px: 16
+      item_widths_px: [122, 122, 108]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 423
+      columns: 3
+      gutter_px: 16
+      item_widths_px: [106, 106, 92]
+  mobile:
+    columns: 3
+    grid:
+      content_width_px: 423
+      columns: 3
+      gutter_px: 16
+      item_widths_px: [106, 106, 92]
+  stack_below: never
+rhythm: { surface: default, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [product-agentarts.html]
+screenshot: screenshots/product-agentarts.html/floors/pc--sec-01.png
+dont: ["不要把产品首屏改成居中大字"]
+confidence: medium

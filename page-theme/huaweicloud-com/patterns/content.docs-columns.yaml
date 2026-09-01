@@ -1,0 +1,60 @@
+id: content.docs-columns
+taxonomy: content
+label_zh: "文档目录·三列"
+role: section
+summary: "居中标题下三列文档链接组，真·目录不是兜底。"
+variant: { layout: grid, columns: 3, media_position: none, overlay: false }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: nav_item
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 3, max: 6, typical: 3 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 1431
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [477, 477, 477]
+  tablet:
+    columns: 1
+    grid: { content_width_px: 1002, columns: 1 }
+  mobile:
+    columns: 1
+    grid: { content_width_px: 784, columns: 1 }
+  stack_below: tablet
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-modelarts.html, product-ecs.html]
+screenshot: screenshots/product-modelarts.html/floors/pc--sec-08.png
+observations:
+  - path: responsive.tablet.grid.content_width_px
+    pageId: product-modelarts.html
+    pageUrl: "https://www.huaweicloud.com/product/modelarts.html"
+    value: 1002
+    selected: true
+  - path: responsive.tablet.grid.content_width_px
+    pageId: product-ecs.html
+    pageUrl: "https://www.huaweicloud.com/product/ecs.html"
+    value: 942
+    selected: false
+  - path: responsive.mobile.grid.content_width_px
+    pageId: product-modelarts.html
+    pageUrl: "https://www.huaweicloud.com/product/modelarts.html"
+    value: 784
+    selected: true
+  - path: responsive.mobile.grid.content_width_px
+    pageId: product-ecs.html
+    pageUrl: "https://www.huaweicloud.com/product/ecs.html"
+    value: 737
+    selected: false
+dont: ["不要把文档目录改成 FAQ 手风琴"]
+confidence: medium

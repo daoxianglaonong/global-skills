@@ -1,0 +1,50 @@
+id: feature.grid-4-support
+taxonomy: feature
+label_zh: "能力·四列其他支持"
+role: section
+summary: "浅灰底「其他支持」四列白卡：支持计划、专业服务等加了解详情。"
+variant: { layout: grid, columns: 4, media_position: none, overlay: false, card: filled }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: secondary_cta
+    required: false
+    repeatable: true
+content_count: { unit: item, min: 4, max: 4, typical: 4 }
+responsive:
+  pc:
+    columns: 4
+    grid:
+      content_width_px: 1447
+      columns: 4
+      gutter_px: 0
+      item_widths_px: [362, 362, 362, 362]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 966
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [483, 483]
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 761
+      columns: 2
+      gutter_px: 0
+      item_widths_px: [380, 380]
+  stack_below: tablet
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [service-contact.html]
+screenshot: screenshots/service-contact.html/floors/pc--sec-04.png
+dont: ["不要把支持卡改成 FAQ 手风琴"]
+confidence: medium

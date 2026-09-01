@@ -1,0 +1,50 @@
+id: feature.slider-cards-3
+taxonomy: feature
+label_zh: "能力·三列顶图滑卡"
+role: section
+summary: "居中标题下三列顶图卡，右侧有滑入箭头。"
+variant:
+  layout: slider
+  columns: 3
+  media_position: top
+  overlay: false
+  card: filled
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+  - name: media
+    required: true
+    repeatable: true
+  - name: primary_cta
+    required: true
+    repeatable: true
+content_count: { unit: slide, min: 3, max: 8, typical: 3 }
+responsive:
+  pc:
+    columns: 1
+    grid: { content_width_px: 1688, columns: 1 }
+  tablet:
+    columns: 1
+    grid: { content_width_px: 1240, columns: 1 }
+  mobile:
+    columns: 6
+    grid:
+      content_width_px: 636
+      columns: 6
+      gutter_px: 12
+      item_widths_px: [342, 342, 342, 342, 342, 342]
+  stack_below: never
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-agentarts.html]
+screenshot: screenshots/product-agentarts.html/floors/pc--sec-04.png
+dont: ["不要把滑卡改成静态三列而丢掉箭头"]
+confidence: medium

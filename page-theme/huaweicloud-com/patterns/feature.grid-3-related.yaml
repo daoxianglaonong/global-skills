@@ -1,0 +1,47 @@
+id: feature.grid-3-related
+taxonomy: feature
+label_zh: "能力·三列相关产品"
+role: section
+summary: "浅灰底「您可能感兴趣的产品」三列白卡：产品名与一句能力。"
+variant: { layout: grid, columns: 3, media_position: none, overlay: false, card: filled }
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: item_title
+    required: true
+    repeatable: true
+  - name: item_body
+    required: true
+    repeatable: true
+content_count: { unit: item, min: 3, max: 3, typical: 3 }
+responsive:
+  pc:
+    columns: 3
+    grid:
+      content_width_px: 1455
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [485, 485, 485]
+  tablet:
+    columns: 3
+    grid:
+      content_width_px: 966
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [322, 322, 322]
+  mobile:
+    columns: 3
+    grid:
+      content_width_px: 761
+      columns: 3
+      gutter_px: 0
+      item_widths_px: [254, 254, 254]
+  stack_below: never
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-ecs.html]
+screenshot: screenshots/product-ecs.html/floors/pc--sec-07.png
+dont: ["不要把相关产品卡改成客户 logo 条"]
+confidence: medium

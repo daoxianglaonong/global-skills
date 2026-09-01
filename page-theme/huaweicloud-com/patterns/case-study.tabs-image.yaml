@@ -1,0 +1,71 @@
+id: case-study.tabs-image
+taxonomy: case-study
+label_zh: "案例·Tab 图底"
+role: section
+summary: "客户 Tab + 图底上的左文右影，白字描边钮。"
+variant: { layout: tabs, columns: 1, media_position: background, overlay: false }
+container: { mode: full-bleed }
+density: default
+content_max: full
+slots:
+  - name: heading
+    required: true
+  - name: tab
+    required: true
+    repeatable: true
+  - name: logo
+    required: false
+  - name: item_title
+    required: true
+  - name: item_body
+    required: true
+  - name: primary_cta
+    required: true
+  - name: media
+    required: true
+content_count: { unit: item, min: 2, max: 6, typical: 4 }
+responsive:
+  pc:
+    columns: 4
+    grid:
+      content_width_px: 1688
+      columns: 4
+      gutter_px: 0
+      item_widths_px: [1688, 1688, 1688, 1688]
+  tablet:
+    columns: 1
+    grid: { content_width_px: 1002, columns: 1 }
+  mobile:
+    columns: 4
+    grid:
+      content_width_px: 737
+      columns: 4
+      gutter_px: 56
+      item_widths_px: [56, 56, 70, 70]
+  stack_below: tablet
+rhythm: { surface: image, alternate: keep, full_bleed_media: true, merge_spacing_with_prev: false }
+observed_on: [ai, product-ecs.html]
+screenshot: screenshots/ai/floors/pc--sec-05.png
+observations:
+  - path: responsive.pc.columns
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 4
+    selected: true
+  - path: responsive.pc.columns
+    pageId: product-ecs.html
+    pageUrl: "https://www.huaweicloud.com/product/ecs.html"
+    value: 2
+    selected: false
+  - path: responsive.pc.grid.content_width_px
+    pageId: ai
+    pageUrl: "https://www.huaweicloud.com/ai/"
+    value: 1688
+    selected: true
+  - path: responsive.pc.grid.content_width_px
+    pageId: product-ecs.html
+    pageUrl: "https://www.huaweicloud.com/product/ecs.html"
+    value: 1688
+    selected: false
+dont: ["不要把图底案例改成白底左媒右数"]
+confidence: medium

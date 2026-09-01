@@ -1,0 +1,56 @@
+id: hero.stacked-plain
+taxonomy: hero
+label_zh: "产品首屏·素底左叠"
+role: section
+summary: "白底左对齐堆叠：产品图标、动态徽标、标题、副文、双 CTA，无右侧媒体。"
+variant:
+  layout: stacked
+  columns: 1
+  media_position: none
+  overlay: false
+  align: start
+container: { mode: contained, max_width_px: 1600 }
+density: default
+content_max: full
+slots:
+  - name: item_icon
+    required: true
+  - name: badge
+    required: false
+  - name: heading
+    required: true
+  - name: subcopy
+    required: true
+  - name: primary_cta
+    required: true
+  - name: secondary_cta
+    required: false
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:
+    columns: 2
+    grid:
+      content_width_px: 665
+      columns: 2
+      gutter_px: 16
+      item_widths_px: [122, 94]
+  tablet:
+    columns: 2
+    grid:
+      content_width_px: 517
+      columns: 2
+      gutter_px: 16
+      item_widths_px: [106, 78]
+  mobile:
+    columns: 2
+    grid:
+      content_width_px: 517
+      columns: 2
+      gutter_px: 16
+      item_widths_px: [106, 78]
+  stack_below: never
+rhythm: { surface: default, alternate: keep, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [product-modelarts.html]
+screenshot: screenshots/product-modelarts.html/floors/pc--sec-01.png
+dont: ["不要给素底产品首屏补一张装饰大图"]
+confidence: medium
