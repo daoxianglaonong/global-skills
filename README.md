@@ -1,18 +1,18 @@
 # global-skills · page-theme-v2
 
-从 `skills-list` 同步 **生成 / 优化** 与 **校验**。不含采集包，不含评测夹具。
+只同步 **page-theme-generate**、**page-theme-audit** 执行硬序需要的文件，以及它们运行时读的那份资产。
 
-| 路径 | 是什么 |
+| 路径 | 执行时做什么 |
 | --- | --- |
 | `.agents/skills/page-theme-generate/` | 创造模式出新页；优化模式刷既有页主题 |
 | `.agents/skills/page-theme-audit/` | 对照资产验产物：十道门 + 色 / 非色值映射 |
-| `page-theme/huaweicloud-com/` | 这两包运行时唯一消费的风格资产 |
+| `page-theme/huaweicloud-com/` | `--asset` 指向这里 |
 
-本仓打开后 Cursor 从 `.agents/skills/` 加载 skill。两包 Node ≥ 20、零运行时依赖，不需要 `npm install`。
+两包只留 `SKILL.md`、`references/`、`scripts/`（含 vendor）。`tests/`、`evals/` 不随迁。
 
-调用时显式传 `--asset page-theme/huaweicloud-com`。没有采集包，准入若得到 `absent` 无法串采集，必须自备合格资产。
+资产只留准入与两包会读的：tokens / voice / DESIGN / 闭集 / 楼层索引 / 包络 / `patterns/` / 已缩过的 PC 楼层截图。不带 `raw/`、`run-meta.json`、`holdout.yaml`、`site-overrides.yaml`。
 
-`huaweicloud-com` 截图已按取用面缩过：只留 PC 楼层缩略图，外加 pattern `screenshot:` 点名的 3 张页级图。
+本仓打开后 Cursor 从 `.agents/skills/` 加载 skill。Node ≥ 20，零运行时依赖。调用传 `--asset page-theme/huaweicloud-com`。没有采集包，准入 `absent` 无法串采集。
 
 ## 提示词参考
 
