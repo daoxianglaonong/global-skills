@@ -9,6 +9,8 @@
 | `.agents/skills/page-theme-workspace/fixtures/fixture-lanyuan-lab/` | 冻结夹具，评测 / 单测硬依赖 | generate + audit 的 tests / evals |
 | `page-theme/huaweicloud-com/` | 华为云风格资产（消费仓库约定路径） | generate + audit 运行时 `--asset` |
 
+`huaweicloud-com` 的截图已按 generate / audit 取用面缩过：只留 PC 楼层缩略图，外加 pattern `screenshot:` 点名的 3 张页级图。交互态、整页长图、平板 / 手机楼层图不随迁——机器门不读它们；要声称读图确认，只能指还在的 `thumb`。
+
 本仓打开后 Cursor 会从 `.agents/skills/` 加载 skill。两包都是 Node ≥ 20、零运行时依赖，不需要 `npm install`。
 
 ## 为什么是这两份资产
