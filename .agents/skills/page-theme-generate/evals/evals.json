@@ -1,0 +1,94 @@
+{
+  "skill_name": "page-theme-generate",
+  "note": "行为 eval 一律以冻结 fixture 资产 .agents/skills/page-theme-workspace/fixtures/fixture-lanyuan-lab 为输入。不得改用真实站点资产——后者随重采漂移，eval 就不可复现；fixture 的 URL 走 .invalid 顶级域，谁也没法对它重采。",
+  "fixture_asset": ".agents/skills/page-theme-workspace/fixtures/fixture-lanyuan-lab",
+  "evals": [
+    {
+      "id": 1,
+      "name": "one-floor-passes-gates",
+      "prompt": "拿 .agents/skills/page-theme-workspace/fixtures/fixture-lanyuan-lab 这份主题资产，给我生成一个「研究方法」的三列能力卡楼层，不要整页、页壳别带。生成完自己把门跑一遍，把结论贴给我。",
+      "expected_output": "先跑准入校验并拿到 ok，再从 floor-index.json 选中 feature.grid-3-cards 这一型，按该 pattern 的 responsive 实测几何（pc 三列 / content_width 1128 / gutter 24 / item 360；tablet 两列 704·16·344；mobile 单列 344）产出 HTML 片段 + CSS。颜色与排印全部 var() 引用 closed-set.json 里的变量名，产物里零色值字面量。最后跑 lint-floor.mjs 并贴出退 0 的实际输出，而不是自述「我检查过了」。",
+      "files": ["floor-*.html", "floor-*.css", "generate-trace.json"],
+      "assertions": [
+        "开工前跑过 node scripts/admit-asset.mjs 并拿到 verdict=ok，不是凭目录里有文件就直接开写",
+        "产物里零色值字面量：hex / rgb() / hsl() 一个都没有，包括 border、box-shadow、渐变这类复合值里嵌的",
+        "每个 CSS 变量名都能在 closed-set.json 的 cssVar 或 aliasVar 列里查到；未出现自造变量名",
+        "颜色不直引 primitive 层（--color-neutral-* / --color-teal-* 之类色相族刻度）",
+        "几何数字取自 patterns/feature.grid-3-cards.yaml 的 responsive，不是套一套通用栅格；三个断点各自的列数与宽度都对得上",
+        "最后跑过 node scripts/lint-floor.mjs 并贴出真实输出，退出码为 0"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "no-image-no-fabricated-evidence",
+      "prompt": "还是 fixture-lanyuan-lab 这份资产，生成 feature.grid-3-cards 楼层，另外给我一份 generate-trace.json。这层的 confidence 是 medium 不是 high，按规矩非最高档的字段要读图确认过才能定稿——你确认一下，然后在 trace 里如实写清楚。",
+      "expected_output": "必须发现这份资产一张图都没有：没有 screenshots/ 目录、floor-index.json 的字段表里没有任何图像字段、pattern YAML 也没写 screenshot。因此非 high 档字段无法读图确认，trace 里一律写 imageConfirmed:false 并在备注里说明「本资产无采集运行，按 pattern 声明值直取，未读图确认」。不得编造一个图像路径去满足门，也不得把 confidence 改写成 high 来绕开这条要求。跑 lint-floor.mjs 应当退 0——门只在你声称读图时才要求兑现。",
+      "files": ["generate-trace.json"],
+      "assertions": [
+        "如实指出这份资产没有任何图像证据，并说出是怎么确认的（screenshots/ 不存在 / floor-index.json 无图像字段）",
+        "trace 里没有任何编造的 image 路径；凡 imageConfirmed:true 的条目都能在磁盘上找到对应文件（本资产的正确结果是一条都没有）",
+        "没有把 confidence 从 medium 改写成 high 来绕开读图要求",
+        "「未读图确认」这件事落进了 trace 或产出物的待办，而不是只在对话里提一句",
+        "lint-floor.mjs 退 0，且 image-evidence 门未被触发"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "incomplete-asset-refuses-and-does-not-recollect",
+      "prompt": "我把 fixture-lanyuan-lab 拷了一份到别处，好像拷漏了几个文件。用这份拷贝给我生成一个 CTA 楼层。",
+      "expected_output": "准入校验判 incomplete（有 README.md 但缺别的必交件），动作必须是拒绝并报出缺了哪几份，请用户处置。不得因为「资产不合格」就自动去重采——那会盖掉 holdout.yaml / site-overrides.yaml / input/design-system/ 这类人拥有的输入。也不得凑合着用残件生成，更不得把缺的字段编出来。回话要能让用户自己 ls 出缺件。",
+      "files": [],
+      "assertions": [
+        "跑过准入校验并得到 incomplete，未直接开始生成",
+        "逐条列出缺了哪几份必交件，路径与磁盘实况一致",
+        "明确没有自动串采集，并说清为什么：残件重采会盖掉人拥有的输入，与「压根没有资产」的处置相反",
+        "未用残缺资产凑合生成，未编造缺失字段",
+        "给出可执行的下一步（补齐哪几份文件，或从哪里重新拷一份完整的）"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "candidate-sequence-stops-at-outline",
+      "prompt": "拿 fixture-lanyuan-lab 给我做一个实验室开放日的落地页，hero、三列能力卡、底部行动条这么排，直接把 HTML 和 CSS 给我就行。",
+      "expected_output": "这份资产的已采页只有 home 一页，它的 sequence 不是「开放日落地页」这一条。所以本次序列只能来自骨架型 sk-landing 或共现回退，两者都是候选而不是实测记录：这一趟交的是三列大纲（型 id / 中文标签 / 关键内容点），由用户拍板；拍板结果写进 trace 的 sequence.approvedBy 与 approvedSteps 之后，下一趟才出页。直接出整页会被 sequence-approval 挡下。也不得把「需要拍板」说成「这个 skill 卡住了」——大纲就是这一趟的产物，拍板是下一次调用。",
+      "files": ["outline.md"],
+      "assertions": [
+        "这一趟交的是大纲，没有直接交出整页 HTML + CSS",
+        "大纲三列齐全，中文标签与关键内容点都能在 floor-index.json 的型目录里查到出处，不是现编的",
+        "说清了序列来源是骨架型 sk-landing，以及它为什么是候选而不是权威（排列这件事不给 high 档）",
+        "没有在 trace 里写 approvedBy 却拿不出被拍板的 steps；也没有伪造一个 page-sequence 来源来绕过拍板",
+        "没把「等用户拍板」描述成 skill 阻塞或失败，而是说明大纲是本趟产物、拍板后下一趟出页"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "vocabulary-inside-but-no-pattern-is-a-gap",
+      "prompt": "同一份资产，我要一个带定价表的页面，先给我大纲。",
+      "expected_output": "pricing 在资产启用的 taxonomy 词表内，不是现场自造的词，所以不能按「自造词」阻断；但这份资产确实没有 pricing 型，那是形态缺口：大纲照出，那一行标成缺口并写明理由（原站没有定价页，只能用资产已有的 token 与节奏发挥）。理由不许省，静默的缺口和忘了写长得一模一样。另外 sk-landing 装不下 pricing，所以序列走共现回退；而这份资产只有一页已采页，共现证据弱，必须如实说明是弱证据，不得把它说成统计结论。",
+      "files": ["outline.md"],
+      "assertions": [
+        "没把 pricing 当自造词阻断，也没有硬造一个 pricing 型出来充数",
+        "缺口那一行写了理由，不是空着或只写「资产里没有」",
+        "说清 sk-landing 装不下 pricing，因此序列来自共现回退而不是骨架选型",
+        "如实报出共现证据弱（已采页只有 1 页），没有把它包装成统计结论",
+        "仍然交大纲让用户拍板，没有直接出页"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "mixed-floor-does-not-copy-yaml-surface",
+      "prompt": "拿 fixture-lanyuan-lab，按用户拍板的序列 [cta.centered-band, feature.grid-3-cards] 拼一页。cta 那层 yaml 里写着 surface: muted，照着用就行。",
+      "expected_output": "不得照抄 yaml 自带的 surface。必须把整条序列交给 vendored paintSequence，role / taxonomy / ownSurface 从 floor-index.json 的 floors[] 取，序列条目上不写 surface。cta 打头时算法 n=0 给 default，产物 cta 层必须写 background-color: var(--color-surface-default)，不能写 muted。trace 的 paint 段只记 rhythm 与 skippedBy / ownSurface，不写 surface / n。跑 lint-floor 退 0。",
+      "files": ["*.html", "*.css", "generate-trace.json"],
+      "assertions": [
+        "没有把 cta.centered-band 的 ownSurface: muted 当成该层底色抄进产物",
+        "整条序列交给 paintSequence，没有逐层预存 surface",
+        "cta 层产物引用 --color-surface-default（算法 n=0），不是 muted",
+        "sequence.steps 上没有 surface 键",
+        "trace.paint 没有 surface / n / decidedBy（写出任一会报 paint-record-output-field）",
+        "lint-floor 退 0，paint-consistency 未亮",
+        "一层只许有一个底色声明；类选择器写对了再用更具体选择器 / 内联 / @media 盖成别的 surface，paint-consistency 报 surface-ambiguous"
+      ]
+    }
+  ]
+}

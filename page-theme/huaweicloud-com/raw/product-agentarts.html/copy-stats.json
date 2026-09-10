@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "pageId": "product-agentarts.html",
+  "pageCount": 1,
+  "itemCount": 126,
+  "hash": "sha256:4d21f7eb05dee90a479d51313062962dd66a6a30463c4003fe1d21b159f5e43d",
+  "url": "https://www.huaweicloud.com/product/agentarts.html",
+  "loggedIn": false,
+  "copyTruncated": false,
+  "bySlot": {
+    "heading": {
+      "n": 12,
+      "charsP50": 8,
+      "charsP90": 23,
+      "punct": 4,
+      "cjkLatin": {
+        "withSpace": 5,
+        "withoutSpace": 5,
+        "ratioWithSpace": 0.5
+      }
+    },
+    "subcopy": {
+      "n": 15,
+      "charsP50": 25,
+      "charsP90": 39,
+      "punct": 24,
+      "cjkLatin": {
+        "withSpace": 8,
+        "withoutSpace": 11,
+        "ratioWithSpace": 0.4211
+      }
+    },
+    "primary_cta": {
+      "n": 3,
+      "charsP50": 2,
+      "charsP90": 2,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "secondary_cta": {
+      "n": 4,
+      "charsP50": 2,
+      "charsP90": 3,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    },
+    "body": {
+      "n": 86,
+      "charsP50": 6,
+      "charsP90": 20,
+      "punct": 48,
+      "cjkLatin": {
+        "withSpace": 4,
+        "withoutSpace": 7,
+        "ratioWithSpace": 0.3636
+      }
+    },
+    "nav_item": {
+      "n": 0,
+      "charsP50": 0,
+      "charsP90": 0,
+      "punct": 0,
+      "cjkLatin": {
+        "withSpace": 0,
+        "withoutSpace": 0,
+        "ratioWithSpace": 0
+      }
+    }
+  },
+  "textAutospace": {
+    "computed": "no-autospace",
+    "declaredInFirstParty": false,
+    "source": "ua-initial",
+    "samples": [
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      },
+      {
+        "selector": "li",
+        "computed": "no-autospace"
+      }
+    ],
+    "autospaceActive": false
+  },
+  "person": {
+    "reader": {
+      "你": 2,
+      "您": 7
+    },
+    "brand_self": {
+      "我们": 1
+    },
+    "audience_noun": {
+      "企业": 2,
+      "开发者": 2,
+      "客户": 2,
+      "用户": 7
+    }
+  },
+  "cta": [
+    {
+      "term": "立即体验",
+      "count": 7
+    },
+    {
+      "term": "登录",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "注册",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "申请公测",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "免费试用",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "控制台",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "文档",
+      "count": 1,
+      "roleHint": "secondary_cta"
+    },
+    {
+      "term": "提交",
+      "count": 1,
+      "roleHint": "primary_cta"
+    },
+    {
+      "term": "资产广场",
+      "count": 1
+    },
+    {
+      "term": "什么是AgentArts？",
+      "count": 1
+    },
+    {
+      "term": "单智能体应用与多智能体应用是否可以切换？",
+      "count": 1
+    },
+    {
+      "term": "工作流应用和多智能体应用有什么区别？",
+      "count": 1
+    },
+    {
+      "term": "插件的输入参数支持图片格式吗？",
+      "count": 1
+    }
+  ],
+  "ctaUnmapped": [],
+  "productNameCandidates": [
+    "AgentArts",
+    "OfficeAce"
+  ],
+  "numberSamples": {
+    "heading": [
+      "950808 ",
+      "1"
+    ],
+    "subcopy": [
+      "26倍",
+      "10%",
+      "30%",
+      "1",
+      "1",
+      "9",
+      "1"
+    ],
+    "body": [
+      "7",
+      "24 ",
+      "7",
+      "24",
+      "1",
+      "2",
+      "20200593 "
+    ]
+  },
+  "chromeCopyPreview": []
+}

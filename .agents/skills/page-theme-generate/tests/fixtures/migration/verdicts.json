@@ -1,0 +1,227 @@
+{
+  "verdict": "pass",
+  "summary": {
+    "rows": 5,
+    "occurrences": 8,
+    "pending": 0,
+    "unmappedProps": []
+  },
+  "rows": [
+    {
+      "id": "vm-background-35a01eec",
+      "sourceValue": "#0f7a6c",
+      "normalizedValue": "#0f7a6cff",
+      "usage": "background",
+      "occurrenceCount": 1,
+      "occurrences": [
+        {
+          "file": "floor-good.css",
+          "selector": ".pt-feature-grid__icon",
+          "prop": "background-color",
+          "value": "#0f7a6c"
+        }
+      ],
+      "candidates": [
+        {
+          "path": "color.primary.$root",
+          "cssVar": "--color-primary",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.teal.2",
+          "cssVar": "--color-teal-2",
+          "layer": "primitive",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.text.link.$root",
+          "cssVar": "--color-text-link",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "component.button-primary.backgroundColor",
+          "cssVar": "--component-button-primary-backgroundColor",
+          "layer": "component",
+          "matchedBy": "hex-exact"
+        }
+      ],
+      "verdict": "accept",
+      "acceptedCssVar": "--color-primary",
+      "note": ""
+    },
+    {
+      "id": "vm-background-2118dc8f",
+      "sourceValue": "#ffffff",
+      "normalizedValue": "#ffffffff",
+      "usage": "background",
+      "occurrenceCount": 2,
+      "occurrences": [
+        {
+          "file": "floor-good.css",
+          "selector": ".pt-feature-grid",
+          "prop": "background-color",
+          "value": "#ffffff"
+        },
+        {
+          "file": "floor-good.css",
+          "selector": ".pt-feature-grid__card",
+          "prop": "background-color",
+          "value": "#ffffff"
+        }
+      ],
+      "candidates": [
+        {
+          "path": "color.neutral.1",
+          "cssVar": "--color-neutral-1",
+          "layer": "primitive",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.on.primary.$root",
+          "cssVar": "--color-on-primary",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.surface.default.$root",
+          "cssVar": "--color-surface-default",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "component.button-primary.textColor",
+          "cssVar": "--component-button-primary-textColor",
+          "layer": "component",
+          "matchedBy": "hex-exact"
+        }
+      ],
+      "verdict": "accept",
+      "acceptedCssVar": "--color-surface-default",
+      "note": ""
+    },
+    {
+      "id": "vm-text-f139520f",
+      "sourceValue": "#16202c",
+      "normalizedValue": "#16202cff",
+      "usage": "text",
+      "occurrenceCount": 3,
+      "occurrences": [
+        {
+          "file": "floor-good.css",
+          "selector": ".pt-feature-grid",
+          "prop": "color",
+          "value": "#16202c"
+        },
+        {
+          "file": "floor-good.css",
+          "selector": ".pt-feature-grid__card-title",
+          "prop": "color",
+          "value": "#16202c"
+        },
+        {
+          "file": "floor-good.css",
+          "selector": ".pt-feature-grid__heading",
+          "prop": "color",
+          "value": "#16202c"
+        }
+      ],
+      "candidates": [
+        {
+          "path": "color.neutral.5",
+          "cssVar": "--color-neutral-5",
+          "layer": "primitive",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.on.surface.default.$root",
+          "cssVar": "--color-on-surface-default",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.on.surface.muted.$root",
+          "cssVar": "--color-on-surface-muted",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.text.default.$root",
+          "cssVar": "--color-text-default",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        }
+      ],
+      "verdict": "accept",
+      "acceptedCssVar": "--color-text-default",
+      "note": ""
+    },
+    {
+      "id": "vm-text-447e4e42",
+      "sourceValue": "#5a6472",
+      "normalizedValue": "#5a6472ff",
+      "usage": "text",
+      "occurrenceCount": 1,
+      "occurrences": [
+        {
+          "file": "floor-good.css",
+          "selector": ".pt-feature-grid__card-body",
+          "prop": "color",
+          "value": "#5a6472"
+        }
+      ],
+      "candidates": [
+        {
+          "path": "color.neutral.4",
+          "cssVar": "--color-neutral-4",
+          "layer": "primitive",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.text.muted.$root",
+          "cssVar": "--color-text-muted",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        }
+      ],
+      "verdict": "accept",
+      "acceptedCssVar": "--color-text-muted",
+      "note": ""
+    },
+    {
+      "id": "vm-border-a60b1c72",
+      "sourceValue": "#dde3ea",
+      "normalizedValue": "#dde3eaff",
+      "usage": "border",
+      "occurrenceCount": 1,
+      "occurrences": [
+        {
+          "file": "floor-good.css",
+          "selector": ".pt-feature-grid__card",
+          "prop": "border",
+          "value": "#dde3ea"
+        }
+      ],
+      "candidates": [
+        {
+          "path": "color.border.default.$root",
+          "cssVar": "--color-border-default",
+          "layer": "semantic",
+          "matchedBy": "hex-exact"
+        },
+        {
+          "path": "color.neutral.3",
+          "cssVar": "--color-neutral-3",
+          "layer": "primitive",
+          "matchedBy": "hex-exact"
+        }
+      ],
+      "verdict": "accept",
+      "acceptedCssVar": "--color-border-default",
+      "note": ""
+    }
+  ],
+  "warnings": [],
+  "findings": []
+}

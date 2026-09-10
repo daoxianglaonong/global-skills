@@ -1,0 +1,29 @@
+id: cta.centered-band
+taxonomy: cta
+label_zh: "转化条·居中浅底"
+role: section
+summary: "浅灰底居中窄条：一句主张 + 单枚实心钮。"
+variant:
+  layout: centered
+  columns: 1
+  media_position: none
+  overlay: false
+  align: center
+container: { mode: contained, max_width_px: 1128 }
+density: compact
+content_max: prose-narrow
+slots:
+  - { name: heading, required: true, typical_chars: "8-16" }
+  - { name: primary_cta, required: true, typical_chars: "2-6" }
+content_count: { unit: item, min: 1, max: 1, typical: 1 }
+responsive:
+  pc:     { columns: 1, order: "heading,cta", grid: { content_width_px: 1128, columns: 1 } }
+  tablet: { columns: 1, order: "heading,cta", grid: { content_width_px: 704, columns: 1 } }
+  mobile: { columns: 1, order: "heading,cta", grid: { content_width_px: 344, columns: 1 } }
+  stack_below: never
+rhythm: { surface: muted, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [home]
+dont:
+  - "本层恒为单钮，不要补第二枚次级按钮"
+  - "不要用识别蓝铺本层底，浅灰底是唯一观测形态"
+confidence: medium

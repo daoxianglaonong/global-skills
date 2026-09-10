@@ -1,0 +1,22 @@
+[
+  {"query": "照着 https://www.notion.so 做个新页 —— 我要一个「AI 会议纪要」的产品落地页,原站没有这一页。仓库里现在什么主题资产都没有。", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "用 page-theme/huaweicloud/ 这份资产给我拼一个「云数据库 RDS」产品页,先把楼层大纲给我看,我确认了再动手拼", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "老项目 src/pages/pricing.vue 现在配色是前端自己乱配的,把主题换成那套 stripe 资产的,内容一个字都别动", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "我们后台跑在 http://localhost:5173,主题想统一到 page-theme/linear/ 那套。硬编码的色值全换成 CSS 变量引用,文案和链接别改。", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "按 page-theme/vercel/ 资产给我生成一个 FAQ 楼层就行,不要整页,页壳别带", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "附件是生产环境扒下来的 DOM 快照 snapshot.html,我起不了 dev server。想把它的主题刷成 page-theme/example-corp/ 这套,先给我一份值映射方案让我逐条拍板。", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "make me a careers page that looks like it belongs on airbnb.com. nothing has been extracted yet so do whatever prep you need first, i just want the finished page", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "这个页面(已附 landing.html)配色太杂了,按我们采好的 page-theme/harmonybp/ 资产把主题重做一遍,楼层顺序和文案保持原样", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "抽一下 stripe 的 design token", "should_trigger": false, "target": "page-theme-extract"},
+  {"query": "把 [华为云控制台](https://console.huaweicloud.com/console/) 的设计语言提取成一份资产目录,色板、字体阶、间距节奏、楼层构图都要,后面我们要拿它生成新页面", "should_trigger": false, "target": "page-theme-extract"},
+  {"query": "https://vercel.com https://vercel.com/pricing https://vercel.com/docs 这三页一起采,我要一份合并的风格资产不是三份", "should_trigger": false, "target": "page-theme-extract"},
+  {"query": "page-theme/huaweicloud/ 这份资产是三个月前采的,我怀疑里面的断点值不是真实的 @media 值,重新采一遍覆盖掉", "should_trigger": false, "target": "page-theme-extract"},
+  {"query": "先看看跟目标主题差在哪 —— 老项目 apps/portal 现在这个样子,跟 page-theme/huaweicloud/ 这份资产比,差异列给我,先别改代码", "should_trigger": false, "target": "page-theme-audit"},
+  {"query": "value-map.md 我填完了,accept 12 条 defer 3 条,读回去核一遍我填得对不对,顺手别改代码", "should_trigger": false, "target": "page-theme-audit"},
+  {"query": "product/floor-3.html 配上 page-theme/linear/ 资产,出个结论就行。生成那个 agent 写了一大段理由,别拿它的说法当依据。", "should_trigger": false, "target": "page-theme-audit"},
+  {"query": "对比设计稿和实现看还原度:设计稿 html/1.html,实现 impl/discussion.html,样式逐项核,给我一份能直接当改码依据的差异清单", "should_trigger": false, "target": "fidelity-audit"},
+  {"query": "这批 D2C 导出的定宽设计稿和我们的 svelte 实现两边 DOM 层级完全对不上,还能逐元素比样式吗?我要评分和差异清单", "should_trigger": false, "target": "fidelity-audit"},
+  {"query": "designs/ 下有 1920 / 1024 / 375 三张断点设计稿,按 PC 优先做响应式实现,栅格用 CSS Grid,别用 flex 硬凑", "should_trigger": false, "target": "responsive-design"},
+  {"query": "deltaE00 那个三档判据和 CSS 变量名派生函数放在哪个 lib 里?我想直接 import 自己算,不想跑整套流程", "should_trigger": false, "target": "page-theme-core"},
+  {"query": "帮我把 tailwind.config.js 里 theme.extend.colors 那堆写死的十六进制换成 CSS 变量,顺便把暗色模式接上", "should_trigger": false, "target": "none"}
+]

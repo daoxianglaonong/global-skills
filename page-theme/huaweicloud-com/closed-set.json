@@ -1,0 +1,1024 @@
+{
+  "schemaVersion": 1,
+  "styleSetId": "huaweicloud-com",
+  "entries": [
+    {
+      "path": "color.neutral.1",
+      "cssVar": "--color-neutral-1",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "color.neutral.2",
+      "cssVar": "--color-neutral-2",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9608,
+          0.9608,
+          0.9608
+        ],
+        "hex": "#f5f5f5"
+      }
+    },
+    {
+      "path": "color.neutral.3",
+      "cssVar": "--color-neutral-3",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9216,
+          0.9216,
+          0.9216
+        ],
+        "hex": "#ebebeb"
+      }
+    },
+    {
+      "path": "color.neutral.4",
+      "cssVar": "--color-neutral-4",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.349,
+          0.349,
+          0.349
+        ],
+        "hex": "#595959"
+      }
+    },
+    {
+      "path": "color.neutral.5",
+      "cssVar": "--color-neutral-5",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "color.red.1",
+      "cssVar": "--color-red-1",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8392,
+          0.2902,
+          0.3216
+        ],
+        "hex": "#d64a52"
+      }
+    },
+    {
+      "path": "color.red.2",
+      "cssVar": "--color-red-2",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8941,
+          0.1176,
+          0.1686
+        ],
+        "hex": "#e41e2b"
+      }
+    },
+    {
+      "path": "color.red.3",
+      "cssVar": "--color-red-3",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7804,
+          0,
+          0.0431
+        ],
+        "hex": "#c7000b"
+      }
+    },
+    {
+      "path": "color.blue.1",
+      "cssVar": "--color-blue-1",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2314,
+          0.5098,
+          0.9647
+        ],
+        "hex": "#3b82f6"
+      }
+    },
+    {
+      "path": "color.blue.2",
+      "cssVar": "--color-blue-2",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0784,
+          0.4627,
+          1
+        ],
+        "hex": "#1476ff"
+      }
+    },
+    {
+      "path": "color.primary.$root",
+      "cssVar": "--color-primary",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.5}",
+      "alias": "color.neutral.5",
+      "aliasVar": "--color-neutral-5",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "color.primary.hover",
+      "cssVar": "--color-primary-hover",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.4}",
+      "alias": "color.neutral.4",
+      "aliasVar": "--color-neutral-4",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.349,
+          0.349,
+          0.349
+        ],
+        "hex": "#595959"
+      }
+    },
+    {
+      "path": "color.identity.$root",
+      "cssVar": "--color-identity",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.red.3}",
+      "alias": "color.red.3",
+      "aliasVar": "--color-red-3",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7804,
+          0,
+          0.0431
+        ],
+        "hex": "#c7000b"
+      }
+    },
+    {
+      "path": "color.identity.hover",
+      "cssVar": "--color-identity-hover",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.red.1}",
+      "alias": "color.red.1",
+      "aliasVar": "--color-red-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8392,
+          0.2902,
+          0.3216
+        ],
+        "hex": "#d64a52"
+      }
+    },
+    {
+      "path": "color.on.primary.$root",
+      "cssVar": "--color-on-primary",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.1}",
+      "alias": "color.neutral.1",
+      "aliasVar": "--color-neutral-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "color.on.identity.$root",
+      "cssVar": "--color-on-identity",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.1}",
+      "alias": "color.neutral.1",
+      "aliasVar": "--color-neutral-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "color.on.surface.default.$root",
+      "cssVar": "--color-on-surface-default",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.5}",
+      "alias": "color.neutral.5",
+      "aliasVar": "--color-neutral-5",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "color.on.surface.muted.$root",
+      "cssVar": "--color-on-surface-muted",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.5}",
+      "alias": "color.neutral.5",
+      "aliasVar": "--color-neutral-5",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "color.text.default.$root",
+      "cssVar": "--color-text-default",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.5}",
+      "alias": "color.neutral.5",
+      "aliasVar": "--color-neutral-5",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "color.text.muted.$root",
+      "cssVar": "--color-text-muted",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.4}",
+      "alias": "color.neutral.4",
+      "aliasVar": "--color-neutral-4",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.349,
+          0.349,
+          0.349
+        ],
+        "hex": "#595959"
+      }
+    },
+    {
+      "path": "color.text.link.$root",
+      "cssVar": "--color-text-link",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.5}",
+      "alias": "color.neutral.5",
+      "aliasVar": "--color-neutral-5",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "color.surface.default.$root",
+      "cssVar": "--color-surface-default",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.1}",
+      "alias": "color.neutral.1",
+      "aliasVar": "--color-neutral-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "color.surface.muted.$root",
+      "cssVar": "--color-surface-muted",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.2}",
+      "alias": "color.neutral.2",
+      "aliasVar": "--color-neutral-2",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9608,
+          0.9608,
+          0.9608
+        ],
+        "hex": "#f5f5f5"
+      }
+    },
+    {
+      "path": "color.border.default.$root",
+      "cssVar": "--color-border-default",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.3}",
+      "alias": "color.neutral.3",
+      "aliasVar": "--color-neutral-3",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9216,
+          0.9216,
+          0.9216
+        ],
+        "hex": "#ebebeb"
+      }
+    },
+    {
+      "path": "dimension.fontSize.1",
+      "cssVar": "--dimension-fontSize-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 14,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.fontSize.2",
+      "cssVar": "--dimension-fontSize-2",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.fontSize.3",
+      "cssVar": "--dimension-fontSize-3",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 40,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.lineHeight.1",
+      "cssVar": "--dimension-lineHeight-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 21,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.lineHeight.2",
+      "cssVar": "--dimension-lineHeight-2",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.lineHeight.3",
+      "cssVar": "--dimension-lineHeight-3",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 60,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.radius.1",
+      "cssVar": "--dimension-radius-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 20,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.radius.2",
+      "cssVar": "--dimension-radius-2",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.radius.3",
+      "cssVar": "--dimension-radius-3",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.borderWidth.1",
+      "cssVar": "--dimension-borderWidth-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 1,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.1",
+      "cssVar": "--dimension-spacing-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.2",
+      "cssVar": "--dimension-spacing-2",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 12,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.3",
+      "cssVar": "--dimension-spacing-3",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.4",
+      "cssVar": "--dimension-spacing-4",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 20,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.5",
+      "cssVar": "--dimension-spacing-5",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.6",
+      "cssVar": "--dimension-spacing-6",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.7",
+      "cssVar": "--dimension-spacing-7",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 40,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.8",
+      "cssVar": "--dimension-spacing-8",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 48,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.9",
+      "cssVar": "--dimension-spacing-9",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 60,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "duration.1",
+      "cssVar": "--duration-1",
+      "type": "duration",
+      "layer": "primitive",
+      "value": {
+        "value": 200,
+        "unit": "ms"
+      }
+    },
+    {
+      "path": "cubicBezier.ease",
+      "cssVar": "--cubicBezier-ease",
+      "type": "cubicBezier",
+      "layer": "primitive",
+      "value": [
+        0.25,
+        0.1,
+        0.25,
+        1
+      ]
+    },
+    {
+      "path": "fontFamily.sans",
+      "cssVar": "--fontFamily-sans",
+      "type": "fontFamily",
+      "layer": "primitive",
+      "value": [
+        "-apple-system",
+        "HuaweiSans",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "STHeiti",
+        "Microsoft YaHei",
+        "Microsoft JhengHei",
+        "SimSun",
+        "sans-serif"
+      ]
+    },
+    {
+      "path": "fontWeight.regular",
+      "cssVar": "--fontWeight-regular",
+      "type": "fontWeight",
+      "layer": "primitive",
+      "value": 400
+    },
+    {
+      "path": "fontWeight.semibold",
+      "cssVar": "--fontWeight-semibold",
+      "type": "fontWeight",
+      "layer": "primitive",
+      "value": 600
+    },
+    {
+      "path": "typography.body",
+      "cssVar": "--typography-body",
+      "type": "typography",
+      "layer": "semantic",
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{dimension.fontSize.2}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{dimension.lineHeight.2}"
+      }
+    },
+    {
+      "path": "typography.heading",
+      "cssVar": "--typography-heading",
+      "type": "typography",
+      "layer": "semantic",
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{dimension.fontSize.3}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{dimension.lineHeight.3}"
+      }
+    },
+    {
+      "path": "typography.label",
+      "cssVar": "--typography-label",
+      "type": "typography",
+      "layer": "semantic",
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{dimension.fontSize.1}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{dimension.lineHeight.1}"
+      }
+    },
+    {
+      "path": "shape.radius.control",
+      "cssVar": "--shape-radius-control",
+      "type": "dimension",
+      "layer": "semantic",
+      "value": "{dimension.radius.3}",
+      "alias": "dimension.radius.3",
+      "aliasVar": "--dimension-radius-3",
+      "resolved": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "shape.radius.container",
+      "cssVar": "--shape-radius-container",
+      "type": "dimension",
+      "layer": "semantic",
+      "value": "{dimension.radius.2}",
+      "alias": "dimension.radius.2",
+      "aliasVar": "--dimension-radius-2",
+      "resolved": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "motion.duration.control",
+      "cssVar": "--motion-duration-control",
+      "type": "duration",
+      "layer": "semantic",
+      "value": "{duration.1}",
+      "alias": "duration.1",
+      "aliasVar": "--duration-1",
+      "resolved": {
+        "value": 200,
+        "unit": "ms"
+      }
+    },
+    {
+      "path": "motion.easing.control",
+      "cssVar": "--motion-easing-control",
+      "type": "cubicBezier",
+      "layer": "semantic",
+      "value": "{cubicBezier.ease}",
+      "alias": "cubicBezier.ease",
+      "aliasVar": "--cubicBezier-ease",
+      "resolved": [
+        0.25,
+        0.1,
+        0.25,
+        1
+      ]
+    },
+    {
+      "path": "component.button-primary.backgroundColor",
+      "cssVar": "--component-button-primary-backgroundColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.primary.$root}",
+      "alias": "color.primary.$root",
+      "aliasVar": "--color-primary",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "component.button-primary.textColor",
+      "cssVar": "--component-button-primary-textColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.on.primary.$root}",
+      "alias": "color.on.primary.$root",
+      "aliasVar": "--color-on-primary",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "component.button-primary.rounded",
+      "cssVar": "--component-button-primary-rounded",
+      "type": "dimension",
+      "layer": "component",
+      "value": "{shape.radius.control}",
+      "alias": "shape.radius.control",
+      "aliasVar": "--shape-radius-control",
+      "resolved": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "component.button-primary-hover.backgroundColor",
+      "cssVar": "--component-button-primary-hover-backgroundColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.primary.hover}",
+      "alias": "color.primary.hover",
+      "aliasVar": "--color-primary-hover",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.349,
+          0.349,
+          0.349
+        ],
+        "hex": "#595959"
+      }
+    },
+    {
+      "path": "component.button-primary-hover.textColor",
+      "cssVar": "--component-button-primary-hover-textColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.on.primary.$root}",
+      "alias": "color.on.primary.$root",
+      "aliasVar": "--color-on-primary",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "component.button-outline.backgroundColor",
+      "cssVar": "--component-button-outline-backgroundColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.surface.default.$root}",
+      "alias": "color.surface.default.$root",
+      "aliasVar": "--color-surface-default",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "component.button-outline.textColor",
+      "cssVar": "--component-button-outline-textColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.text.default.$root}",
+      "alias": "color.text.default.$root",
+      "aliasVar": "--color-text-default",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "component.button-outline.borderColor",
+      "cssVar": "--component-button-outline-borderColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.text.default.$root}",
+      "alias": "color.text.default.$root",
+      "aliasVar": "--color-text-default",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.098,
+          0.098
+        ],
+        "hex": "#191919"
+      }
+    },
+    {
+      "path": "component.button-outline.rounded",
+      "cssVar": "--component-button-outline-rounded",
+      "type": "dimension",
+      "layer": "component",
+      "value": "{shape.radius.control}",
+      "alias": "shape.radius.control",
+      "aliasVar": "--shape-radius-control",
+      "resolved": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "component.button-outline.border",
+      "cssVar": "--component-button-outline-border",
+      "type": "border",
+      "layer": "component",
+      "value": {
+        "color": "{color.text.default.$root}",
+        "width": "{dimension.borderWidth.1}",
+        "style": "solid"
+      }
+    },
+    {
+      "path": "component.input-outline.backgroundColor",
+      "cssVar": "--component-input-outline-backgroundColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.surface.default.$root}",
+      "alias": "color.surface.default.$root",
+      "aliasVar": "--color-surface-default",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "component.input-outline.textColor",
+      "cssVar": "--component-input-outline-textColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.text.muted.$root}",
+      "alias": "color.text.muted.$root",
+      "aliasVar": "--color-text-muted",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.349,
+          0.349,
+          0.349
+        ],
+        "hex": "#595959"
+      }
+    },
+    {
+      "path": "component.input-outline.borderColor",
+      "cssVar": "--component-input-outline-borderColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.border.default.$root}",
+      "alias": "color.border.default.$root",
+      "aliasVar": "--color-border-default",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9216,
+          0.9216,
+          0.9216
+        ],
+        "hex": "#ebebeb"
+      }
+    },
+    {
+      "path": "component.input-outline.rounded",
+      "cssVar": "--component-input-outline-rounded",
+      "type": "dimension",
+      "layer": "component",
+      "value": "{dimension.radius.1}",
+      "alias": "dimension.radius.1",
+      "aliasVar": "--dimension-radius-1",
+      "resolved": {
+        "value": 20,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "breakpoints.768",
+      "cssVar": "--breakpoints-768",
+      "type": "dimension",
+      "layer": "unresolvable",
+      "value": {
+        "value": 768,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "breakpoints.979",
+      "cssVar": "--breakpoints-979",
+      "type": "dimension",
+      "layer": "unresolvable",
+      "value": {
+        "value": 979,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "breakpoints.1024",
+      "cssVar": "--breakpoints-1024",
+      "type": "dimension",
+      "layer": "unresolvable",
+      "value": {
+        "value": 1024,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "breakpoints.1280",
+      "cssVar": "--breakpoints-1280",
+      "type": "dimension",
+      "layer": "unresolvable",
+      "value": {
+        "value": 1280,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "breakpoints.1600",
+      "cssVar": "--breakpoints-1600",
+      "type": "dimension",
+      "layer": "unresolvable",
+      "value": {
+        "value": 1600,
+        "unit": "px"
+      }
+    }
+  ]
+}

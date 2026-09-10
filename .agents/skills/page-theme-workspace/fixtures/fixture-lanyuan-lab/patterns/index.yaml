@@ -1,0 +1,34 @@
+schema_version: 1
+style_set_id: fixture-lanyuan-lab
+taxonomy_layers: [L1, L2]
+catalog:
+  chrome: chrome.yaml
+  sections: [hero.centered-pitch, feature.grid-3-cards, cta.centered-band]
+rhythm:
+  scheme: alternate-muted
+  skip_roles: [chrome, overlay]
+  skip_taxonomies: [hero, footer]
+  surfaces: [default, muted]
+  notes: "交替池只放 default 与 muted，指向 tokens 的 {color.surface.default.$root} 与 {color.surface.muted.$root}。本站无识别色做楼层底，identity 不入池。"
+chrome:
+  navbar: navbar.utility-left
+  footer: footer.compact-three
+page_skeletons:
+  - id: sk-landing
+    label_zh: "单页落地型"
+    observed_on: [home]
+    steps:
+      - { taxonomy: hero, required: true, repeat: { min: 1, max: 1 } }
+      - { taxonomy: feature, required: true, repeat: { min: 1, max: 2 } }
+      - { taxonomy: cta, required: false, repeat: { min: 0, max: 1 } }
+    confidence: low
+pages:
+  home:
+    url: https://www.lanyuan-lab.invalid/
+    title_zh: 首页
+    sequence:
+      - { id: home-navbar, pattern: navbar.utility-left, taxonomy: navbar, label_zh: 顶栏 }
+      - { id: home-hero, pattern: hero.centered-pitch, taxonomy: hero, label_zh: 首屏 }
+      - { id: home-feature, pattern: feature.grid-3-cards, taxonomy: feature, surface: default, label_zh: 三列能力 }
+      - { id: home-cta, pattern: cta.centered-band, taxonomy: cta, surface: muted, label_zh: 转化条 }
+      - { id: home-footer, pattern: footer.compact-three, taxonomy: footer, label_zh: 页脚 }

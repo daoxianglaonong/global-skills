@@ -1,0 +1,31 @@
+id: feature.grid-3-cards
+taxonomy: feature
+label_zh: "能力·三列描边卡"
+role: section
+summary: "白底三列等宽描边卡：顶部线性图标、卡标题、两行说明；卡内无按钮。"
+variant:
+  layout: grid
+  columns: 3
+  media_position: top
+  overlay: false
+  card: outlined
+container: { mode: contained, max_width_px: 1128 }
+density: default
+content_max: full
+slots:
+  - { name: heading, required: true, typical_chars: "6-14" }
+  - { name: item_icon, required: true, repeatable: true }
+  - { name: item_title, required: true, repeatable: true, typical_chars: "4-10" }
+  - { name: item_body, required: true, repeatable: true, typical_chars: "20-40" }
+content_count: { unit: item, min: 3, max: 6, typical: 3, observed: [3] }
+responsive:
+  pc:     { columns: 3, order: "heading,grid", grid: { content_width_px: 1128, columns: 3, gutter_px: 24, item_widths_px: [360, 360, 360] } }
+  tablet: { columns: 2, order: "heading,grid", grid: { content_width_px: 704, columns: 2, gutter_px: 16, item_widths_px: [344, 344] } }
+  mobile: { columns: 1, order: "heading,grid", grid: { content_width_px: 344, columns: 1 } }
+  stack_below: mobile
+rhythm: { surface: default, alternate: prefer-contrast-with-prev, full_bleed_media: false, merge_spacing_with_prev: false }
+observed_on: [home]
+dont:
+  - "不要把三张能力卡换成客户 logo 灰度条"
+  - "卡片用描边不用投影，本站无 elevation token"
+confidence: medium

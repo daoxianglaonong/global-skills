@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "styleSetId": "fixture-lanyuan-lab",
+  "entries": [
+    {
+      "path": "color.neutral.1",
+      "cssVar": "--color-neutral-1",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "color.neutral.2",
+      "cssVar": "--color-neutral-2",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9569,
+          0.9647,
+          0.9725
+        ],
+        "hex": "#f4f6f8"
+      }
+    },
+    {
+      "path": "color.neutral.3",
+      "cssVar": "--color-neutral-3",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8667,
+          0.8902,
+          0.9176
+        ],
+        "hex": "#dde3ea"
+      }
+    },
+    {
+      "path": "color.neutral.4",
+      "cssVar": "--color-neutral-4",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3529,
+          0.3922,
+          0.4471
+        ],
+        "hex": "#5a6472"
+      }
+    },
+    {
+      "path": "color.neutral.5",
+      "cssVar": "--color-neutral-5",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0863,
+          0.1255,
+          0.1725
+        ],
+        "hex": "#16202c"
+      }
+    },
+    {
+      "path": "color.teal.1",
+      "cssVar": "--color-teal-1",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0784,
+          0.6275,
+          0.5608
+        ],
+        "hex": "#14a08f"
+      }
+    },
+    {
+      "path": "color.teal.2",
+      "cssVar": "--color-teal-2",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0588,
+          0.4784,
+          0.4235
+        ],
+        "hex": "#0f7a6c"
+      }
+    },
+    {
+      "path": "color.indigo.1",
+      "cssVar": "--color-indigo-1",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.1686,
+          0.2275,
+          0.5608
+        ],
+        "hex": "#2b3a8f"
+      }
+    },
+    {
+      "path": "color.orange.1",
+      "cssVar": "--color-orange-1",
+      "type": "color",
+      "layer": "primitive",
+      "value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.851,
+          0.4667,
+          0.0235
+        ],
+        "hex": "#d97706"
+      }
+    },
+    {
+      "path": "color.primary.$root",
+      "cssVar": "--color-primary",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.teal.2}",
+      "alias": "color.teal.2",
+      "aliasVar": "--color-teal-2",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0588,
+          0.4784,
+          0.4235
+        ],
+        "hex": "#0f7a6c"
+      }
+    },
+    {
+      "path": "color.primary.hover",
+      "cssVar": "--color-primary-hover",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.teal.1}",
+      "alias": "color.teal.1",
+      "aliasVar": "--color-teal-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0784,
+          0.6275,
+          0.5608
+        ],
+        "hex": "#14a08f"
+      }
+    },
+    {
+      "path": "color.identity.$root",
+      "cssVar": "--color-identity",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.indigo.1}",
+      "alias": "color.indigo.1",
+      "aliasVar": "--color-indigo-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.1686,
+          0.2275,
+          0.5608
+        ],
+        "hex": "#2b3a8f"
+      }
+    },
+    {
+      "path": "color.accent.$root",
+      "cssVar": "--color-accent",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.orange.1}",
+      "alias": "color.orange.1",
+      "aliasVar": "--color-orange-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.851,
+          0.4667,
+          0.0235
+        ],
+        "hex": "#d97706"
+      }
+    },
+    {
+      "path": "color.on.primary.$root",
+      "cssVar": "--color-on-primary",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.1}",
+      "alias": "color.neutral.1",
+      "aliasVar": "--color-neutral-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "color.on.surface.default.$root",
+      "cssVar": "--color-on-surface-default",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.5}",
+      "alias": "color.neutral.5",
+      "aliasVar": "--color-neutral-5",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0863,
+          0.1255,
+          0.1725
+        ],
+        "hex": "#16202c"
+      }
+    },
+    {
+      "path": "color.on.surface.muted.$root",
+      "cssVar": "--color-on-surface-muted",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.5}",
+      "alias": "color.neutral.5",
+      "aliasVar": "--color-neutral-5",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0863,
+          0.1255,
+          0.1725
+        ],
+        "hex": "#16202c"
+      }
+    },
+    {
+      "path": "color.text.default.$root",
+      "cssVar": "--color-text-default",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.5}",
+      "alias": "color.neutral.5",
+      "aliasVar": "--color-neutral-5",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0863,
+          0.1255,
+          0.1725
+        ],
+        "hex": "#16202c"
+      }
+    },
+    {
+      "path": "color.text.muted.$root",
+      "cssVar": "--color-text-muted",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.4}",
+      "alias": "color.neutral.4",
+      "aliasVar": "--color-neutral-4",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3529,
+          0.3922,
+          0.4471
+        ],
+        "hex": "#5a6472"
+      }
+    },
+    {
+      "path": "color.text.link.$root",
+      "cssVar": "--color-text-link",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.teal.2}",
+      "alias": "color.teal.2",
+      "aliasVar": "--color-teal-2",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0588,
+          0.4784,
+          0.4235
+        ],
+        "hex": "#0f7a6c"
+      }
+    },
+    {
+      "path": "color.surface.default.$root",
+      "cssVar": "--color-surface-default",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.1}",
+      "alias": "color.neutral.1",
+      "aliasVar": "--color-neutral-1",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "color.surface.muted.$root",
+      "cssVar": "--color-surface-muted",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.2}",
+      "alias": "color.neutral.2",
+      "aliasVar": "--color-neutral-2",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9569,
+          0.9647,
+          0.9725
+        ],
+        "hex": "#f4f6f8"
+      }
+    },
+    {
+      "path": "color.border.default.$root",
+      "cssVar": "--color-border-default",
+      "type": "color",
+      "layer": "semantic",
+      "value": "{color.neutral.3}",
+      "alias": "color.neutral.3",
+      "aliasVar": "--color-neutral-3",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8667,
+          0.8902,
+          0.9176
+        ],
+        "hex": "#dde3ea"
+      }
+    },
+    {
+      "path": "dimension.fontSize.1",
+      "cssVar": "--dimension-fontSize-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.fontSize.2",
+      "cssVar": "--dimension-fontSize-2",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.lineHeight.1",
+      "cssVar": "--dimension-lineHeight-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 26,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.lineHeight.2",
+      "cssVar": "--dimension-lineHeight-2",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 42,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.radius.1",
+      "cssVar": "--dimension-radius-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 6,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.radius.2",
+      "cssVar": "--dimension-radius-2",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 12,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.1",
+      "cssVar": "--dimension-spacing-1",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "dimension.spacing.2",
+      "cssVar": "--dimension-spacing-2",
+      "type": "dimension",
+      "layer": "primitive",
+      "value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "fontFamily.sans",
+      "cssVar": "--fontFamily-sans",
+      "type": "fontFamily",
+      "layer": "primitive",
+      "value": [
+        "system-ui",
+        "PingFang SC",
+        "Microsoft YaHei",
+        "sans-serif"
+      ]
+    },
+    {
+      "path": "fontWeight.regular",
+      "cssVar": "--fontWeight-regular",
+      "type": "fontWeight",
+      "layer": "primitive",
+      "value": 400
+    },
+    {
+      "path": "fontWeight.semibold",
+      "cssVar": "--fontWeight-semibold",
+      "type": "fontWeight",
+      "layer": "primitive",
+      "value": 600
+    },
+    {
+      "path": "typography.body",
+      "cssVar": "--typography-body",
+      "type": "typography",
+      "layer": "semantic",
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{dimension.fontSize.1}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{dimension.lineHeight.1}"
+      }
+    },
+    {
+      "path": "typography.heading",
+      "cssVar": "--typography-heading",
+      "type": "typography",
+      "layer": "semantic",
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{dimension.fontSize.2}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{dimension.lineHeight.2}"
+      }
+    },
+    {
+      "path": "shape.radius.control",
+      "cssVar": "--shape-radius-control",
+      "type": "dimension",
+      "layer": "semantic",
+      "value": "{dimension.radius.1}",
+      "alias": "dimension.radius.1",
+      "aliasVar": "--dimension-radius-1",
+      "resolved": {
+        "value": 6,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "shape.radius.container",
+      "cssVar": "--shape-radius-container",
+      "type": "dimension",
+      "layer": "semantic",
+      "value": "{dimension.radius.2}",
+      "alias": "dimension.radius.2",
+      "aliasVar": "--dimension-radius-2",
+      "resolved": {
+        "value": 12,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "component.button-primary.backgroundColor",
+      "cssVar": "--component-button-primary-backgroundColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.primary.$root}",
+      "alias": "color.primary.$root",
+      "aliasVar": "--color-primary",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0588,
+          0.4784,
+          0.4235
+        ],
+        "hex": "#0f7a6c"
+      }
+    },
+    {
+      "path": "component.button-primary.textColor",
+      "cssVar": "--component-button-primary-textColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.on.primary.$root}",
+      "alias": "color.on.primary.$root",
+      "aliasVar": "--color-on-primary",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    {
+      "path": "component.button-primary.rounded",
+      "cssVar": "--component-button-primary-rounded",
+      "type": "dimension",
+      "layer": "component",
+      "value": "{shape.radius.control}",
+      "alias": "shape.radius.control",
+      "aliasVar": "--shape-radius-control",
+      "resolved": {
+        "value": 6,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "component.button-primary-hover.backgroundColor",
+      "cssVar": "--component-button-primary-hover-backgroundColor",
+      "type": "color",
+      "layer": "component",
+      "value": "{color.primary.hover}",
+      "alias": "color.primary.hover",
+      "aliasVar": "--color-primary-hover",
+      "resolved": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0784,
+          0.6275,
+          0.5608
+        ],
+        "hex": "#14a08f"
+      }
+    },
+    {
+      "path": "breakpoints.768",
+      "cssVar": "--breakpoints-768",
+      "type": "dimension",
+      "layer": "unresolvable",
+      "value": {
+        "value": 768,
+        "unit": "px"
+      }
+    },
+    {
+      "path": "breakpoints.1024",
+      "cssVar": "--breakpoints-1024",
+      "type": "dimension",
+      "layer": "unresolvable",
+      "value": {
+        "value": 1024,
+        "unit": "px"
+      }
+    }
+  ]
+}

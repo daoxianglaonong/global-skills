@@ -1,0 +1,7 @@
+*
+!*/
+!.gitignore
+!**/copy-stats.json
+!**/custom-properties.json
+!**/first-party-variables.json
+!**/media-queries.json

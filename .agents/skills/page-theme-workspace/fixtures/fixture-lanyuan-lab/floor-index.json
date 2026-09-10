@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "styleSetId": "fixture-lanyuan-lab",
+  "rhythm": {
+    "scheme": "alternate-muted",
+    "surfaces": [
+      "default",
+      "muted"
+    ],
+    "skipRoles": [
+      "chrome",
+      "overlay"
+    ],
+    "skipTaxonomies": [
+      "hero",
+      "footer"
+    ]
+  },
+  "floors": [
+    {
+      "id": "cta.centered-band",
+      "source": "pattern",
+      "file": "patterns/cta.centered-band.yaml",
+      "labelZh": "转化条·居中浅底",
+      "taxonomy": "cta",
+      "role": "section",
+      "summary": "浅灰底居中窄条：一句主张 + 单枚实心钮。",
+      "variant": {
+        "layout": "centered",
+        "columns": 1,
+        "mediaPosition": "none",
+        "overlay": false,
+        "align": "center"
+      },
+      "container": {
+        "mode": "contained",
+        "maxWidthPx": 1128
+      },
+      "density": "compact",
+      "contentMax": "prose-narrow",
+      "slots": [
+        {
+          "name": "heading",
+          "required": true,
+          "typicalChars": "8-16"
+        },
+        {
+          "name": "primary_cta",
+          "required": true,
+          "typicalChars": "2-6"
+        }
+      ],
+      "contentCount": {
+        "unit": "item",
+        "min": 1,
+        "max": 1,
+        "typical": 1
+      },
+      "paint": {
+        "ownSurface": "muted",
+        "skippedByRole": false,
+        "skippedByTaxonomy": false,
+        "ownSurfaceIsHardSkip": false,
+        "hitsSkip": false,
+        "participatesInCount": true
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "feature.grid-3-cards",
+      "source": "pattern",
+      "file": "patterns/feature.grid-3-cards.yaml",
+      "labelZh": "能力·三列描边卡",
+      "taxonomy": "feature",
+      "role": "section",
+      "summary": "白底三列等宽描边卡：顶部线性图标、卡标题、两行说明；卡内无按钮。",
+      "variant": {
+        "layout": "grid",
+        "columns": 3,
+        "mediaPosition": "top",
+        "overlay": false,
+        "card": "outlined"
+      },
+      "container": {
+        "mode": "contained",
+        "maxWidthPx": 1128
+      },
+      "density": "default",
+      "contentMax": "full",
+      "slots": [
+        {
+          "name": "heading",
+          "required": true,
+          "typicalChars": "6-14"
+        },
+        {
+          "name": "item_icon",
+          "required": true,
+          "repeatable": true
+        },
+        {
+          "name": "item_title",
+          "required": true,
+          "repeatable": true,
+          "typicalChars": "4-10"
+        },
+        {
+          "name": "item_body",
+          "required": true,
+          "repeatable": true,
+          "typicalChars": "20-40"
+        }
+      ],
+      "contentCount": {
+        "unit": "item",
+        "min": 3,
+        "max": 6,
+        "typical": 3
+      },
+      "paint": {
+        "ownSurface": "default",
+        "skippedByRole": false,
+        "skippedByTaxonomy": false,
+        "ownSurfaceIsHardSkip": false,
+        "hitsSkip": false,
+        "participatesInCount": true
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "footer.compact-three",
+      "source": "chrome",
+      "file": "patterns/chrome.yaml",
+      "labelZh": "页脚·三列紧凑",
+      "taxonomy": "footer",
+      "role": "section",
+      "summary": "白底三列链接：产品、文档、联系；底行一条备案文本，上方一条描边分割。",
+      "variant": {
+        "layout": "grid",
+        "columns": 3,
+        "mediaPosition": "none",
+        "overlay": false
+      },
+      "container": {
+        "mode": "contained",
+        "maxWidthPx": 1128
+      },
+      "density": "compact",
+      "contentMax": "full",
+      "slots": [
+        {
+          "name": "nav_item",
+          "required": true,
+          "repeatable": true,
+          "typicalChars": "2-6"
+        },
+        {
+          "name": "legal",
+          "required": true,
+          "typicalChars": "10-24"
+        },
+        {
+          "name": "beian",
+          "required": false,
+          "typicalChars": "12-20"
+        }
+      ],
+      "contentCount": {
+        "unit": "item",
+        "min": 3,
+        "max": 3,
+        "typical": 3
+      },
+      "paint": {
+        "ownSurface": "default",
+        "skippedByRole": false,
+        "skippedByTaxonomy": true,
+        "ownSurfaceIsHardSkip": false,
+        "hitsSkip": true,
+        "participatesInCount": false
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "hero.centered-pitch",
+      "source": "pattern",
+      "file": "patterns/hero.centered-pitch.yaml",
+      "labelZh": "首屏·居中主张",
+      "taxonomy": "hero",
+      "role": "section",
+      "summary": "白底居中：主标、副文、一实一线双钮；无媒体、无背景图。",
+      "variant": {
+        "layout": "centered",
+        "columns": 1,
+        "mediaPosition": "none",
+        "overlay": false,
+        "align": "center"
+      },
+      "container": {
+        "mode": "contained",
+        "maxWidthPx": 1128
+      },
+      "density": "spacious",
+      "contentMax": "prose",
+      "slots": [
+        {
+          "name": "heading",
+          "required": true,
+          "typicalChars": "10-18"
+        },
+        {
+          "name": "subcopy",
+          "required": true,
+          "typicalChars": "18-32"
+        },
+        {
+          "name": "primary_cta",
+          "required": true,
+          "typicalChars": "2-6"
+        },
+        {
+          "name": "secondary_cta",
+          "required": false,
+          "typicalChars": "2-6"
+        }
+      ],
+      "contentCount": {
+        "unit": "item",
+        "min": 1,
+        "max": 1,
+        "typical": 1
+      },
+      "paint": {
+        "ownSurface": "default",
+        "skippedByRole": false,
+        "skippedByTaxonomy": true,
+        "ownSurfaceIsHardSkip": false,
+        "hitsSkip": true,
+        "participatesInCount": false
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "navbar.utility-left",
+      "source": "chrome",
+      "file": "patterns/chrome.yaml",
+      "labelZh": "顶栏·左标右钮",
+      "taxonomy": "navbar",
+      "role": "chrome",
+      "summary": "白底单层：左 logo 与四项导航，右侧一枚行动色实心钮；底边一条描边分割。",
+      "variant": {
+        "layout": "split",
+        "columns": 2,
+        "mediaPosition": "none",
+        "overlay": false,
+        "align": "justified"
+      },
+      "container": {
+        "mode": "contained",
+        "maxWidthPx": 1128
+      },
+      "density": "compact",
+      "contentMax": "full",
+      "slots": [
+        {
+          "name": "logo",
+          "required": true
+        },
+        {
+          "name": "nav_item",
+          "required": true,
+          "repeatable": true,
+          "typicalChars": "2-4"
+        },
+        {
+          "name": "primary_cta",
+          "required": true,
+          "typicalChars": "2-4"
+        }
+      ],
+      "contentCount": {
+        "unit": "item",
+        "min": 4,
+        "max": 4,
+        "typical": 4
+      },
+      "paint": {
+        "ownSurface": "default",
+        "skippedByRole": true,
+        "skippedByTaxonomy": false,
+        "ownSurfaceIsHardSkip": false,
+        "hitsSkip": true,
+        "participatesInCount": false
+      },
+      "confidence": "medium"
+    }
+  ],
+  "skeletons": [
+    {
+      "id": "sk-landing",
+      "labelZh": "单页落地型",
+      "steps": [
+        {
+          "taxonomy": "hero",
+          "required": true,
+          "repeat": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "taxonomy": "feature",
+          "required": true,
+          "repeat": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        {
+          "taxonomy": "cta",
+          "required": false,
+          "repeat": {
+            "min": 0,
+            "max": 1
+          }
+        }
+      ],
+      "confidence": "low"
+    }
+  ]
+}

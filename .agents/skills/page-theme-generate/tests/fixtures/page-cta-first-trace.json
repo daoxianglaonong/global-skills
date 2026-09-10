@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "styleSetId": "fixture-lanyuan-lab",
+  "targetVariant": "",
+  "artifact": { "kind": "floor", "html": "page-cta-first.html", "css": ["page-cta-first.css"] },
+  "sequence": {
+    "source": "skeleton",
+    "page": null,
+    "skeleton": "sk-landing",
+    "steps": [
+      { "id": "s1", "pattern": "cta.centered-band" },
+      { "id": "s2", "pattern": "feature.grid-3-cards" }
+    ],
+    "approvedBy": "user",
+    "approvedSteps": [
+      { "id": "s1", "pattern": "cta.centered-band" },
+      { "id": "s2", "pattern": "feature.grid-3-cards" }
+    ]
+  },
+  "paint": {
+    "rhythm": {
+      "scheme": "alternate-muted",
+      "surfaces": ["default", "muted"],
+      "skipRoles": ["chrome", "overlay"],
+      "skipTaxonomies": ["hero", "footer"]
+    },
+    "steps": [
+      { "pattern": "cta.centered-band", "ownSurface": "muted", "skippedBy": null },
+      { "pattern": "feature.grid-3-cards", "ownSurface": "default", "skippedBy": null }
+    ]
+  },
+  "floors": [
+    {
+      "id": "cta.centered-band",
+      "pattern": "patterns/cta.centered-band.yaml",
+      "skeleton": "sk-landing",
+      "fields": [
+        { "field": "rhythm.surface", "value": "muted", "confidence": "medium", "imageConfirmed": false, "note": "ownSurface 是资产记录，不是本次序列的应涂色" }
+      ]
+    }
+  ]
+}
