@@ -1,0 +1,9 @@
+.acme-button { font: inherit; font-size: var(--type-body); border: 1px solid transparent; border-radius: var(--acme-radius-control); padding: var(--acme-space-sm) var(--acme-space-md); cursor: pointer; }
+.acme-button--primary { background: var(--acme-button-primary-bg); color: var(--acme-button-primary-text); }
+.acme-button--secondary { background: var(--acme-surface); color: var(--acme-text); border-color: var(--acme-button-secondary-border); }
+.acme-button:disabled, .acme-button.is-disabled { opacity: .4; cursor: not-allowed; }
+
+.acme-input { font: inherit; font-size: var(--type-body); color: var(--acme-text); background: var(--acme-input-bg); border: 1px solid var(--acme-input-border); border-radius: var(--acme-radius-control); padding: var(--acme-space-sm) var(--acme-space-md); }
+.acme-input::placeholder { color: var(--acme-text-muted); }
+.acme-input:focus, .acme-input.is-focus { outline: none; border-color: var(--acme-input-border-focus); }
+.acme-input:disabled, .acme-input.is-disabled { background: var(--acme-surface-alt); cursor: not-allowed; }

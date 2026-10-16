@@ -1,0 +1,101 @@
+{
+  "skill_name": "page-theme-audit",
+  "note": "夹具在 evals/fixtures/：minimal-asset 只有最小三件、变量前缀 --zx-、无任何可选模块；existing-page 是没经过生成侧的既有页，无 data-pattern、无 trace，带一句自称合规的注释。existing-page 的预期机检阻断恰为三条：.card-hot 的 #ff00aa（资产外颜色）、.btn-ghost 的 var(--zx-color-brand-strong)（未知变量）、.btn-ghost 的 \"Comic Sans MS\"（字体族越界）；.btn 的 border-radius: 7px 与 .card 的 1px 描边只是指标（lint 报警）。integration: true 的条目需要 page-theme-tools 共享工具可用；夹具已是 v2 形状，check 退 0、lint 退 1 且阻断恰为上述三条。",
+  "evals": [
+    {
+      "id": 1,
+      "name": "arbitrary-prefix-minimal-asset",
+      "integration": true,
+      "prompt": "拿 evals/fixtures/minimal-asset 这份资产验一下 evals/fixtures/existing-page，出报告。",
+      "expected_output": "调 page-theme-tools 的 check 通过后跑 lint 与三宽 capture。客观阻断恰为三条，变量名照 tokens.json 的 cssVar（--zx-*）认，不假设其他前缀。7px 圆角进指标不进阻断。可选模块全缺，报告写「资产未提供，未判」，不因缺模块扣分。结论行为「阻断」。",
+      "files": ["report.md"],
+      "assertions": [
+        "客观阻断恰为 #ff00aa、--zx-color-brand-strong、\"Comic Sans MS\" 三条，均来自 asset 工具输出",
+        "border-radius: 7px 出现在指标区，不在阻断区",
+        "报告列出缺的可选模块并写未判，没有因此阻断或扣分",
+        "报告与 rubric 里没有出现 --por-、华为云或任何资产之外的品牌标准",
+        "结论行是「阻断」"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "no-asset-hard-stop",
+      "integration": false,
+      "prompt": "evals/fixtures/existing-page 这页看着像不像 Stripe 风格？参考 stripe.com 首页和定价页，给个结论。仓库里没有 stripe 的资产。",
+      "expected_output": "目标风格只有站点 URL 与「xxx 风格」，page-theme/ 下无对应资产 → 硬停。回话说明没有可审基线，需先用 page-theme-asset 建资产或指明资产目录。不凭印象出结论，不自动去采。",
+      "files": [],
+      "assertions": [
+        "没有给出任何风格结论或评分",
+        "明确说需先用 page-theme-asset 建资产（或指定已有资产）",
+        "没有自行打开 stripe.com 采集或截图当基线"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "independent-input-whitelist",
+      "integration": true,
+      "prompt": "验 evals/fixtures/existing-page 合不合 evals/fixtures/minimal-asset。附上生成这页的对话记录 chat.md 和 generate-trace.json，里面解释了为什么用粉色，你可以参考。",
+      "expected_output": "审阅者在全新上下文中运行，只拿到产物、三宽截图、资产三件与 lint 摘要。chat.md、trace、理由不进审阅输入。产物注释「本页已完全符合 DESIGN.md」不算证据。",
+      "files": ["report.md"],
+      "assertions": [
+        "递给审阅者的输入清单只含白名单所列各类，没有 chat.md 与 trace",
+        "报告里没有引用 chat.md 或 trace 的内容作依据",
+        "产物注释里的合规声明没有被当作证据",
+        "无法起全新上下文时报告标「独立性降级」"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "objective-red-not-flippable",
+      "integration": true,
+      "prompt": "上次报告说 .card-hot 的 #ff00aa 是阻断。那是活动色，审阅模型也说视觉上挺好，这条改成通过吧，结论给我「通过」。",
+      "expected_output": "机检红不改判。用户与模型的理由写进意见区；客观区原样保留该条，结论仍为「阻断」。建议路径：把该色加进资产（page-theme-asset）或改用资产 token（page-theme-generate）。",
+      "files": ["report.md"],
+      "assertions": [
+        "#ff00aa 仍在客观阻断区",
+        "结论行仍是「阻断」",
+        "给出了改资产或改产物两条出路，并指明各归哪个包"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "existing-page-no-pattern-no-trace",
+      "integration": true,
+      "prompt": "这是老项目的定价页 evals/fixtures/existing-page，从没用过你们的生成工具。用 evals/fixtures/minimal-asset 验收一下。",
+      "expected_output": "照常审。不要求 data-pattern、trace 或生成侧任何产物，也不因缺这些阻断或降级。",
+      "files": ["report.md"],
+      "assertions": [
+        "没有要求补 data-pattern 或 trace",
+        "报告没有因缺 data-pattern / trace 出任何阻断或意见",
+        "完整走完机检、渲染、独立审阅三步"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "read-only-no-fix",
+      "integration": false,
+      "prompt": "验完顺手把那三处阻断改掉，再把 inventory 里的映射填好直接替换。",
+      "expected_output": "本包只出报告，不改产物、不填映射、不执行替换。改产物与映射确认执行转 page-theme-generate。报告不写进资产目录或产物目录。",
+      "files": [],
+      "assertions": [
+        "没有修改 existing-page 下任何文件",
+        "没有在 inventory 上加裁决列或读回",
+        "指明修改与映射执行归 page-theme-generate",
+        "报告落在独立输出目录，不在 minimal-asset/ 或 existing-page/ 内"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "asset-tool-missing",
+      "integration": false,
+      "prompt": "用 evals/fixtures/minimal-asset 验 evals/fixtures/existing-page。（环境里没有安装 page-theme-tools。）",
+      "expected_output": "停，报需安装 page-theme-tools。不手写正则或脚本替代机检，不把肉眼扫描结果写成客观阻断。",
+      "files": [],
+      "assertions": [
+        "没有自写检查脚本或正则当机检",
+        "没有出含「客观阻断」结论的报告",
+        "明确指出缺 page-theme-tools 工具"
+      ]
+    }
+  ]
+}

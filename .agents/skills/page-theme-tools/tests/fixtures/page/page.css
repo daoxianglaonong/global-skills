@@ -1,0 +1,11 @@
+:root {
+  --site-brand: #1a5fd6;
+  --site-gap: 16px;
+  --site-action: var(--site-brand);
+}
+body { margin: 0; font-family: "Inter", sans-serif; color: #1f2329; }
+.block { position: absolute; left: 0; top: 100px; width: 200px; height: 200px; background: var(--site-brand); }
+.cta { margin-top: 320px; padding: 8px 16px; border-radius: 4px; background: #1a5fd6; color: #ffffff; }
+@media (max-width: 768px) {
+  .cta { padding: 6px 12px; }
+}

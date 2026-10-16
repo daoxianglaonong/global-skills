@@ -1,0 +1,11 @@
+/* Generated from tokens.json by page-theme-asset. Edit tokens.json, then run `theme.mjs css`. */
+:root {
+  --kx-text: #1b1f3b;
+  --kx-surface: #ffffff;
+  --kx-accent: #2563eb;
+  --kx-on-accent: #ffffff;
+  --kx-font: "Inter", "PingFang SC", sans-serif;
+  --kx-space-md: 16px;
+  --kx-space-lg: 32px;
+  --kx-radius: 8px;
+}

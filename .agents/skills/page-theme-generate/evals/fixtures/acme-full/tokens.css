@@ -1,0 +1,27 @@
+/* Generated from tokens.json by page-theme-asset. Edit tokens.json, then run `theme.mjs css`. */
+:root {
+  --acme-text: #222831;
+  --acme-text-muted: #5b6270;
+  --acme-surface: #ffffff;
+  --acme-surface-alt: #f4f6f8;
+  --acme-line: #e3e6ea;
+  --acme-accent: #0b63ce;
+  --acme-on-accent: #ffffff;
+  --acme-shadow-card: 0 2px 8px rgba(16, 24, 40, 0.08);
+  --type-sans: "Source Han Sans SC", "Helvetica Neue", sans-serif;
+  --type-body: 16px;
+  --type-h2: 28px;
+  --type-h1: 40px;
+  --acme-space-sm: 8px;
+  --acme-space-md: 16px;
+  --acme-space-lg: 32px;
+  --acme-space-xl: 64px;
+  --acme-radius-control: 6px;
+  --acme-radius-card: 12px;
+  --acme-button-primary-bg: var(--acme-accent);
+  --acme-button-primary-text: var(--acme-on-accent);
+  --acme-button-secondary-border: var(--acme-line);
+  --acme-input-bg: var(--acme-surface);
+  --acme-input-border: var(--acme-line);
+  --acme-input-border-focus: var(--acme-accent);
+}

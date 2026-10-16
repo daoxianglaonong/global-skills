@@ -1,0 +1,7 @@
+/* Generated from tokens.json by page-theme-asset. Edit tokens.json, then run `theme.mjs css`. */
+:root {
+  --ks-text: #1b1f3b;
+  --ks-surface: #ffffff;
+  --ks-accent: #2563eb;
+  --ks-on-accent: #ffffff;
+}

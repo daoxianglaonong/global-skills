@@ -1,0 +1,51 @@
+:root {
+  --card-gap: var(--zx-space-4);
+}
+
+body {
+  margin: 0;
+  background: var(--zx-color-surface);
+  color: var(--zx-color-text);
+  font-family: var(--zx-font-sans);
+}
+
+.hero {
+  padding: var(--zx-space-8);
+}
+
+.lead {
+  color: var(--zx-color-text-muted);
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--zx-space-2) var(--zx-space-4);
+  border-radius: 7px;
+}
+
+.btn-primary {
+  background: var(--zx-color-accent);
+  color: var(--zx-color-surface);
+}
+
+.btn-ghost {
+  color: var(--zx-color-brand-strong);
+  font-family: "Comic Sans MS";
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--card-gap);
+  padding: var(--zx-space-8);
+}
+
+.card {
+  border: 1px solid var(--zx-color-border);
+  border-radius: var(--zx-radius-md);
+  padding: var(--zx-space-4);
+}
+
+.card-hot {
+  background: #ff00aa;
+}

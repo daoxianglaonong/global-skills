@@ -1,0 +1,13 @@
+/* Generated from tokens.json by page-theme-asset. Edit tokens.json, then run `theme.mjs css`. */
+:root {
+  --zx-color-text: #1b2330;
+  --zx-color-text-muted: #5b6576;
+  --zx-color-surface: #f7f8fa;
+  --zx-color-accent: #0f7a6c;
+  --zx-color-border: #dde1e7;
+  --zx-font-sans: "Inter", "PingFang SC", sans-serif;
+  --zx-radius-md: 6px;
+  --zx-space-2: 8px;
+  --zx-space-4: 16px;
+  --zx-space-8: 32px;
+}

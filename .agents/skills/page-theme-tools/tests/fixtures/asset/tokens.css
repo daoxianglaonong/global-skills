@@ -1,0 +1,14 @@
+/* Generated from tokens.json by page-theme-asset. Edit tokens.json, then run `theme.mjs css`. */
+:root {
+  --zz-action-primary: #1a5fd6;
+  --zz-action-hover: #3b7ae8;
+  --zz-text: #1f2329;
+  --zz-text-link: var(--zz-action-primary);
+  --zz-surface: #ffffff;
+  --zz-font-body: "Inter", "PingFang SC", sans-serif;
+  --zz-font-size-body: 14px;
+  --zz-font-weight-strong: 600;
+  --zz-space-4: 16px;
+  --zz-radius-md: 4px;
+  --zz-shadow-card: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
