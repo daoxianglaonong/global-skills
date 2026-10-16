@@ -1,0 +1,22 @@
+[
+  {"query": "src/pages/pricing.vue 现在跑在 http://localhost:5173/pricing,对照 page-theme/acme/ 这份资产验一下有没有用出资产外的颜色和变量,先别改代码", "should_trigger": true, "target": "page-theme-audit"},
+  {"query": "这个楼层是外包拿 page-theme/notion/ 生成的,他说已经全部合规。我不信,给我一份独立结论,他的生成记录和理由一律别看", "should_trigger": true, "target": "page-theme-audit"},
+  {"query": "landing.html 像不像 Stripe 那种风格?给个验收结论。仓库里还没有 stripe 的主题资产", "should_trigger": true, "target": "page-theme-audit"},
+  {"query": "i need a verdict, not a page: does https://staging.example.com/pricing follow the asset in page-theme/brand-x/? objective blockers plus a visual review", "should_trigger": true, "target": "page-theme-audit"},
+  {"query": "dist/ 整个构建目录拿 page-theme/stripe/ 资产验收一下,客观阻断和视觉意见分开列,截图证据附上", "should_trigger": true, "target": "page-theme-audit"},
+  {"query": "这个卡片组件放进我们站会不会一眼看出是外来的?我们的资产在 page-theme/harmonybp/,桌面平板手机三个宽度都看看", "should_trigger": true, "target": "page-theme-audit"},
+  {"query": "按「源值 × 用途」把 build/index.html 里不在 page-theme/vercel/ 资产里的颜色列个清单给我,只看不改", "should_trigger": true, "target": "page-theme-audit"},
+  {"query": "老项目 apps/portal 跟 page-theme/corp/ 这份资产差在哪?先出报告,改不改之后再说", "should_trigger": true, "target": "page-theme-audit"},
+  {"query": "映射表我确认完了,就按表把 pricing.vue 里写死的颜色全部换成 page-theme/stripe/ 的变量", "should_trigger": false, "target": "page-theme-generate"},
+  {"query": "附件 snapshot.html 想刷成 page-theme/acme/ 的主题,先给我一份「源值 × 用途」映射表让我逐条拍板,拍完你再替换", "should_trigger": false, "target": "page-theme-generate"},
+  {"query": "stripe.com 首页和定价页采一份风格资产,DESIGN.md 加 tokens,之后我要拿它去验收别的页面", "should_trigger": false, "target": "page-theme-asset"},
+  {"query": "对照设计稿 designs/home.html 验收 impl/home.vue 的还原度,间距、圆角、字号逐项核,给实测值和建议值", "should_trigger": false, "target": "fidelity-audit"},
+  {"query": "page-theme/acme/ 这份资产本身合不合格?tokens.css 跟 tokens.json 对不对得上,cssVar 有没有重名", "should_trigger": false, "target": "page-theme-asset"},
+  {"query": "照着 page-theme/notion/ 这份资产做个「AI 会议纪要」产品落地页,原站没有这一页", "should_trigger": false, "target": "page-theme-generate"},
+  {"query": "linear.app 帮我把主题风格分析一下,产出的东西要给另一个仓库的同事直接用,别只丢几张截图", "should_trigger": false, "target": "page-theme-asset"},
+  {"query": "vue 组件跑在 http://localhost:5173,对照 designs/home.design.html 验收响应式还原,重点看 1024 断点该跳的有没有跳", "should_trigger": false, "target": "fidelity-audit"},
+  {"query": "这个页面(已附 landing.html)配色太杂了,按 page-theme/harmonybp/ 把主题重做一遍,楼层顺序和文案保持原样", "should_trigger": false, "target": "page-theme-generate"},
+  {"query": "designs/ 下 8 张设计稿,起多个 sub agent 并行跑同一套流程,需要我确认的攒一批一起给我", "should_trigger": false, "target": "batch-workflow"},
+  {"query": "帮我 review 一下这个分支的 CSS 改动,命名和代码规范有没有问题", "should_trigger": false, "target": "none"},
+  {"query": "给我做个 SaaS 定价页,现代一点,深色底配霓虹绿,三档套餐横排", "should_trigger": false, "target": "none"}
+]

@@ -1,0 +1,22 @@
+[
+  {"query": "照 https://www.notion.so 的风格做一个「AI 会议纪要」产品落地页,原站没有这一页,仓库里也还没采过它的资产。", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "附件 snapshot.html 是生产页的 DOM 快照,想把主题刷成 page-theme/example-corp/ 那套。先给我一张映射表我拍板,确认了你再改。", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "参考 https://linear.app 、https://linear.app/pricing 、https://linear.app/changelog 这三页的风格,给我们内部工具做一个设置页。", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "product/rds.html 是别人用 page-theme/huaweicloud-com/ 拼的「云数据库 RDS」产品页,验一下合不合这份资产,别改", "should_trigger": false, "target": "page-theme-audit"},
+  {"query": "老项目 src/pages/pricing.vue 配色是前端自己乱配的,换成 stripe 那套资产,文案一个字都别动", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "按 page-theme/vercel/ 资产做一个 FAQ 楼层就行,不要整页", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "make me a careers page that looks like it belongs on airbnb.com. nothing has been extracted yet, do whatever prep you need, i just want the finished page", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "这张截图是我要的布局(左侧筛选、右侧卡片列表),颜色和字体照 page-theme/acme/ 来,做成 HTML", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "把 https://vercel.com 的设计语言采成一份风格资产,色板、字体、间距、典型布局都要,页面先不做", "should_trigger": false, "target": "page-theme-asset"},
+  {"query": "老项目 apps/portal 跟 page-theme/huaweicloud-com/ 比差在哪?把越界色值按源值和用途列出来,先别改代码", "should_trigger": false, "target": "page-theme-audit"},
+  {"query": "product/floor-3.html 配上 page-theme/linear/ 资产,给个合不合的结论就行。生成那个 agent 写的理由别当依据。", "should_trigger": false, "target": "page-theme-audit"},
+  {"query": "对比设计稿 html/1.html 和实现 impl/discussion.html 的还原度,样式逐项核,给我一份能当改码依据的差异清单", "should_trigger": false, "target": "fidelity-audit"},
+  {"query": "page-theme/huaweicloud-com/ 是三个月前采的,断点值可疑,重新采一遍覆盖掉", "should_trigger": false, "target": "page-theme-asset"},
+  {"query": "抽一下 stripe 的 design token", "should_trigger": false, "target": "page-theme-asset"},
+  {"query": "映射表 value-map.md 我整表看过了,第 6 行改保留,其余照表把 legacy/ 换成 page-theme/acme/ 的变量", "should_trigger": true, "target": "page-theme-generate"},
+  {"query": "这批 D2C 导出的定宽设计稿和我们的 svelte 实现两边 DOM 层级完全对不上,还能逐元素比样式吗?我要评分和差异清单", "should_trigger": false, "target": "fidelity-audit"},
+  {"query": "designs/ 下有 1920 / 1024 / 375 三张断点设计稿,按 PC 优先做响应式实现,栅格用 CSS Grid", "should_trigger": false, "target": "responsive-design"},
+  {"query": "帮我把 tailwind.config.js 里 theme.extend.colors 那堆写死的十六进制换成 CSS 变量,顺便把暗色模式接上", "should_trigger": false, "target": "none"},
+  {"query": "我们站没有正式规范,看 https://example.com 起草一份候选规范和 tokens.json 给我审,审完入库", "should_trigger": false, "target": "page-theme-asset"},
+  {"query": "随便帮我设计一个好看的个人博客首页,风格你自由发挥,不用照哪个站", "should_trigger": false, "target": "none"}
+]

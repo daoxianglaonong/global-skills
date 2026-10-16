@@ -1,0 +1,13 @@
+body { margin: 0; font-family: Arial, sans-serif; color: #333333; background: #ffffff; }
+.hero { padding: 64px 32px; background: #ffffff; }
+.hero h1 { font-size: 40px; color: #333333; }
+.hero p { color: #666666; }
+.btn { display: inline-block; padding: 8px 16px; background: #0a66c2; color: #ffffff; border-radius: 4px; }
+.badge { padding: 2px 8px; background: #ff5a00; color: #ffffff; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding: 64px 32px; background: #f5f5f5; }
+.card { padding: 16px; background: #ffffff; border: 1px solid #e5e5e5; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.card h2 { font-size: 28px; color: #333333; }
+.card p { color: #666666; }
+.foot { padding: 32px; border-top: 1px solid #e5e5e5; }
+.foot a { color: #0a66c2; }
+@media (max-width: 767px) { .cards { grid-template-columns: 1fr; } }

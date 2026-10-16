@@ -1,0 +1,145 @@
+{
+  "skill_name": "page-theme-generate",
+  "note": "文档级行为 eval。夹具在 evals/fixtures/：kite-minimal 只有最小三件、前缀 --kx-；kite-spec-only 是声明 valuePolicy spec-only、只有颜色 token 的最小三件（前缀 --ks-）；acme-full 带 layouts / recipes / voice 与最小组件层（按钮、输入框：组件 token、components.md、components.css）、混用 --acme- 与 --type- 两种前缀、无 evidence；legacy-page 是待刷主题的旧页与一份已确认映射表。工具（check / lint / capture / inventory / baseline）住在共享工具目录 page-theme-tools，本包不含实现；工具未装时，断言只验流程与摘要如实写「未跑」。kite-minimal、kite-spec-only、acme-full 是 v2 资产，check 退 0；legacy-page 按 confirmed-map.md 执行后，lint 阻断只剩 #ff5a00，baseline 零漂移。跑 eval 时把夹具拷到临时目录，产物不写回夹具。",
+  "evals": [
+    {
+      "id": 1,
+      "name": "minimal-asset-any-prefix-floor",
+      "prompt": "照 evals/fixtures/kite-minimal 这套风格，给我做一个 FAQ 楼层，四个问答，不要整页。",
+      "expected_output": "check 通过后直接做楼层，不停。HTML/CSS 引入资产 tokens.css，颜色、字体只用 --kx-* 公开变量。摘要列出缺席模块（layouts / recipes / voice / evidence 等），说明按 DESIGN.md 自行设计。",
+      "assertions": [
+        "没有出大纲、没有停下等确认",
+        "产物颜色与字体族全部是 var(--kx-…)，零色值字面量",
+        "没有出现 --por- 或任何资产里不存在的变量名；没有引用 public:false 的 --kx-ink-900 / --kx-paper-0 / --kx-sky-600",
+        "没有把缺 layouts / recipes 当成资产残缺而拒绝",
+        "摘要写明缺席模块与「参考：无，按 DESIGN.md 自行设计」",
+        "没有生成 trace、批准记录或门报告文件",
+        "page-theme-tools 不可用时，摘要写 lint / 截图未跑及原因，没有宣称通过"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "value-gap-not-invented",
+      "prompt": "用 evals/fixtures/kite-minimal 做一个登录表单组件，输错密码要有红色错误提示。",
+      "expected_output": "资产没有错误色，是值缺口。不造红色：错误提示用已有语义（如 --kx-text 加图标或文字说明）表达，摘要标精度损失并建议给资产补错误色。",
+      "assertions": [
+        "产物里没有任何资产外的红色值（hex / rgb / 命名色都没有）",
+        "没有自造 --kx-danger 之类资产里不存在的变量",
+        "摘要把「缺错误色」列为值缺口，并写了替代做法"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "optional-modules-absent-page-outline",
+      "prompt": "照 evals/fixtures/kite-minimal 风格做一个开发者文档首页。",
+      "expected_output": "整页请求，资产没有 recipes/，按新页型处理：出一张大纲（楼层 / 参考 layout / 关键内容 / 理由），layout 列写「自定」，然后停，不写页面代码。",
+      "assertions": [
+        "这一次只交大纲，没有 HTML/CSS",
+        "大纲有楼层、参考 layout、关键内容、理由四列；layout 列为「自定」而非编造的 layout id",
+        "说明资产没有 recipes / layouts，所以先出大纲",
+        "明确请用户确认，确认后下一次出页"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "known-page-type-no-stop",
+      "prompt": "用 evals/fixtures/acme-full 给我做 DataBox 数据盒的产品页。卖点：即连即查、权限到列、结果可视化。",
+      "expected_output": "recipes/product 匹配，已知页型，直接出页不停。只读 DESIGN.md、recipes/product.md、它用到的三个 layout 与 voice.md。楼层顺序参考 recipe，卡数按三个卖点定。摘要列 recipe product 与 layouts split-hero / card-grid / cta-band。",
+      "assertions": [
+        "没有出大纲停下，直接交页面",
+        "颜色、字体族只用 tokens.css 的公开变量，--acme- 与 --type- 两种前缀都按原名引用，没有统一改名",
+        "核心能力楼层是三张卡，没有为凑四列补卡",
+        "文案没有 voice.md 禁词，没有编造数字",
+        "整页只有一个实心主按钮在首屏（cta-band 可重复同一动作）",
+        "摘要列出 recipe 与 layout id，并说明它们是参考",
+        "lint 可用时阻断为 0；capture 可用时给出 1440 / 768 / 375 三张截图"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "unknown-page-type-outline",
+      "prompt": "照 evals/fixtures/acme-full 风格做一个线下技术沙龙报名页，这类页源站没有。",
+      "expected_output": "recipes 里没有同类页型，先出大纲停。大纲可借用 split-hero / card-grid / cta-band，报名表单这类资产没有的楼层写「自定」并列为形态缺口。",
+      "assertions": [
+        "这一次只交大纲，没有页面代码",
+        "没有把 product recipe 原样套用成报名页",
+        "报名表单等资产没有的楼层标为形态缺口，并说明只用资产已有的值来设计",
+        "请用户确认，确认后下一次出页"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "url-without-asset",
+      "prompt": "照 https://www.example.org 的风格给我做一个价格楼层，仓库里还没有这个站的资产。",
+      "expected_output": "找不到对应资产：一句话告知先建资产，软串 page-theme-asset，不等确认；资产过 check 后回来做楼层。page-theme-asset 不可用时停下报「需要资产」。任何情况下都不看着网站手抄色值。",
+      "assertions": [
+        "没有直接写页面，也没有从网站或截图里自己取色、取字号",
+        "告知先建资产后转交 page-theme-asset，没有停下等用户同意这一步",
+        "page-theme-asset 不可用时停下并说明需要资产，没有凑一份临时 tokens"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "incomplete-asset-reports-gap",
+      "prompt": "我把 evals/fixtures/acme-full 拷了一份但漏了 tokens.css，用这份拷贝做一个能力卡楼层。",
+      "expected_output": "check 不过：只报缺 tokens.css 这一缺口，停。不手写或重新生成 tokens.css，不重采，不用残件凑合出页。",
+      "assertions": [
+        "没有出页",
+        "指出缺的是 tokens.css，路径与实际一致",
+        "没有自己从 tokens.json 拼出 tokens.css，也没有触发重采",
+        "给出下一步：从原处补齐，或交 page-theme-asset 重新编译"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "retheme-one-table-then-stop",
+      "prompt": "evals/fixtures/legacy-page 是个旧页，把主题刷成 evals/fixtures/acme-full，文案和结构都别动。",
+      "expected_output": "刷主题模式。记 baseline、做 inventory，交一张「源值 × 用途 -> token」表（颜色、字体、字号、圆角、间距在同一张表），#ff5a00 这类无候选行默认保留，然后停。本次不改任何文件。",
+      "assertions": [
+        "只交一张表，没有分色值表、非色表等多张表",
+        "#ffffff 按用途拆成页面底与按钮上的字两行",
+        "无合适 token 的行（如 #ff5a00）默认保留，没有硬配或自造 token",
+        "本次调用没有修改 index.html 或 style.css",
+        "请用户整表确认或只改几行"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "retheme-execute-with-lock",
+      "prompt": "evals/fixtures/legacy-page 刷 acme-full 主题。映射表我确认了，见 evals/fixtures/legacy-page/confirmed-map.md，照它执行。",
+      "expected_output": "按确认表执行：映射行全部换成 var()，第 6、12、19、20 行保持原样。tokens.css 用 @import 引入，不动 HTML。baseline 比对文本、链接、图片、DOM 结构零漂移；lint 阻断只来自保留行 #ff5a00。前后三宽截图并列交付。",
+      "assertions": [
+        "index.html 与原文件逐字节相同（不加 link、不改 class）",
+        "style.css 的选择器与 @media 条件和原文件一致，只有值变化与顶部一条 @import",
+        "#ff5a00、卡片标题 28px、角标 2px、描边 1px 原样保留",
+        "其余映射行每一处都已换成表里的 var()，阴影整值换成 var(--acme-shadow-card)",
+        "摘要写已换 / 保留行数与 baseline 结果；工具不可用时如实写未跑"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "form-uses-component-classes",
+      "prompt": "用 evals/fixtures/acme-full 做一个「联系我们」表单楼层：姓名、邮箱、留言，一个提交按钮。纯静态页，没有前端框架。",
+      "expected_output": "直接做楼层。项目没有组件库、资产有 components.css，所以引入 tokens.css 与 components.css，输入框用 acme-input、提交用 acme-button acme-button--primary，不另写一套按钮 / 输入框样式；只写布局 CSS。lint 阻断 0。摘要「组件」一行写 components.css。",
+      "assertions": [
+        "页面引入了 acme-full 的 components.css（link 或 @import）",
+        "输入框用 class acme-input，提交按钮用 acme-button acme-button--primary",
+        "产物 CSS 没有重新定义 .acme-button / .acme-input 的颜色、描边或圆角",
+        "页面上只有一个主按钮",
+        "摘要有「组件」一行并写明用的是 components.css"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "spec-gap-local-vars",
+      "prompt": "照 evals/fixtures/kite-spec-only 做一个 FAQ 楼层，四个问答。这套主题的官网是 https://kite.example.com，需要的话可以参考。",
+      "expected_output": "资产 spec-only，只有颜色。字体栈、字号、间距、圆角是规范缺口：模型自定，在页面样式开头集中声明成本页局部变量（--page-* 之类，不用 --ks- 前缀），正文只 var() 它们；不打开、不 capture 那个官网取值。颜色只用 --ks- 公开变量。摘要「规范缺口」逐条列出类别、变量与值。lint 阻断 0，font-check-skipped / scalar-check-skipped 报警照实写。",
+      "assertions": [
+        "没有访问或 capture kite.example.com 取值",
+        "非颜色自定值集中声明在一个局部变量块里，变量名不以 --ks- 开头",
+        "产物里没有资产外颜色，也没有 --ks- 开头却不在资产里的变量",
+        "摘要有「规范缺口」一节，逐条列出字体栈、字号、间距等自定值，且没有把它们说成资产值"
+      ]
+    }
+  ]
+}
